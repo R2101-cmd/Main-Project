@@ -1,0 +1,4 @@
+from datetime import datetime, timezone
+
+def build_report(*, advertisement: dict, extracted: dict, text_assessment: dict | None, employer_identity: dict, evidence: list[dict], naive_assessment: dict, lineage_assessment: dict, decision: dict) -> dict:
+    return {"advertisement": advertisement, "observed_at": datetime.now(timezone.utc).isoformat(), "extraction": extracted, "textual_assessment": text_assessment or {"status": "unavailable", "limitation": "No validated labelled model was supplied."}, "employer_identity": employer_identity, "vacancy_evidence": evidence, "aggregation": {"naive": naive_assessment, "lineage_aware": lineage_assessment}, "decision": decision, "limitations": ["Evidence availability and source access are incomplete.", "This assessment supports human verification and does not establish fraud with certainty."]}

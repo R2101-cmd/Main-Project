@@ -1,0 +1,58 @@
+{
+  "input_path": "data\\raw\\fake_job_postings.csv",
+  "output_path": "data\\processed\\fake_job_postings_imported.jsonl",
+  "total_rows": 17880,
+  "output_rows": 17599,
+  "columns": [
+    "job_id",
+    "title",
+    "location",
+    "department",
+    "salary_range",
+    "company_profile",
+    "description",
+    "requirements",
+    "benefits",
+    "telecommuting",
+    "has_company_logo",
+    "has_questions",
+    "employment_type",
+    "required_experience",
+    "required_education",
+    "industry",
+    "function",
+    "fraudulent"
+  ],
+  "missing_values": {
+    "salary_range": 15012,
+    "benefits": 7214,
+    "required_education": 8105,
+    "industry": 4903,
+    "department": 11553,
+    "employment_type": 3471,
+    "required_experience": 7050,
+    "function": 6455,
+    "company_profile": 3308,
+    "requirements": 2696,
+    "location": 346,
+    "description": 1
+  },
+  "duplicate_job_ids": 0,
+  "exact_duplicate_rows": 281,
+  "potential_repost_pairs": 1359,
+  "potential_repost_components": 594,
+  "source_fraud_label_counts": {
+    "0": 16743,
+    "1": 856
+  },
+  "authorization_label_counts": {
+    "unresolved": 17599
+  },
+  "notes": [
+    "Exact duplicate rows were removed from the processed output and retained in the original CSV.",
+    "Imported records are not manually reviewed authorization labels.",
+    "The source fraudulent field is preserved separately and is not used as vacancy authorization.",
+    "Potential repost components are conservative split groups, not confirmed lineage merges.",
+    "No source URLs, requisition IDs, official evidence, or employer verification were invented."
+  ]
+}

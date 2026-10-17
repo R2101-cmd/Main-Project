@@ -1,0 +1,13 @@
+
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/*.sqlite3
+artifacts/models/
+artifacts/experiments/
+data/raw/*
+!data/raw/.gitkeep
+
+# Ignore large processed dataset files
+data/processed/*.jsonl
