@@ -1,13 +1,38 @@
 
 .venv/
+.env
+.env.*
+!.env.example
 __pycache__/
 .pytest_cache/
 *.pyc
+*.log
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
+
+# Local Streamlit state and secrets
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# Local runtime and generated validation outputs
 data/*.sqlite3
+artifacts/readiness/
 artifacts/models/
 artifacts/experiments/
+
+# Source captures and collection logs may contain sensitive provenance
 data/raw/*
 !data/raw/.gitkeep
+data/collection/*
+!data/collection/.gitkeep
+data/snapshots/
 
 # Ignore large processed dataset files
 data/processed/*.jsonl
+
+# Metric-analysis artifacts are publishable outputs; ignore only local scratch files
+final_completion_package/metric_analysis/.cache/
+final_completion_package/metric_analysis/*.tmp
+final_completion_package/metric_analysis/*.log

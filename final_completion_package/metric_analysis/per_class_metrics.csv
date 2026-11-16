@@ -1,0 +1,37 @@
+benchmark,subset,method,class,support,precision,recall,f1,recall_95_wilson_ci
+synthetic_v2,test,E1_text_only,contradicted,20,0.5714285714285714,0.6,0.5853658536585366,"{'lower': 0.3865815007622531, 'upper': 0.781193467627183}"
+synthetic_v2,test,E1_text_only,supported,20,0.5238095238095238,0.55,0.5365853658536585,"{'lower': 0.34208534245034233, 'upper': 0.7418021417443759}"
+synthetic_v2,test,E1_text_only,unresolved,20,0.5555555555555556,0.5,0.5263157894736842,"{'lower': 0.2992980081982123, 'upper': 0.7007019918017877}"
+synthetic_v2,test,E4_ordinary_aggregation,contradicted,20,1.0,1.0,1.0,"{'lower': 0.8388748419471806, 'upper': 1.0}"
+synthetic_v2,test,E4_ordinary_aggregation,supported,20,0.7142857142857143,1.0,0.8333333333333333,"{'lower': 0.8388748419471806, 'upper': 1.0}"
+synthetic_v2,test,E4_ordinary_aggregation,unresolved,20,1.0,0.6,0.7499999999999999,"{'lower': 0.3865815007622531, 'upper': 0.781193467627183}"
+synthetic_v2,test,E5_lineage_aware_aggregation,contradicted,20,1.0,1.0,1.0,"{'lower': 0.8388748419471806, 'upper': 1.0}"
+synthetic_v2,test,E5_lineage_aware_aggregation,supported,20,1.0,1.0,1.0,"{'lower': 0.8388748419471806, 'upper': 1.0}"
+synthetic_v2,test,E5_lineage_aware_aggregation,unresolved,20,1.0,1.0,1.0,"{'lower': 0.8388748419471806, 'upper': 1.0}"
+synthetic_v3_current_implementation,all,E1_text_only,contradicted,50,0.3333333333333333,0.06,0.10169491525423728,"{'lower': 0.02061497034897397, 'upper': 0.16217091688838173}"
+synthetic_v3_current_implementation,all,E1_text_only,supported,50,0.3543307086614173,0.9,0.5084745762711864,"{'lower': 0.7863976856252035, 'upper': 0.9565242350681096}"
+synthetic_v3_current_implementation,all,E1_text_only,unresolved,50,0.5,0.14,0.21875000000000003,"{'lower': 0.06950833427016294, 'upper': 0.2618619371058554}"
+synthetic_v3_current_implementation,all,E4_ordinary_aggregation,contradicted,50,0.9090909090909091,1.0,0.9523809523809523,"{'lower': 0.9286524008666414, 'upper': 1.0}"
+synthetic_v3_current_implementation,all,E4_ordinary_aggregation,supported,50,0.6666666666666666,1.0,0.8,"{'lower': 0.9286524008666414, 'upper': 1.0}"
+synthetic_v3_current_implementation,all,E4_ordinary_aggregation,unresolved,50,1.0,0.4,0.5714285714285715,"{'lower': 0.27608389730256544, 'upper': 0.5381856225241064}"
+synthetic_v3_current_implementation,all,E5_lineage_aware_raw,contradicted,50,0.9090909090909091,1.0,0.9523809523809523,"{'lower': 0.9286524008666414, 'upper': 1.0}"
+synthetic_v3_current_implementation,all,E5_lineage_aware_raw,supported,50,0.7692307692307693,1.0,0.8695652173913044,"{'lower': 0.9286524008666414, 'upper': 1.0}"
+synthetic_v3_current_implementation,all,E5_lineage_aware_raw,unresolved,50,1.0,0.6,0.7499999999999999,"{'lower': 0.4618143774758936, 'upper': 0.7239161026974346}"
+synthetic_v3_current_implementation,all,E5_lineage_aware_live_policy,contradicted,50,1.0,1.0,1.0,"{'lower': 0.9286524008666414, 'upper': 1.0}"
+synthetic_v3_current_implementation,all,E5_lineage_aware_live_policy,supported,50,1.0,1.0,1.0,"{'lower': 0.9286524008666414, 'upper': 1.0}"
+synthetic_v3_current_implementation,all,E5_lineage_aware_live_policy,unresolved,50,1.0,1.0,1.0,"{'lower': 0.9286524008666414, 'upper': 1.0}"
+provisional_145_record_evaluation,test,naive_evidence,contradicted,0,0.0,0.0,0.0,
+provisional_145_record_evaluation,test,naive_evidence,supported,1,0.0,0.0,0.0,
+provisional_145_record_evaluation,test,naive_evidence,unresolved,15,0.9375,1.0,0.967741935483871,
+provisional_145_record_evaluation,test,lineage_aware_evidence,contradicted,0,0.0,0.0,0.0,
+provisional_145_record_evaluation,test,lineage_aware_evidence,supported,1,0.0,0.0,0.0,
+provisional_145_record_evaluation,test,lineage_aware_evidence,unresolved,15,0.9375,1.0,0.967741935483871,
+provisional_145_record_evaluation,test,text_only_baseline,contradicted,0,0.0,0.0,0.0,
+provisional_145_record_evaluation,test,text_only_baseline,supported,1,0.0,0.0,0.0,
+provisional_145_record_evaluation,test,text_only_baseline,unresolved,15,0.9375,1.0,0.967741935483871,
+provisional_145_record_evaluation,test,E2_text_plus_metadata,contradicted,0,0.0,0.0,0.0,
+provisional_145_record_evaluation,test,E2_text_plus_metadata,supported,1,0.0,0.0,0.0,
+provisional_145_record_evaluation,test,E2_text_plus_metadata,unresolved,15,0.9375,1.0,0.967741935483871,
+provisional_145_record_evaluation,test,E3_employer_context,contradicted,0,0.0,0.0,0.0,
+provisional_145_record_evaluation,test,E3_employer_context,supported,1,0.0,0.0,0.0,
+provisional_145_record_evaluation,test,E3_employer_context,unresolved,15,0.9375,1.0,0.967741935483871,

@@ -1,0 +1,1031 @@
+[
+  {
+    "benchmark": "synthetic_v2",
+    "subset": "test",
+    "method": "E1_text_only",
+    "source": "existing v2 test case-level predictions with embedded expected labels",
+    "n": 60,
+    "class_distribution": {
+      "contradicted": 20,
+      "unresolved": 20,
+      "supported": 20
+    },
+    "predicted_distribution": {
+      "contradicted": 21,
+      "supported": 21,
+      "unresolved": 18
+    },
+    "accuracy": 0.55,
+    "accuracy_95_wilson_ci": {
+      "lower": 0.4249193588533434,
+      "upper": 0.6690634559324476
+    },
+    "balanced_accuracy": 0.5499999999999999,
+    "macro_precision": 0.5502645502645503,
+    "macro_recall": 0.5499999999999999,
+    "macro_f1": 0.5494223363286265,
+    "per_class": {
+      "contradicted": {
+        "precision": 0.5714285714285714,
+        "recall": 0.6,
+        "f1": 0.5853658536585366,
+        "support": 20,
+        "recall_95_wilson_ci": {
+          "lower": 0.3865815007622531,
+          "upper": 0.781193467627183
+        }
+      },
+      "supported": {
+        "precision": 0.5238095238095238,
+        "recall": 0.55,
+        "f1": 0.5365853658536585,
+        "support": 20,
+        "recall_95_wilson_ci": {
+          "lower": 0.34208534245034233,
+          "upper": 0.7418021417443759
+        }
+      },
+      "unresolved": {
+        "precision": 0.5555555555555556,
+        "recall": 0.5,
+        "f1": 0.5263157894736842,
+        "support": 20,
+        "recall_95_wilson_ci": {
+          "lower": 0.2992980081982123,
+          "upper": 0.7007019918017877
+        }
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        12,
+        5,
+        3
+      ],
+      [
+        4,
+        11,
+        5
+      ],
+      [
+        5,
+        5,
+        10
+      ]
+    ],
+    "false_assurance_count": 10,
+    "false_assurance_denominator": 40,
+    "false_assurance_rate": 0.25,
+    "false_assurance_95_wilson_ci": {
+      "lower": 0.14187118639096302,
+      "upper": 0.40193961420768026
+    },
+    "coverage": 0.7,
+    "selective_accuracy": 0.5476190476190477,
+    "selective_risk": 0.45238095238095233,
+    "abstention_rate": 0.3,
+    "insufficient_sample_warning": []
+  },
+  {
+    "benchmark": "synthetic_v2",
+    "subset": "test",
+    "method": "E4_ordinary_aggregation",
+    "source": "existing v2 test case-level predictions with embedded expected labels",
+    "n": 60,
+    "class_distribution": {
+      "contradicted": 20,
+      "unresolved": 20,
+      "supported": 20
+    },
+    "predicted_distribution": {
+      "contradicted": 20,
+      "supported": 28,
+      "unresolved": 12
+    },
+    "accuracy": 0.8666666666666667,
+    "accuracy_95_wilson_ci": {
+      "lower": 0.7583484032350039,
+      "upper": 0.9308589051941303
+    },
+    "balanced_accuracy": 0.8666666666666667,
+    "macro_precision": 0.9047619047619048,
+    "macro_recall": 0.8666666666666667,
+    "macro_f1": 0.8611111111111112,
+    "per_class": {
+      "contradicted": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 20,
+        "recall_95_wilson_ci": {
+          "lower": 0.8388748419471806,
+          "upper": 1.0
+        }
+      },
+      "supported": {
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333333,
+        "support": 20,
+        "recall_95_wilson_ci": {
+          "lower": 0.8388748419471806,
+          "upper": 1.0
+        }
+      },
+      "unresolved": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.7499999999999999,
+        "support": 20,
+        "recall_95_wilson_ci": {
+          "lower": 0.3865815007622531,
+          "upper": 0.781193467627183
+        }
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        8,
+        12
+      ]
+    ],
+    "false_assurance_count": 8,
+    "false_assurance_denominator": 40,
+    "false_assurance_rate": 0.2,
+    "false_assurance_95_wilson_ci": {
+      "lower": 0.10499989725437704,
+      "upper": 0.347573063463995
+    },
+    "coverage": 0.8,
+    "selective_accuracy": 0.8333333333333334,
+    "selective_risk": 0.16666666666666663,
+    "abstention_rate": 0.2,
+    "insufficient_sample_warning": []
+  },
+  {
+    "benchmark": "synthetic_v2",
+    "subset": "test",
+    "method": "E5_lineage_aware_aggregation",
+    "source": "existing v2 test case-level predictions with embedded expected labels",
+    "n": 60,
+    "class_distribution": {
+      "contradicted": 20,
+      "unresolved": 20,
+      "supported": 20
+    },
+    "predicted_distribution": {
+      "contradicted": 20,
+      "unresolved": 20,
+      "supported": 20
+    },
+    "accuracy": 1.0,
+    "accuracy_95_wilson_ci": {
+      "lower": 0.93982814785791,
+      "upper": 0.9999999999999998
+    },
+    "balanced_accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "contradicted": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 20,
+        "recall_95_wilson_ci": {
+          "lower": 0.8388748419471806,
+          "upper": 1.0
+        }
+      },
+      "supported": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 20,
+        "recall_95_wilson_ci": {
+          "lower": 0.8388748419471806,
+          "upper": 1.0
+        }
+      },
+      "unresolved": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 20,
+        "recall_95_wilson_ci": {
+          "lower": 0.8388748419471806,
+          "upper": 1.0
+        }
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        0,
+        20
+      ]
+    ],
+    "false_assurance_count": 0,
+    "false_assurance_denominator": 40,
+    "false_assurance_rate": 0.0,
+    "false_assurance_95_wilson_ci": {
+      "lower": 0.0,
+      "upper": 0.08762160119728664
+    },
+    "coverage": 0.6666666666666666,
+    "selective_accuracy": 1.0,
+    "selective_risk": 0.0,
+    "abstention_rate": 0.3333333333333333,
+    "insufficient_sample_warning": []
+  },
+  {
+    "benchmark": "synthetic_v3_current_implementation",
+    "subset": "all",
+    "method": "E1_text_only",
+    "source": "existing v3 case-level predictions + expected_labels.jsonl",
+    "n": 150,
+    "class_distribution": {
+      "supported": 50,
+      "contradicted": 50,
+      "unresolved": 50
+    },
+    "predicted_distribution": {
+      "supported": 127,
+      "unresolved": 14,
+      "contradicted": 9
+    },
+    "accuracy": 0.36666666666666664,
+    "accuracy_95_wilson_ci": {
+      "lower": 0.2937744456533283,
+      "upper": 0.44621761951149214
+    },
+    "balanced_accuracy": 0.3666666666666667,
+    "macro_precision": 0.3958880139982502,
+    "macro_recall": 0.3666666666666667,
+    "macro_f1": 0.2763064971751412,
+    "per_class": {
+      "contradicted": {
+        "precision": 0.3333333333333333,
+        "recall": 0.06,
+        "f1": 0.10169491525423728,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.02061497034897397,
+          "upper": 0.16217091688838173
+        }
+      },
+      "supported": {
+        "precision": 0.3543307086614173,
+        "recall": 0.9,
+        "f1": 0.5084745762711864,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.7863976856252035,
+          "upper": 0.9565242350681096
+        }
+      },
+      "unresolved": {
+        "precision": 0.5,
+        "recall": 0.14,
+        "f1": 0.21875000000000003,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.06950833427016294,
+          "upper": 0.2618619371058554
+        }
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        3,
+        43,
+        4
+      ],
+      [
+        2,
+        45,
+        3
+      ],
+      [
+        4,
+        39,
+        7
+      ]
+    ],
+    "false_assurance_count": 82,
+    "false_assurance_denominator": 100,
+    "false_assurance_rate": 0.82,
+    "false_assurance_95_wilson_ci": {
+      "lower": 0.7333264161369926,
+      "upper": 0.8829977450105364
+    },
+    "coverage": 0.9066666666666666,
+    "selective_accuracy": 0.35294117647058826,
+    "selective_risk": 0.6470588235294117,
+    "abstention_rate": 0.09333333333333334,
+    "insufficient_sample_warning": []
+  },
+  {
+    "benchmark": "synthetic_v3_current_implementation",
+    "subset": "all",
+    "method": "E4_ordinary_aggregation",
+    "source": "existing v3 case-level predictions + expected_labels.jsonl",
+    "n": 150,
+    "class_distribution": {
+      "supported": 50,
+      "contradicted": 50,
+      "unresolved": 50
+    },
+    "predicted_distribution": {
+      "supported": 75,
+      "contradicted": 55,
+      "unresolved": 20
+    },
+    "accuracy": 0.8,
+    "accuracy_95_wilson_ci": {
+      "lower": 0.7288586692020037,
+      "upper": 0.8561591841771504
+    },
+    "balanced_accuracy": 0.7999999999999999,
+    "macro_precision": 0.8585858585858586,
+    "macro_recall": 0.7999999999999999,
+    "macro_f1": 0.7746031746031745,
+    "per_class": {
+      "contradicted": {
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.9286524008666414,
+          "upper": 1.0
+        }
+      },
+      "supported": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.9286524008666414,
+          "upper": 1.0
+        }
+      },
+      "unresolved": {
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1": 0.5714285714285715,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.27608389730256544,
+          "upper": 0.5381856225241064
+        }
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        50,
+        0,
+        0
+      ],
+      [
+        0,
+        50,
+        0
+      ],
+      [
+        5,
+        25,
+        20
+      ]
+    ],
+    "false_assurance_count": 25,
+    "false_assurance_denominator": 100,
+    "false_assurance_rate": 0.25,
+    "false_assurance_95_wilson_ci": {
+      "lower": 0.17545211362287672,
+      "upper": 0.34304463548061603
+    },
+    "coverage": 0.8666666666666667,
+    "selective_accuracy": 0.7692307692307693,
+    "selective_risk": 0.23076923076923073,
+    "abstention_rate": 0.13333333333333333,
+    "insufficient_sample_warning": []
+  },
+  {
+    "benchmark": "synthetic_v3_current_implementation",
+    "subset": "all",
+    "method": "E5_lineage_aware_raw",
+    "source": "existing v3 case-level predictions + expected_labels.jsonl",
+    "n": 150,
+    "class_distribution": {
+      "supported": 50,
+      "contradicted": 50,
+      "unresolved": 50
+    },
+    "predicted_distribution": {
+      "supported": 65,
+      "contradicted": 55,
+      "unresolved": 30
+    },
+    "accuracy": 0.8666666666666667,
+    "accuracy_95_wilson_ci": {
+      "lower": 0.803019825502258,
+      "upper": 0.9120019952944858
+    },
+    "balanced_accuracy": 0.8666666666666667,
+    "macro_precision": 0.8927738927738927,
+    "macro_recall": 0.8666666666666667,
+    "macro_f1": 0.8573153899240856,
+    "per_class": {
+      "contradicted": {
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.9286524008666414,
+          "upper": 1.0
+        }
+      },
+      "supported": {
+        "precision": 0.7692307692307693,
+        "recall": 1.0,
+        "f1": 0.8695652173913044,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.9286524008666414,
+          "upper": 1.0
+        }
+      },
+      "unresolved": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.7499999999999999,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.4618143774758936,
+          "upper": 0.7239161026974346
+        }
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        50,
+        0,
+        0
+      ],
+      [
+        0,
+        50,
+        0
+      ],
+      [
+        5,
+        15,
+        30
+      ]
+    ],
+    "false_assurance_count": 15,
+    "false_assurance_denominator": 100,
+    "false_assurance_rate": 0.15,
+    "false_assurance_95_wilson_ci": {
+      "lower": 0.0930598528365663,
+      "upper": 0.23283559590832364
+    },
+    "coverage": 0.8,
+    "selective_accuracy": 0.8333333333333334,
+    "selective_risk": 0.16666666666666663,
+    "abstention_rate": 0.2,
+    "insufficient_sample_warning": []
+  },
+  {
+    "benchmark": "synthetic_v3_current_implementation",
+    "subset": "all",
+    "method": "E5_lineage_aware_live_policy",
+    "source": "existing v3 case-level predictions + expected_labels.jsonl",
+    "n": 150,
+    "class_distribution": {
+      "supported": 50,
+      "contradicted": 50,
+      "unresolved": 50
+    },
+    "predicted_distribution": {
+      "supported": 50,
+      "contradicted": 50,
+      "unresolved": 50
+    },
+    "accuracy": 1.0,
+    "accuracy_95_wilson_ci": {
+      "lower": 0.9750297556319235,
+      "upper": 1.0
+    },
+    "balanced_accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "contradicted": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.9286524008666414,
+          "upper": 1.0
+        }
+      },
+      "supported": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.9286524008666414,
+          "upper": 1.0
+        }
+      },
+      "unresolved": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 50,
+        "recall_95_wilson_ci": {
+          "lower": 0.9286524008666414,
+          "upper": 1.0
+        }
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        50,
+        0,
+        0
+      ],
+      [
+        0,
+        50,
+        0
+      ],
+      [
+        0,
+        0,
+        50
+      ]
+    ],
+    "false_assurance_count": 0,
+    "false_assurance_denominator": 100,
+    "false_assurance_rate": 0.0,
+    "false_assurance_95_wilson_ci": {
+      "lower": 3.469446951953614e-18,
+      "upper": 0.03699349820698568
+    },
+    "coverage": 0.6666666666666666,
+    "selective_accuracy": 1.0,
+    "selective_risk": 0.0,
+    "abstention_rate": 0.3333333333333333,
+    "insufficient_sample_warning": []
+  },
+  {
+    "benchmark": "provisional_145_record_evaluation",
+    "subset": "test",
+    "method": "naive_evidence",
+    "source": "existing e2_e3_mvp.json summary; no per-case vector reconstructed",
+    "n": 16,
+    "class_distribution": {
+      "unresolved": 15,
+      "supported": 1
+    },
+    "accuracy": 0.9375,
+    "accuracy_95_wilson_ci": {
+      "lower": null,
+      "upper": null
+    },
+    "balanced_accuracy": 0.5,
+    "macro_precision": 0.3125,
+    "macro_recall": 0.3333333333333333,
+    "macro_f1": 0.3225806451612903,
+    "per_class": {
+      "contradicted": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "supported": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1
+      },
+      "unresolved": {
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1": 0.967741935483871,
+        "support": 15
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15
+      ]
+    ],
+    "false_assurance_count": 0,
+    "false_assurance_denominator": 15,
+    "false_assurance_rate": 0.0,
+    "false_assurance_95_wilson_ci": {
+      "lower": null,
+      "upper": null
+    },
+    "coverage": 0.0,
+    "selective_accuracy": null,
+    "selective_risk": null,
+    "abstention_rate": 1.0,
+    "insufficient_sample_warning": [
+      "provisional evidence-derived labels; circularity risk",
+      "contradicted class absent from test set"
+    ]
+  },
+  {
+    "benchmark": "provisional_145_record_evaluation",
+    "subset": "test",
+    "method": "lineage_aware_evidence",
+    "source": "existing e2_e3_mvp.json summary; no per-case vector reconstructed",
+    "n": 16,
+    "class_distribution": {
+      "unresolved": 15,
+      "supported": 1
+    },
+    "accuracy": 0.9375,
+    "accuracy_95_wilson_ci": {
+      "lower": null,
+      "upper": null
+    },
+    "balanced_accuracy": 0.5,
+    "macro_precision": 0.3125,
+    "macro_recall": 0.3333333333333333,
+    "macro_f1": 0.3225806451612903,
+    "per_class": {
+      "contradicted": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "supported": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1
+      },
+      "unresolved": {
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1": 0.967741935483871,
+        "support": 15
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15
+      ]
+    ],
+    "false_assurance_count": 0,
+    "false_assurance_denominator": 15,
+    "false_assurance_rate": 0.0,
+    "false_assurance_95_wilson_ci": {
+      "lower": null,
+      "upper": null
+    },
+    "coverage": 0.0,
+    "selective_accuracy": null,
+    "selective_risk": null,
+    "abstention_rate": 1.0,
+    "insufficient_sample_warning": [
+      "provisional evidence-derived labels; circularity risk",
+      "contradicted class absent from test set"
+    ]
+  },
+  {
+    "benchmark": "provisional_145_record_evaluation",
+    "subset": "test",
+    "method": "text_only_baseline",
+    "source": "existing e2_e3_mvp.json summary; no per-case vector reconstructed",
+    "n": 16,
+    "class_distribution": {
+      "unresolved": 15,
+      "supported": 1
+    },
+    "accuracy": 0.9375,
+    "accuracy_95_wilson_ci": {
+      "lower": null,
+      "upper": null
+    },
+    "balanced_accuracy": 0.5,
+    "macro_precision": 0.3125,
+    "macro_recall": 0.3333333333333333,
+    "macro_f1": 0.3225806451612903,
+    "per_class": {
+      "contradicted": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "supported": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1
+      },
+      "unresolved": {
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1": 0.967741935483871,
+        "support": 15
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15
+      ]
+    ],
+    "false_assurance_count": null,
+    "false_assurance_denominator": null,
+    "false_assurance_rate": null,
+    "false_assurance_95_wilson_ci": {
+      "lower": null,
+      "upper": null
+    },
+    "coverage": null,
+    "selective_accuracy": null,
+    "selective_risk": null,
+    "abstention_rate": null,
+    "insufficient_sample_warning": [
+      "provisional evidence-derived labels; circularity risk",
+      "contradicted class absent from test set"
+    ]
+  },
+  {
+    "benchmark": "provisional_145_record_evaluation",
+    "subset": "test",
+    "method": "E2_text_plus_metadata",
+    "source": "existing e2_e3_mvp.json summary; no per-case vector reconstructed",
+    "n": 16,
+    "class_distribution": {
+      "unresolved": 15,
+      "supported": 1
+    },
+    "accuracy": 0.9375,
+    "accuracy_95_wilson_ci": {
+      "lower": null,
+      "upper": null
+    },
+    "balanced_accuracy": 0.5,
+    "macro_precision": 0.3125,
+    "macro_recall": 0.3333333333333333,
+    "macro_f1": 0.3225806451612903,
+    "per_class": {
+      "contradicted": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "supported": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1
+      },
+      "unresolved": {
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1": 0.967741935483871,
+        "support": 15
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15
+      ]
+    ],
+    "false_assurance_count": null,
+    "false_assurance_denominator": null,
+    "false_assurance_rate": null,
+    "false_assurance_95_wilson_ci": {
+      "lower": null,
+      "upper": null
+    },
+    "coverage": null,
+    "selective_accuracy": null,
+    "selective_risk": null,
+    "abstention_rate": null,
+    "insufficient_sample_warning": [
+      "provisional evidence-derived labels; circularity risk",
+      "contradicted class absent from test set"
+    ]
+  },
+  {
+    "benchmark": "provisional_145_record_evaluation",
+    "subset": "test",
+    "method": "E3_employer_context",
+    "source": "existing e2_e3_mvp.json summary; no per-case vector reconstructed",
+    "n": 16,
+    "class_distribution": {
+      "unresolved": 15,
+      "supported": 1
+    },
+    "accuracy": 0.9375,
+    "accuracy_95_wilson_ci": {
+      "lower": null,
+      "upper": null
+    },
+    "balanced_accuracy": 0.5,
+    "macro_precision": 0.3125,
+    "macro_recall": 0.3333333333333333,
+    "macro_f1": 0.3225806451612903,
+    "per_class": {
+      "contradicted": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "supported": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1
+      },
+      "unresolved": {
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1": 0.967741935483871,
+        "support": 15
+      }
+    },
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15
+      ]
+    ],
+    "false_assurance_count": null,
+    "false_assurance_denominator": null,
+    "false_assurance_rate": null,
+    "false_assurance_95_wilson_ci": {
+      "lower": null,
+      "upper": null
+    },
+    "coverage": null,
+    "selective_accuracy": null,
+    "selective_risk": null,
+    "abstention_rate": null,
+    "insufficient_sample_warning": [
+      "provisional evidence-derived labels; circularity risk",
+      "contradicted class absent from test set"
+    ]
+  }
+]

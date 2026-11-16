@@ -1,0 +1,326 @@
+[
+  {
+    "benchmark": "synthetic_v2",
+    "subset": "test",
+    "method": "E1_text_only",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        12,
+        5,
+        3
+      ],
+      [
+        4,
+        11,
+        5
+      ],
+      [
+        5,
+        5,
+        10
+      ]
+    ]
+  },
+  {
+    "benchmark": "synthetic_v2",
+    "subset": "test",
+    "method": "E4_ordinary_aggregation",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        8,
+        12
+      ]
+    ]
+  },
+  {
+    "benchmark": "synthetic_v2",
+    "subset": "test",
+    "method": "E5_lineage_aware_aggregation",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        0,
+        20
+      ]
+    ]
+  },
+  {
+    "benchmark": "synthetic_v3_current_implementation",
+    "subset": "all",
+    "method": "E1_text_only",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        3,
+        43,
+        4
+      ],
+      [
+        2,
+        45,
+        3
+      ],
+      [
+        4,
+        39,
+        7
+      ]
+    ]
+  },
+  {
+    "benchmark": "synthetic_v3_current_implementation",
+    "subset": "all",
+    "method": "E4_ordinary_aggregation",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        50,
+        0,
+        0
+      ],
+      [
+        0,
+        50,
+        0
+      ],
+      [
+        5,
+        25,
+        20
+      ]
+    ]
+  },
+  {
+    "benchmark": "synthetic_v3_current_implementation",
+    "subset": "all",
+    "method": "E5_lineage_aware_raw",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        50,
+        0,
+        0
+      ],
+      [
+        0,
+        50,
+        0
+      ],
+      [
+        5,
+        15,
+        30
+      ]
+    ]
+  },
+  {
+    "benchmark": "synthetic_v3_current_implementation",
+    "subset": "all",
+    "method": "E5_lineage_aware_live_policy",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        50,
+        0,
+        0
+      ],
+      [
+        0,
+        50,
+        0
+      ],
+      [
+        0,
+        0,
+        50
+      ]
+    ]
+  },
+  {
+    "benchmark": "provisional_145_record_evaluation",
+    "subset": "test",
+    "method": "naive_evidence",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15
+      ]
+    ]
+  },
+  {
+    "benchmark": "provisional_145_record_evaluation",
+    "subset": "test",
+    "method": "lineage_aware_evidence",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15
+      ]
+    ]
+  },
+  {
+    "benchmark": "provisional_145_record_evaluation",
+    "subset": "test",
+    "method": "text_only_baseline",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15
+      ]
+    ]
+  },
+  {
+    "benchmark": "provisional_145_record_evaluation",
+    "subset": "test",
+    "method": "E2_text_plus_metadata",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15
+      ]
+    ]
+  },
+  {
+    "benchmark": "provisional_145_record_evaluation",
+    "subset": "test",
+    "method": "E3_employer_context",
+    "confusion_matrix_labels": [
+      "contradicted",
+      "supported",
+      "unresolved"
+    ],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        15
+      ]
+    ]
+  }
+]
