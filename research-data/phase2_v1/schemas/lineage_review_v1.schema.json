@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vacancyguard-phase2-lineage-review-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["lineage_review_id", "lineage_group_id", "advertisement_ids", "relationship", "signals", "basis", "reviewer_id", "reviewed_at", "review_status"],
+  "properties": {
+    "lineage_review_id": {"type": "string", "minLength": 1},
+    "lineage_group_id": {"type": "string", "minLength": 1},
+    "advertisement_ids": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+    "relationship": {"enum": ["original", "independent", "copied_derived", "unknown"]},
+    "signals": {"type": "array", "items": {"type": "string"}},
+    "basis": {"type": "string", "minLength": 1},
+    "reviewer_id": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "format": "date-time"},
+    "review_status": {"enum": ["candidate", "reviewed", "adjudicated", "unresolved"]}
+  }
+}

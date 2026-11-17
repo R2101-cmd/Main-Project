@@ -1,0 +1,791 @@
+{
+  "generated_utc": "2026-11-14T04:24:24.702789Z",
+  "datasets": {
+    "pilot_annotations": {
+      "name": "pilot_annotations",
+      "path": "data/annotations/pilot.jsonl",
+      "exists": true,
+      "sha256": "fe4e0d2f0e3858b8e7d0732d14875109cb5435a5b3c06389ca9446ea3255f69e",
+      "bytes": 4664,
+      "records": 4,
+      "sample_keys": [
+        "annotation_rationale",
+        "authorization_label",
+        "employer_identity",
+        "evidence",
+        "id",
+        "partition",
+        "synthetic",
+        "text",
+        "vacancy_group"
+      ],
+      "distributions": {
+        "authorization_label": {
+          "supported": 2,
+          "unresolved": 2
+        },
+        "employer_identity": {
+          "verified": 2,
+          "unresolved": 2
+        },
+        "synthetic": {
+          "False": 4
+        },
+        "partition": {
+          "train": 2,
+          "validation": 1,
+          "test": 1
+        }
+      }
+    },
+    "provisional_eval_annotations": {
+      "name": "provisional_eval_annotations",
+      "path": "data/annotations/job_ad_authorization_evaluation.jsonl",
+      "exists": true,
+      "sha256": "b6105933ad642146f1436357bd1d819163c1ade8ed5ddde21c61307bb2fecffc",
+      "bytes": 147670,
+      "records": 145,
+      "sample_keys": [
+        "annotation_rationale",
+        "annotation_status",
+        "authorization_label",
+        "employer_identity",
+        "evidence",
+        "id",
+        "partition",
+        "synthetic",
+        "text",
+        "vacancy_group"
+      ],
+      "distributions": {
+        "authorization_label": {
+          "unresolved": 133,
+          "supported": 12
+        },
+        "employer_identity": {
+          "unresolved": 133,
+          "verified": 12
+        },
+        "synthetic": {
+          "False": 145
+        },
+        "partition": {
+          "train": 101,
+          "validation": 28,
+          "test": 16
+        }
+      }
+    },
+    "provisional_independent_review_v1": {
+      "name": "provisional_independent_review_v1",
+      "path": "data/annotations/job_ad_independent_review_v1.jsonl",
+      "exists": true,
+      "sha256": "3ec3e6c422567f7a6378155ce725c5a250f57e78148f671d4bcf72b0d6c1bd31",
+      "bytes": 33461,
+      "records": 31,
+      "sample_keys": [
+        "annotation_rationale",
+        "annotation_status",
+        "authorization_label",
+        "employer_identity",
+        "evidence",
+        "id",
+        "partition",
+        "reviewer_id",
+        "synthetic",
+        "text",
+        "vacancy_group"
+      ],
+      "distributions": {
+        "authorization_label": {
+          "unresolved": 19,
+          "supported": 12
+        },
+        "employer_identity": {
+          "unresolved": 19,
+          "verified": 12
+        },
+        "synthetic": {
+          "False": 31
+        },
+        "partition": {
+          "train": 19,
+          "test": 12
+        }
+      }
+    },
+    "table_a_780": {
+      "name": "table_a_780",
+      "path": "DatasetCollection/processed/table_A_advertisements.csv",
+      "exists": true,
+      "sha256": "834d7eebd3b613304186ceaba10232a33fe846932c90fcfa881f22f862e80413",
+      "bytes": 4526526,
+      "records": 780,
+      "columns": [
+        "﻿case_id",
+        "employer_id",
+        "job_title",
+        "job_description",
+        "location",
+        "salary_text",
+        "contact_details",
+        "application_url",
+        "advertisement_url",
+        "platform_type",
+        "input_type",
+        "observed_at"
+      ],
+      "distributions": {
+        "employer_id": {
+          "EMP_STRIPE": 780
+        },
+        "platform_type": {
+          "official_careers_site": 780
+        }
+      }
+    },
+    "table_b_780": {
+      "name": "table_b_780",
+      "path": "DatasetCollection/processed/table_B_ground_truth.csv",
+      "exists": true,
+      "sha256": "f8d7c840c2ad535498d64a9976cddf3467c6c74dcc3c38d1dcebfad1744a5e0a",
+      "bytes": 83613,
+      "records": 780,
+      "columns": [
+        "﻿case_id",
+        "employer_identity_label",
+        "vacancy_authorization_label",
+        "fraud_outcome_label",
+        "label_rationale",
+        "label_evidence_refs",
+        "annotator_id",
+        "adjudication_status"
+      ],
+      "distributions": {
+        "employer_identity_label": {
+          "unresolved": 780
+        },
+        "vacancy_authorization_label": {
+          "unresolved": 780
+        },
+        "fraud_outcome_label": {
+          "unresolved": 780
+        },
+        "adjudication_status": {
+          "pending": 780
+        }
+      }
+    },
+    "table_c_snapshot_780": {
+      "name": "table_c_snapshot_780",
+      "path": "DatasetCollection/processed/table_C_evidence_records.csv",
+      "exists": true,
+      "sha256": "b77fbd1a079cba7e2c3e264d25a9f2119dd007429d20dcd166878a720e468094",
+      "bytes": 526746,
+      "records": 780,
+      "columns": [
+        "﻿evidence_id",
+        "case_id",
+        "claim_type",
+        "source_url",
+        "source_type",
+        "retrieved_at",
+        "source_published_at",
+        "evidence_state",
+        "matched_fields",
+        "contradiction_details",
+        "evidence_rationale",
+        "retrieval_outcome",
+        "source_job_id",
+        "requisition_id",
+        "source_updated_at",
+        "description_sha256"
+      ],
+      "unique_ids": 780,
+      "duplicate_ids": 0,
+      "distributions": {
+        "evidence_state": {
+          "supported": 780
+        }
+      }
+    },
+    "stage4e_evidence_780": {
+      "name": "stage4e_evidence_780",
+      "path": "DatasetCollection/processed/stage4e_evidence_records.csv",
+      "exists": true,
+      "sha256": "a0a78bccdb7358a928812311ebd144e2b401ecd7407d09c89fd875ca07d25676",
+      "bytes": 9398145,
+      "records": 780,
+      "columns": [
+        "﻿batch_name",
+        "batch_number",
+        "record_index",
+        "evidence_id",
+        "case_id",
+        "employer_id",
+        "advertised_job_title",
+        "advertised_location",
+        "advertisement_description",
+        "official_employer_url",
+        "official_http_status",
+        "greenhouse_api_url",
+        "greenhouse_http_status",
+        "greenhouse_job_id",
+        "retrieval_timestamp",
+        "official_response_hash",
+        "greenhouse_response_hash",
+        "retrieval_error",
+        "employer_name_observed",
+        "retrieved_job_title",
+        "retrieved_location",
+        "retrieved_description",
+        "vacancy_status",
+        "vacancy_status_basis",
+        "match_employer",
+        "match_title",
+        "match_location",
+        "match_description",
+        "match_job_identifier",
+        "source_record_match_state",
+        "evidence_classification",
+        "employer_identity_evidence",
+        "vacancy_authorization_evidence",
+        "source_independence",
+        "retrieval_independence",
+        "publication_date",
+        "updated_date",
+        "requisition_id",
+        "response_archive_paths",
+        "limitations"
+      ],
+      "unique_ids": 780,
+      "duplicate_ids": 0,
+      "distributions": {
+        "employer_id": {
+          "EMP_STRIPE": 780
+        }
+      }
+    },
+    "stage4f_expansion_2200": {
+      "name": "stage4f_expansion_2200",
+      "path": "DatasetCollection/processed/stage4f_expansion_records.csv",
+      "exists": true,
+      "sha256": "acc7a9857ed7b62e15214f554add93c1f3fb919db023e83eea2296c5dc04f5d3",
+      "bytes": 21292453,
+      "records": 2200,
+      "columns": [
+        "case_id",
+        "employer_id",
+        "employer_name",
+        "job_title",
+        "job_description",
+        "location",
+        "original_source_url",
+        "source_type",
+        "source_family",
+        "ats_platform",
+        "job_identifier",
+        "retrieval_timestamp",
+        "publication_date",
+        "updated_date",
+        "http_status",
+        "response_hash",
+        "collection_method",
+        "retrieval_provenance",
+        "source_family_id",
+        "source_instance_id",
+        "retrieval_event_id",
+        "canonical_vacancy_id",
+        "lineage_group_id",
+        "source_independence_status",
+        "retrieval_independence_status",
+        "vacancy_status_observation",
+        "retrieval_error_or_warning",
+        "raw_response_path"
+      ],
+      "unique_ids": 2200,
+      "duplicate_ids": 0,
+      "distributions": {
+        "source_family_id": {
+          "Greenhouse": 1747,
+          "Lever": 453
+        },
+        "ats_platform": {
+          "Greenhouse": 1747,
+          "Lever": 453
+        },
+        "employer_id": {
+          "EMP_STAGE4F_738e22f0acab814c": 481,
+          "EMP_STAGE4F_4d8bd97f03109ac1": 383,
+          "EMP_STAGE4F_65819e198c32566a": 368,
+          "EMP_STAGE4F_ab7d0a36ecbe10c2": 217,
+          "EMP_STAGE4F_f5afbedfef4f63f0": 168,
+          "EMP_STAGE4F_09a2f4897466c7a5": 151,
+          "EMP_STAGE4F_2e183f2a7a70de1c": 147,
+          "EMP_STAGE4F_44435aa866c2c97a": 83,
+          "EMP_STAGE4F_0ebebc1dc933de11": 61,
+          "EMP_STAGE4F_e9e029f4af326c8e": 49,
+          "EMP_STAGE4F_59958e2950398a3a": 39,
+          "EMP_STAGE4F_e0e2087b3efad83c": 30,
+          "EMP_STAGE4F_f40955ee93bcbb1d": 11,
+          "EMP_STAGE4F_4d3754cc6848e1ed": 7,
+          "EMP_STAGE4F_9e14aafb94637fb8": 2
+        },
+        "source_independence_status": {
+          "not_assessed": 2200
+        },
+        "vacancy_status_observation": {
+          "active_or_listed_at_retrieval": 2200
+        }
+      }
+    },
+    "stripe_cohort_pkg": {
+      "name": "stripe_cohort_pkg",
+      "path": "DatasetCollection/final_research_package/stripe_cohort.csv",
+      "exists": true,
+      "sha256": "9a1609a94bba5cb5dfc22644307cf2fc86bf682b41f26e10442dba1dcf04c797",
+      "bytes": 4526523,
+      "records": 780,
+      "columns": [
+        "case_id",
+        "employer_id",
+        "job_title",
+        "job_description",
+        "location",
+        "salary_text",
+        "contact_details",
+        "application_url",
+        "advertisement_url",
+        "platform_type",
+        "input_type",
+        "observed_at"
+      ],
+      "unique_ids": 780,
+      "duplicate_ids": 0,
+      "distributions": {
+        "employer_id": {
+          "EMP_STRIPE": 780
+        },
+        "platform_type": {
+          "official_careers_site": 780
+        }
+      }
+    },
+    "stage4f_cohort_pkg": {
+      "name": "stage4f_cohort_pkg",
+      "path": "DatasetCollection/final_research_package/stage4f_expansion_cohort.csv",
+      "exists": true,
+      "sha256": "acc7a9857ed7b62e15214f554add93c1f3fb919db023e83eea2296c5dc04f5d3",
+      "bytes": 21292453,
+      "records": 2200,
+      "columns": [
+        "case_id",
+        "employer_id",
+        "employer_name",
+        "job_title",
+        "job_description",
+        "location",
+        "original_source_url",
+        "source_type",
+        "source_family",
+        "ats_platform",
+        "job_identifier",
+        "retrieval_timestamp",
+        "publication_date",
+        "updated_date",
+        "http_status",
+        "response_hash",
+        "collection_method",
+        "retrieval_provenance",
+        "source_family_id",
+        "source_instance_id",
+        "retrieval_event_id",
+        "canonical_vacancy_id",
+        "lineage_group_id",
+        "source_independence_status",
+        "retrieval_independence_status",
+        "vacancy_status_observation",
+        "retrieval_error_or_warning",
+        "raw_response_path"
+      ],
+      "unique_ids": 2200,
+      "duplicate_ids": 0,
+      "distributions": {
+        "source_family_id": {
+          "Greenhouse": 1747,
+          "Lever": 453
+        },
+        "ats_platform": {
+          "Greenhouse": 1747,
+          "Lever": 453
+        },
+        "employer_id": {
+          "EMP_STAGE4F_738e22f0acab814c": 481,
+          "EMP_STAGE4F_4d8bd97f03109ac1": 383,
+          "EMP_STAGE4F_65819e198c32566a": 368,
+          "EMP_STAGE4F_ab7d0a36ecbe10c2": 217,
+          "EMP_STAGE4F_f5afbedfef4f63f0": 168,
+          "EMP_STAGE4F_09a2f4897466c7a5": 151,
+          "EMP_STAGE4F_2e183f2a7a70de1c": 147,
+          "EMP_STAGE4F_44435aa866c2c97a": 83,
+          "EMP_STAGE4F_0ebebc1dc933de11": 61,
+          "EMP_STAGE4F_e9e029f4af326c8e": 49,
+          "EMP_STAGE4F_59958e2950398a3a": 39,
+          "EMP_STAGE4F_e0e2087b3efad83c": 30,
+          "EMP_STAGE4F_f40955ee93bcbb1d": 11,
+          "EMP_STAGE4F_4d3754cc6848e1ed": 7,
+          "EMP_STAGE4F_9e14aafb94637fb8": 2
+        },
+        "source_independence_status": {
+          "not_assessed": 2200
+        },
+        "vacancy_status_observation": {
+          "active_or_listed_at_retrieval": 2200
+        }
+      }
+    },
+    "unified_proposed_pkg": {
+      "name": "unified_proposed_pkg",
+      "path": "DatasetCollection/final_research_package/unified_proposed_dataset.csv",
+      "exists": true,
+      "sha256": "39820542ec00734e479d15e7d05bdd3265dcc46d63108de450cd495ea6abb831",
+      "bytes": 26083943,
+      "records": 2980,
+      "columns": [
+        "cohort_id",
+        "case_id",
+        "employer_id",
+        "employer_name",
+        "job_title",
+        "job_description",
+        "location",
+        "salary_text",
+        "publication_date",
+        "update_date",
+        "original_source_url",
+        "official_employer_url",
+        "ats_platform",
+        "source_type",
+        "source_family_id",
+        "source_instance_id",
+        "collection_method",
+        "retrieval_timestamp",
+        "http_status",
+        "response_hash",
+        "job_identifier",
+        "canonical_vacancy_id",
+        "vacancy_status_observation",
+        "evidence_state",
+        "employer_identity_state",
+        "vacancy_authorization_state",
+        "source_independence_status",
+        "retrieval_independence_status",
+        "evidence_references",
+        "lineage_group_id",
+        "potential_lineage_relationship",
+        "confirmed_lineage_status",
+        "lineage_rationale",
+        "employer_identity_label",
+        "vacancy_authorization_label",
+        "fraud_outcome_label",
+        "annotator_id",
+        "adjudication_status"
+      ],
+      "unique_ids": 2980,
+      "duplicate_ids": 0,
+      "distributions": {
+        "cohort_id": {
+          "stage4f_expansion_2200": 2200,
+          "stripe_greenhouse_780": 780
+        },
+        "source_family_id": {
+          "Greenhouse": 1747,
+          "stripe_greenhouse": 780,
+          "Lever": 453
+        },
+        "ats_platform": {
+          "Greenhouse": 2527,
+          "Lever": 453
+        },
+        "employer_id": {
+          "EMP_STRIPE": 780,
+          "EMP_STAGE4F_738e22f0acab814c": 481,
+          "EMP_STAGE4F_4d8bd97f03109ac1": 383,
+          "EMP_STAGE4F_65819e198c32566a": 368,
+          "EMP_STAGE4F_ab7d0a36ecbe10c2": 217,
+          "EMP_STAGE4F_f5afbedfef4f63f0": 168,
+          "EMP_STAGE4F_09a2f4897466c7a5": 151,
+          "EMP_STAGE4F_2e183f2a7a70de1c": 147,
+          "EMP_STAGE4F_44435aa866c2c97a": 83,
+          "EMP_STAGE4F_0ebebc1dc933de11": 61,
+          "EMP_STAGE4F_e9e029f4af326c8e": 49,
+          "EMP_STAGE4F_59958e2950398a3a": 39,
+          "EMP_STAGE4F_e0e2087b3efad83c": 30,
+          "EMP_STAGE4F_f40955ee93bcbb1d": 11,
+          "EMP_STAGE4F_4d3754cc6848e1ed": 7
+        },
+        "employer_identity_label": {
+          "": 2980
+        },
+        "vacancy_authorization_label": {
+          "": 2980
+        },
+        "fraud_outcome_label": {
+          "": 2980
+        },
+        "evidence_state": {
+          "": 2200,
+          "independent_official_confirmation": 744,
+          "fresh_same_system_retrieval": 19,
+          "unresolved": 16,
+          "unavailable": 1
+        },
+        "source_independence_status": {
+          "not_assessed": 2200,
+          "separate_employer_controlled_page_and_official_greenhouse_api": 780
+        },
+        "vacancy_status_observation": {
+          "active_or_listed_at_retrieval": 2200,
+          "active": 763,
+          "removed": 17
+        },
+        "adjudication_status": {
+          "not_started": 2200,
+          "unreviewed": 780
+        }
+      }
+    },
+    "naukri_separate_pkg": {
+      "name": "naukri_separate_pkg",
+      "path": "DatasetCollection/final_research_package/naukri_separate_cohort.csv",
+      "exists": true,
+      "sha256": "5d817ae39a8c27086f20be018d80b9bdffd1c2fb68071df1a67e38b04788a011",
+      "bytes": 241969,
+      "records": 198,
+      "columns": [
+        "case_id",
+        "employer_id",
+        "job_title",
+        "job_description",
+        "location",
+        "salary_text",
+        "contact_details",
+        "application_url",
+        "advertisement_url",
+        "platform_type",
+        "input_type",
+        "observed_at",
+        "source_job_id",
+        "source_employer_name",
+        "source_company_id",
+        "source_created_date",
+        "source_file"
+      ],
+      "unique_ids": 198,
+      "duplicate_ids": 0,
+      "distributions": {
+        "employer_id": {
+          "emp_4d748ebd71af03a7": 9,
+          "emp_943c3eeb252dbd17": 5,
+          "emp_2bdd94c004581aa9": 4,
+          "emp_9cd50a3b43004536": 4,
+          "emp_0b9ee0b94db97ea7": 3,
+          "emp_a7d324a4b53ea387": 3,
+          "emp_9538358d0779f606": 3,
+          "emp_9f5b5b5b5b87dcc1": 2,
+          "emp_666b9f5485e5d89b": 2,
+          "emp_cf69bcecb143729b": 2,
+          "emp_d6806158f7533400": 2,
+          "emp_0de4f3f059ad5e1c": 2,
+          "emp_ee513d374afbbc2a": 2,
+          "emp_fb134d04851dce40": 2,
+          "emp_5528a266f145e52b": 2
+        },
+        "platform_type": {
+          "job portal (Naukri)": 198
+        }
+      }
+    },
+    "lineage_candidates_21": {
+      "name": "lineage_candidates_21",
+      "path": "DatasetCollection/processed/vacancyguard_table_d_lineage_candidates.csv",
+      "exists": true,
+      "sha256": "ab1ea04b399a5de955aa30ebb742fb7853a4ad4ffb9a35be871a4400d1b0ae5a",
+      "bytes": 8174,
+      "records": 21,
+      "columns": [
+        "lineage_group_id",
+        "source_relationship",
+        "related_case_ids",
+        "lineage_signals",
+        "lineage_review_status",
+        "lineage_rationale",
+        "similarity_score",
+        "left_source_job_id",
+        "right_source_job_id"
+      ],
+      "unique_ids": 21,
+      "duplicate_ids": 0,
+      "distributions": {
+        "lineage_review_status": {
+          "automated candidate": 21
+        },
+        "source_relationship": {
+          "copied/derived candidate": 20,
+          "related candidate": 1
+        }
+      }
+    },
+    "stripe_pair_review_207": {
+      "name": "stripe_pair_review_207",
+      "path": "DatasetCollection/processed/stage5b_lineage_pair_review.csv",
+      "exists": true,
+      "sha256": "f2a2066d5ccde602ed2a2777f16d359556fc74c2b7ede2213a110708e9a7177d",
+      "bytes": 41737,
+      "records": 207,
+      "columns": [
+        "pair_id",
+        "case_id_1",
+        "case_id_2",
+        "similarity_score",
+        "title_similarity",
+        "description_similarity",
+        "location_similarity",
+        "source_family",
+        "publication_time_comparison",
+        "reviewer_decision",
+        "copy_direction",
+        "lineage_rationale",
+        "confidence",
+        "adjudication_status"
+      ],
+      "unique_ids": 207,
+      "duplicate_ids": 0,
+      "distributions": {
+        "adjudication_status": {
+          "not_started": 207
+        },
+        "reviewer_decision": {
+          "": 207
+        }
+      }
+    },
+    "stage4f_lineage_candidates": {
+      "name": "stage4f_lineage_candidates",
+      "path": "DatasetCollection/processed/stage4f_lineage_candidates.csv",
+      "exists": true,
+      "sha256": "27d6f363ed14c10135cd4f912fa26efbde18fdcb3852e28996f031055f251f8c",
+      "bytes": 47390,
+      "records": 459,
+      "columns": [
+        "pair_id",
+        "case_id_1",
+        "case_id_2",
+        "similarity_score",
+        "relationship_status",
+        "copy_direction",
+        "lineage_group_id",
+        "human_decision"
+      ]
+    },
+    "synthetic_benchmark_v1": {
+      "name": "synthetic_benchmark_v1",
+      "path": "research-data/phase2_v1/synthetic/synthetic_benchmark_v1.jsonl",
+      "exists": true,
+      "sha256": "2ea4323c4f101ba04785dc7567fa04bf0da3028fa192df0515e1a5b8f4129419",
+      "bytes": 191698,
+      "records": 60,
+      "sample_keys": [
+        "advertisement_id",
+        "annotation_rationale",
+        "annotation_status",
+        "authorization_label",
+        "employer_id",
+        "employer_identity",
+        "employer_name",
+        "evidence",
+        "id",
+        "input_type",
+        "job_title",
+        "location",
+        "missing_data_notes",
+        "observed_at",
+        "original_source_url",
+        "partition",
+        "privacy_review_status",
+        "requisition_id",
+        "salary_text",
+        "snapshot_reference",
+        "source_published_at",
+        "source_type",
+        "synthetic",
+        "synthetic_generation_seed",
+        "synthetic_label_source",
+        "text",
+        "vacancy_group",
+        "vacancy_group_id"
+      ],
+      "distributions": {
+        "authorization_label": {
+          "unresolved": 20,
+          "contradicted": 20,
+          "supported": 20
+        },
+        "employer_identity": {
+          "synthetic_scenario_label": 60
+        },
+        "synthetic": {
+          "True": 60
+        },
+        "partition": {
+          "train": 36,
+          "test": 12,
+          "validation": 12
+        }
+      }
+    }
+  },
+  "notes": [],
+  "overlaps": {
+    "stripe_vs_expansion_case_id_overlap": 0,
+    "stripe_vs_stage4f_processed_overlap": 0,
+    "expansion_pkg_vs_processed_overlap": 2200,
+    "stripe_in_unified": 780,
+    "expansion_in_unified": 2200,
+    "naukri_vs_unified_overlap": 0,
+    "naukri_vs_stripe_overlap": 0,
+    "naukri_vs_expansion_overlap": 0,
+    "table_a_vs_stripe_pkg_overlap": 0,
+    "counts": {
+      "stripe": 780,
+      "expansion_pkg": 2200,
+      "expansion_processed": 2200,
+      "unified": 2980,
+      "naukri": 198,
+      "table_a": 0
+    }
+  },
+  "post_execution_reconciliation": {
+    "unified_distinct_employers": 18,
+    "stripe_distinct_employers": 1,
+    "expansion_distinct_employers": 17,
+    "explanation": "Difference (17 vs 18) is scope: expansion cohort has 17 employers; unified main package has 18 because it includes the Stripe/Greenhouse cohort employer in addition to the 17 expansion employers (1 + 17 = 18).",
+    "stripe_employer_ids": [
+      "EMP_STRIPE"
+    ],
+    "expansion_employer_ids_sample": [
+      "EMP_STAGE4F_09a2f4897466c7a5",
+      "EMP_STAGE4F_0ebebc1dc933de11",
+      "EMP_STAGE4F_2e183f2a7a70de1c",
+      "EMP_STAGE4F_427a3e8d8f1b42ff",
+      "EMP_STAGE4F_44435aa866c2c97a",
+      "EMP_STAGE4F_4d3754cc6848e1ed",
+      "EMP_STAGE4F_4d8bd97f03109ac1",
+      "EMP_STAGE4F_59958e2950398a3a",
+      "EMP_STAGE4F_65819e198c32566a",
+      "EMP_STAGE4F_738e22f0acab814c"
+    ],
+    "lineage_total": 687,
+    "queue_updated": true
+  }
+}

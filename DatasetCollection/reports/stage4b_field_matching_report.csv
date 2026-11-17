@@ -1,0 +1,302 @@
+﻿evidence_id,case_id,field_name,expected_value,observed_value,match_class,source,comparison_method
+S4B-001,5f2f1a4b-6fc9-42d3-b494-42a1db759ac4,employer_name,CGI,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-001,5f2f1a4b-6fc9-42d3-b494-42a1db759ac4,job_title,Data Analyst,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-001,5f2f1a4b-6fc9-42d3-b494-42a1db759ac4,job_location,Bengaluru,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-001,5f2f1a4b-6fc9-42d3-b494-42a1db759ac4,job_description,"Shift: General Shift
+
+Employment Type: Full Time. 
+
+Must have experience in working with AGILE,KANBAN methodologies
+
+Experience: 7 - 9 Years
+
+Knowledge of and experience with design & prototyping tools
+
+Self motivated,very good in taking initiative
+
+Good to have Skills",,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-001,5f2f1a4b-6fc9-42d3-b494-42a1db759ac4,requisition_id,031126919443,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-002,e68a6aaa-5f42-4d21-b308-620432fb29f1,employer_name,CGI,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-002,e68a6aaa-5f42-4d21-b308-620432fb29f1,job_title,Data Analyst,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-002,e68a6aaa-5f42-4d21-b308-620432fb29f1,job_location,Bengaluru,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-002,e68a6aaa-5f42-4d21-b308-620432fb29f1,job_description,"Shift: General Shift
+
+Employment Type: Full Time. 
+
+Must have experience in working with AGILE,KANBAN methodologies
+
+Experience: 7 - 9 Years
+
+Knowledge of and experience with design prototyping tools
+
+Self motivated,very good in taking initiative
+
+Good to have Skills",,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-002,e68a6aaa-5f42-4d21-b308-620432fb29f1,requisition_id,031126915172,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-003,7e5bdc57-77f5-4014-81f2-e6876e65f0fb,employer_name,Cogitx,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-003,7e5bdc57-77f5-4014-81f2-e6876e65f0fb,job_title,Product Manager,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-003,7e5bdc57-77f5-4014-81f2-e6876e65f0fb,job_location,Pune,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-003,7e5bdc57-77f5-4014-81f2-e6876e65f0fb,job_description,"Develop and implement product strategies to drive business growth. 
+Collaborate with cross-functional teams to identify market trends and customer needs. 
+Design and launch new products and features that meet customer requirements. 
+Analyze market data and competitor activity to inform product decisions. 
+Work closely with the sales team to understand customer feedback and improve product offerings. 
+Identify and prioritize product requirements based on business objectives. 
+
+
+
+Disclaimer: This job posting has been aggregated from external source. Role details, content, and availability are subject to change. Applicants are advised to confirm the latest information directly on the company website before applying.",,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-003,7e5bdc57-77f5-4014-81f2-e6876e65f0fb,requisition_id,140826500193,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-004,7ed2d2ef-9a0f-4ffb-bae4-b22ef4e2eb21,employer_name,Cogitx,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-004,7ed2d2ef-9a0f-4ffb-bae4-b22ef4e2eb21,job_title,Product Manager,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-004,7ed2d2ef-9a0f-4ffb-bae4-b22ef4e2eb21,job_location,Bengaluru,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-004,7ed2d2ef-9a0f-4ffb-bae4-b22ef4e2eb21,job_description,"Develop and implement product strategies to drive business growth. 
+Collaborate with cross-functional teams to identify market trends and customer needs. 
+Design and launch new products and features that meet customer requirements. 
+Analyze market data and competitor activity to inform product decisions. 
+Work closely with the sales team to understand customer feedback and improve product offerings. 
+Identify and prioritize product requirements based on business objectives. 
+
+
+
+Disclaimer: This job posting has been aggregated from external source. Role details, content, and availability are subject to change. Applicants are advised to confirm the latest information directly on the company website before applying.",,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-004,7ed2d2ef-9a0f-4ffb-bae4-b22ef4e2eb21,requisition_id,180826504710,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-005,1d5f8610-b834-4dc4-a53a-5de81eeedd9d,employer_name,Dexter Capital Advisors,Dexter Capital,partial,meta_or_visible_html,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-005,1d5f8610-b834-4dc4-a53a-5de81eeedd9d,job_title,Analyst,Careers at Dexter Capital | Your Path to Growth,mismatch,meta_or_visible_html,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-005,1d5f8610-b834-4dc4-a53a-5de81eeedd9d,job_location,Mumbai,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-005,1d5f8610-b834-4dc4-a53a-5de81eeedd9d,job_description,Disclaimer : This job description has been sourced from a public domain and may have been modified by Naukri,"Discover a fulfilling career at Dexter Capital. Learn about our teams, including Research, Analytics, Execution, and Deal Making. Apply today and build your future with us!",mismatch,meta_or_visible_html,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-005,1d5f8610-b834-4dc4-a53a-5de81eeedd9d,requisition_id,091025503129,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-006,1b86dfbb-5f76-4c05-a5dd-e843453734ed,employer_name,Hitachi Energy,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-006,1b86dfbb-5f76-4c05-a5dd-e843453734ed,job_title,R&D Business Analyst/Product Owner - IDC,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-006,1b86dfbb-5f76-4c05-a5dd-e843453734ed,job_location,Bengaluru,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-006,1b86dfbb-5f76-4c05-a5dd-e843453734ed,job_description,"Bachelors degree in Engineering,Computer Science,Business Administration,or a related field
+
+PMI-PBA or an Agile certification
+
+You will partner with Product Owners and delivery teams to improve requirement quality,backlog readiness,delivery predictability,and product quality
+
+Proven experience writing user stories,acceptance criteria,and requirement documentation",,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-006,1b86dfbb-5f76-4c05-a5dd-e843453734ed,requisition_id,031126912806,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-007,cf06cdd3-437d-4ef1-8e69-cd8b26309bef,employer_name,Hitachi Energy,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-007,cf06cdd3-437d-4ef1-8e69-cd8b26309bef,job_title,Business Analyst/Product Owner,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-007,cf06cdd3-437d-4ef1-8e69-cd8b26309bef,job_location,Bengaluru,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-007,cf06cdd3-437d-4ef1-8e69-cd8b26309bef,job_description,"Bachelors degree in Engineering,Computer Science,Business Administration,or a related field
+
+PMI-PBA or an Agile certification
+
+You will partner with Product Owners and delivery teams to improve requirement quality,backlog readiness,delivery predictability,and product quality
+
+Proven experience writing user stories,acceptance criteria,and requirement documentation",,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-007,cf06cdd3-437d-4ef1-8e69-cd8b26309bef,requisition_id,261026921229,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-008,697f24f6-ccb4-4901-abb2-cae9f2942914,employer_name,HPL Electric & Power,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-008,697f24f6-ccb4-4901-abb2-cae9f2942914,job_title,Analyst,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-008,697f24f6-ccb4-4901-abb2-cae9f2942914,job_location,Faridabad,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-008,697f24f6-ccb4-4901-abb2-cae9f2942914,job_description,Disclaimer : This job description has been sourced from a public domain and may have been modified by Naukri,"HPL Additives Limited (formerly known as High Polymer Labs Limited), is a prominent name in the global market for Polymer Additives and Specialty Chemicals.",mismatch,meta_or_visible_html,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-008,697f24f6-ccb4-4901-abb2-cae9f2942914,requisition_id,041125502654,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-009,6a42fc26-59ab-47bc-a8b2-52a5a6e3f5ca,employer_name,Icand,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-009,6a42fc26-59ab-47bc-a8b2-52a5a6e3f5ca,job_title,Business Analyst,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-009,6a42fc26-59ab-47bc-a8b2-52a5a6e3f5ca,job_location,Chennai,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-009,6a42fc26-59ab-47bc-a8b2-52a5a6e3f5ca,job_description,"Collaborate with cross-functional teams to identify business requirements and develop solutions. Conduct market research and analyze industry trends to inform business decisions. Develop and maintain detailed documentation of business processes and procedures. Identify areas for process improvement and implement changes to increase efficiency. Work closely with stakeholders to understand their needs and provide effective solutions. Develop and present reports to senior management on business performance and improvement opportunities. 
+
+Disclaimer: The job location mentioned in this description is based on publicly available information or company headquarters. Role details, content, and availability are subject to change. Applicants are advised to confirm the latest information directly on the company website before applying.","Explore career opportunities at iCanD (Virudhunagar Kamaraj Memorial Software Pvt. Ltd.). Join our team of ERP, CRM, and custom software development professionals in Madurai, Tamil Nadu.",mismatch,meta_or_visible_html,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-009,6a42fc26-59ab-47bc-a8b2-52a5a6e3f5ca,requisition_id,271026501761,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-010,b5c543dd-54a7-4c13-b18a-7debf1bbd383,employer_name,Icand,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-010,b5c543dd-54a7-4c13-b18a-7debf1bbd383,job_title,Business Analyst,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-010,b5c543dd-54a7-4c13-b18a-7debf1bbd383,job_location,Madurai,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-010,b5c543dd-54a7-4c13-b18a-7debf1bbd383,job_description,"Collaborate with cross-functional teams to identify business requirements and develop solutions. Conduct market research and analyze industry trends to inform business decisions. Develop and maintain detailed documentation of business processes and procedures. Identify areas for process improvement and implement changes to increase efficiency. Work closely with stakeholders to understand their needs and provide effective solutions. Develop and present reports to senior management on business performance and improvement opportunities. 
+
+Disclaimer: The job location mentioned in this description is based on publicly available information or company headquarters. Role details, content, and availability are subject to change. Applicants are advised to confirm the latest information directly on the company website before applying.","Explore career opportunities at iCanD (Virudhunagar Kamaraj Memorial Software Pvt. Ltd.). Join our team of ERP, CRM, and custom software development professionals in Madurai, Tamil Nadu.",mismatch,meta_or_visible_html,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-010,b5c543dd-54a7-4c13-b18a-7debf1bbd383,requisition_id,301026500474,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-011,7c5d447a-a7bc-46c2-8b0b-91733753ae6f,employer_name,2Base,2Base Technologies,partial,meta_or_visible_html,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-011,7c5d447a-a7bc-46c2-8b0b-91733753ae6f,job_title,Product Manager,2Base Technologies - Product Manager in Kochi,partial,meta_or_visible_html,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-011,7c5d447a-a7bc-46c2-8b0b-91733753ae6f,job_location,Kochi,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-011,7c5d447a-a7bc-46c2-8b0b-91733753ae6f,job_description,"Trade-offs are the job,and somebody loses every time one is made. . Education . A Bachelors degree in Engineering,Computer Science,Business Administration,or a related discipline. . What We Are Not Looking For . 
+
+Candidates whose account of a product is the features it shipped,with no view on whether it should have shipped them. . .",2Base Technologies 2Base Technologies Pvt. Ltd. is a Kochi-based IT services and software development company established in 2010. We are a full-servi,mismatch,meta_or_visible_html,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-011,7c5d447a-a7bc-46c2-8b0b-91733753ae6f,requisition_id,041126500431,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-012,f5e8bedb-2f19-4e16-b09b-3eac05e7371d,employer_name,3M India,IND 3M Global Tech Center PVT LTD,mismatch,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-012,f5e8bedb-2f19-4e16-b09b-3eac05e7371d,job_title,ESC -FP&A Analyst,ESC -FP&amp;A Specialist,partial,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-012,f5e8bedb-2f19-4e16-b09b-3eac05e7371d,job_location,Bengaluru,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-012,f5e8bedb-2f19-4e16-b09b-3eac05e7371d,job_description,"CA / CA -Inter/ CMA/ CMA -Inter/ MBA qualified with 4 to 6 years relevant experience . 2 to 3 years of Experience with Power BI,SQL,and analytics tools in finance or supply chain environments","3M has a long-standing reputation as a company committed to innovation. We provide the freedom to explore and encourage curiosity and creativity. We gain new insight from diverse thinking, and take risks on new ideas. Here, you can apply your talent in bold ways that matter. Job Description: ESC-FP&amp;A Specialist Collaborate with Innovative 3Mers Around the World Choosing where to start and grow your career has a major impact on your professional and personal life, so it’s equally important you know that the company that you choose to work at, and its leaders, will support and guide you. With a wide variety of people, global locations, technologies and products, 3M is a place where you can collaborate with other curious, creative 3Mers. The Impact You’ll Make in this Role As a you will have the opportunity to tap into your curiosity and collaborate with some of the most innovative people around the world. You would be expected to: Support AOP, strategic planning, forecasting, consolidation, system loads, and data tie-outs. Analyze financial and operational performance, including P&amp;L, working capital, KPIs, trends, risks, opportunities, and key business drivers. Develop and maintain financial models, dashboards, reports, and analytical tools for forecasting, scenario analysis, and business decision-making. Prepare standardized management reporting and executive-level presentations covering actuals, forecasts, plans, and strategic priorities. Support month-end close, in-month performance management, and reporting processes to improve accuracy, consistency, and efficiency. Your Skills and Expertise To set you up for success in this role from day one, 3M requires (at a minimum) the following qualifications: CA/CA -Inter/ CMA/ CMA -Inter/ MBA qualified with 4 to 6 years relevant experience 2 to 3 years of Experience with Power BI, SQL, and analytics tools in finance or supply chain environments. Understanding of key supply chain finance concepts, including gross margin, absorption, yield, productivity, and PPV. Additional qualifications that could help you succeed even further in this role include: Strong analytical skills with a passion for solving business problems using data. Excellent verbal and written communication skills. Self- motivated with a proactive approach to learning and contributing to the team. Drive process improvement through standardization, simplification, automation, digital tools, and AI-enabled analytics. Work Location: Hebbal, Bangalore (Karnataka), Hybrid Mode Supporting Your Well-being 3M offers many programs to help you live your best life – both physically and financially. To ensure competitive pay and benefits, 3M regularly benchmarks with other companies that are comparable in size and scope. Learn more about 3M’s creative solutions to the world’s problems at www.3M.com or on Instagram, Facebook, and LinkedIn @3M. Safety is a core value at 3M. All employees are expected to contribute to a strong Environmental Health and Safety (EHS) culture by following safety policies, identifying hazards, and engaging in continuous improvement. Please note: your application may not be considered if you do not provide your education and work history, either by: 1) uploading a resume, or 2) entering the information into the application fields directly. 3M Global Terms of Use and Privacy Statement Carefully read these Terms of Use before using this website. Your access to and use of this website and application for a job at 3M are conditioned on your acceptance and compliance with these terms. Please click on the following links and select the country where you are applying for employment to review the applicable Terms of Use (link here) and Privacy Policy (link here). Before submitting your application, you will be asked to confirm your agreement with the terms. At 3M we apply science in collaborative ways to improve lives daily as our employees connect with customers all around the world. Learn more about 3M's creative solutions to global challenges at www.3M.com or on Twitter @3M or @3MNews.",partial,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-012,f5e8bedb-2f19-4e16-b09b-3eac05e7371d,requisition_id,061126502064,R01173227,mismatch,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-013,37c51f88-9dcb-4e44-9059-0c03116d56b9,employer_name,A.P. Moller Maersk,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-013,37c51f88-9dcb-4e44-9059-0c03116d56b9,job_title,Area SG&A Analyst,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-013,37c51f88-9dcb-4e44-9059-0c03116d56b9,job_location,Pune,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-013,37c51f88-9dcb-4e44-9059-0c03116d56b9,job_description,"Bachelor or Master in finance (CA/ MBA-finance). 8+ years of experience in finance and analysis domain. 
+
+Experience and Qualifications . 
+
+Experience of financial modelling and budgeting and forecasting. Good communication and stakeholder management skills.",,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-013,37c51f88-9dcb-4e44-9059-0c03116d56b9,requisition_id,051126935611,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-014,487a8f95-0d80-4fc8-9079-69ffe1b94712,employer_name,Acara Solutions,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-014,487a8f95-0d80-4fc8-9079-69ffe1b94712,job_title,Business Analyst Margin & Collateral,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-014,487a8f95-0d80-4fc8-9079-69ffe1b94712,job_location,Hybrid - Chennai,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-014,487a8f95-0d80-4fc8-9079-69ffe1b94712,job_description,"Must-have experience. 3+ years as a Business Analyst in banking,financial services or a fintech technology provider
+
+Derivatives experience: OTC,ETD or Bilateral derivatives
+
+Good to have",,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-014,487a8f95-0d80-4fc8-9079-69ffe1b94712,requisition_id,101126006586,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-015,1f1d98ba-f3d6-41c3-8b3a-be60c0e6e7d4,employer_name,Accenture,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-015,1f1d98ba-f3d6-41c3-8b3a-be60c0e6e7d4,job_title,Data Engineer,Packaged/SaaS Application Engineer,mismatch,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-015,1f1d98ba-f3d6-41c3-8b3a-be60c0e6e7d4,job_location,Bengaluru,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-015,1f1d98ba-f3d6-41c3-8b3a-be60c0e6e7d4,job_description,"About The Role  
+
+
+
+Project Role : Data Engineer
+
+
+
+
+Project Role Description : Design, develop and maintain data solutions for data generation, collection, and processing. Create data pipelines, ensure data quality, and implement ETL (extract, transform and load) processes to migrate and deploy data across systems. 
+
+
+Must have skills : Microsoft Azure Databricks
+
+
+
+Good to have skills : NA
+Minimum 
+
+7.5 year(s) of experience is required
+
+
+
+Educational Qualification : 15 years full time education
+
+
+
+Summary :
+As a Data Engineer, you will design, develop, and maintain data solutions that facilitate data generation, collection, and processing. Your typical day will involve creating data pipelines, ensuring data quality, and implementing ETL processes to effectively migrate and deploy data across various systems. You will collaborate with cross-functional teams to understand data requirements and deliver solutions that meet organizational needs, while also troubleshooting and optimizing existing data workflows to enhance performance and reliability.
+
+Roles Responsibilities:
+- The Senior Analytics Engineer will work closely with our key stakeholders in both business and IT to help narrate stories with data and visualize insights in a compelling and insightful way that enables business decision-making. 
+- As a Senior Analytics engineer you are a subject matter expert, who designs builds analytics solutions and mentors junior engineers. 
+- You are also the key person to convert the Vison and Data and Analytics Strategies into IT solutions and deliver them.
+Key Characteristics Design, build and implement POCs, prototypes and full-fledged UX solutions and strategies 
+Communicate with key stakeholders to drive clarification of requirements and to promote UX designs and solutions 
+Support the design, e.g., by analyzing user journeys and drive towards simplification and automation 
+- Enable high quality compelling story telling through creation of strong, simple to understand data visualizations Document technical solution design and strategy documentation 
+- Run a quality assessment of a counterparts'' design 
+- Coach and develop other UX analysts 
+- Adhere to Shell''s Release and Change process 
+- Pursue knowledge enhancement
+
+
+Professional & Technical 
+
+
+Skills: 
+- 
+
+
+Must To Have 
+
+
+Skills: 
+Proficiency in Microsoft Azure Databricks.
+- Good To Have 
+
+
+Skills: Experience with data warehousing solutions.
+- Strong understanding of data modeling concepts and best practices.
+- Familiarity with data governance and compliance standards.
+- Experience in programming languages such as Python or Scala for data manipulation.
+
+Mandatory skills:
+Experience Design Technology - Master
+Source Data Procurement Strategies - Master
+Agile, Scrum - Master
+Data Visualization - Skill
+Authoring/Troubleshooting SQL queries - Skill
+Security Performance Config. Skill
+PowerBI, SAC, Azure Analytic Service - Skill
+Dimension Modelling - Skill
+
+Optional skills:
+Skilled at one of the secondary visualization tools (Power BI and Azure Analysis Services, Spotfire, SAP Analytics Cloud)
+Knowledge of cloud data engineering technologies
+
+
+Additional Information:
+- The candidate should have minimum 7.5 years of experience in Microsoft Azure Databricks.
+- This position is based at our Bengaluru office.
+- A 15 years full time education is required.
+
+ Qualification  15 years full time education","<b>Project Role : </b>Packaged/SaaS Application Engineer<br><b>Project Role Description : </b>Configure and support packaged or SaaS applications to adapt features, manage releases, and ensure system stability. Use standard tools, APIs, and low-code platforms to align solutions with business needs while preserving compatibility and performance.                                                                                                                                                                                                                                                                                 <br><b>Must have skills : </b>Microsoft Azure Databricks<br><b>Good to have skills : </b>NA<br>Minimum <b>7.5</b> year(s) of experience is required<br><b>Educational Qualification : </b>15 years full time education<br><br>Summary: <br>As a Packaged or Software as a Service Application Engineer, a typical day involves configuring and supporting packaged or SaaS applications to meet evolving business requirements. This includes adapting application features, managing software releases, and ensuring the overall stability and performance of the systems. The role requires working with various tools, application programming interfaces, and low-code platforms to deliver solutions that align with organizational goals while maintaining compatibility across different environments. Collaboration with multiple teams to address challenges and optimize application functionality is a key aspect of daily activities.<br> <br>Roles & Responsibilities: <br>- Expected to be an SME, collaborate and manage the team to perform.<br>- Responsible for team decisions.<br>- Engage with multiple teams and contribute on key decisions.<br>- Provide solutions to problems for their immediate team and across multiple teams.<br>- Lead efforts to identify and implement process improvements within the team to enhance efficiency and quality.<br>- Mentor junior team members by providing guidance and support to foster professional growth.<br>- Coordinate cross-functional communication to ensure alignment on project goals and deliverables.<br> <br>Professional & Technical Skills: <br>- Must To Have Skills: Proficiency in Microsoft Azure Databricks.<br>- Experience with cloud-based data engineering and analytics platforms.<br>- Strong understanding of data integration, transformation, and pipeline orchestration.<br>- Familiarity with scripting and automation to streamline application configuration and deployment.<br>- Ability to troubleshoot and resolve complex technical issues related to packaged or SaaS applications.<br>- Knowledge of API management and low-code/no-code development environments.<br> <br>Additional Information: <br>- The candidate should have minimum 7.5 years of experience in Microsoft Azure Databricks.<br>- This position is based at our Bengaluru office.<br>- A 15 years full time education is required.<br> <br>",mismatch,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-015,1f1d98ba-f3d6-41c3-8b3a-be60c0e6e7d4,requisition_id,021126922652,ATCI-5449798-S1993596,mismatch,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-016,2d41d782-74b4-4241-8570-08a10bfb5e4c,employer_name,Accenture,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-016,2d41d782-74b4-4241-8570-08a10bfb5e4c,job_title,AI / ML Engineer,AI / ML Engineer,exact,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-016,2d41d782-74b4-4241-8570-08a10bfb5e4c,job_location,Indore,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-016,2d41d782-74b4-4241-8570-08a10bfb5e4c,job_description,"Minimum 5 year(s) of experience is required. Educational Qualification : 15 years full time education. Summary : As an AI / ML Engineer,you will engage in the development of applications and systems that leverage artificial intelligence tools and cloud AI services
+
+A 15 years full time education is required
+
+Qualification15 years full time education","<b>Project Role : </b>AI / ML Engineer<br><b>Project Role Description : </b>Develops applications and systems that utilize AI tools, Cloud AI services, with proper cloud or on-prem application pipeline with production ready quality. Be able to apply GenAI models as part of the solution. Could also include but not limited to deep learning, neural networks, chatbots, image processing.                                                                                                                                                                                                                        <br><b>Must have skills : </b>Machine Learning (ML)<br><b>Good to have skills : </b>NA<br>Minimum <b>5</b> year(s) of experience is required<br><b>Educational Qualification : </b>15 years full time education<br><br>Summary: <br>As an AI / ML Engineer, you will engage in the development of applications and systems that leverage artificial intelligence tools and cloud AI services. Your typical day will involve designing and implementing production-ready solutions, ensuring that they meet quality standards. You will work with various AI models, including generative AI, deep learning, and neural networks, while also exploring innovative applications such as chatbots and image processing. Collaboration with cross-functional teams will be essential to integrate these advanced technologies into existing systems and workflows, driving efficiency and enhancing user experiences.<br> <br>Roles & Responsibilities: <br>- Expected to be an SME.<br>- Collaborate and manage the team to perform.<br>- Responsible for team decisions.<br>- Engage with multiple teams and contribute on key decisions.<br>- Provide solutions to problems for their immediate team and across multiple teams.<br>- Mentor junior team members to enhance their skills and knowledge in AI and machine learning.<br>- Continuously evaluate and implement new technologies to improve existing processes and systems.<br> <br>Professional & Technical Skills: <br>- Must To Have Skills: Proficiency in Machine Learning.<br>- Strong understanding of various machine learning algorithms and their applications.<br>- Experience with cloud-based AI services and deployment strategies.<br>- Familiarity with programming languages such as Python or R for data analysis and model development.<br>- Knowledge of data preprocessing techniques and tools to ensure high-quality input for models.<br> <br>Additional Information: <br>- The candidate should have minimum 5 years of experience in Machine Learning.<br>- This position is based at our Bengaluru office.<br>- A 15 years full time education is required.<br> <br>",partial,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-016,2d41d782-74b4-4241-8570-08a10bfb5e4c,requisition_id,061126922050,ATCI-5302952-S1935466,mismatch,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-017,4512d89b-599e-455f-bb28-9da2a16d197a,employer_name,Accenture,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-017,4512d89b-599e-455f-bb28-9da2a16d197a,job_title,Data Engineer,Data Engineer,exact,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-017,4512d89b-599e-455f-bb28-9da2a16d197a,job_location,Bengaluru,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-017,4512d89b-599e-455f-bb28-9da2a16d197a,job_description,"Educational Qualification : 15 years full time education. Role Summary / Description. AI Powered Tech Talent. As a Senior Engineer in AI Infrastructure Architecture for AWS,you will own significant portions of the end-to-end architecture and engineering of optimized compute infrastructure for large-scale AI and machine learning systems
+
+. Qualification 15 years full time education","<b>Project Role : </b>Data Engineer<br><b>Project Role Description : </b>Design, develop and maintain data solutions for data generation, collection, and processing. Create data pipelines, ensure data quality, and implement ETL (extract, transform and load) processes to migrate and deploy data across systems.                                                                                                                                                                                                                                                                                                <br><b>Must have skills : </b>Machine Learning Operations<br><b>Good to have skills : </b>Amazon Web Services (AWS)<br>Minimum <b>7.5</b> year(s) of experience is required<br><b>Educational Qualification : </b>15 years full time education<br><br> Role Summary / Description<br><br>AI Powered Tech Talent<br><br>  As a Senior Engineer in AI Infrastructure Architecture for AWS, you will own significant portions of the end-to-end architecture and engineering of optimized compute infrastructure for large-scale AI and machine learning systems. You will design scalable distributed training environments, model-serving foundations, automation patterns and operational controls that align with client standards, SLAs, security, compliance and cost-efficiency expectations. You will bring industry experience across enterprise AI adoption, cloud modernization, regulated workloads, FinOps and production reliability, while mentoring engineers and partnering with architects to translate business requirements into robust AWS-based AI infrastructure solutions.<br><br>Key Responsibilities<br>  Own end-to-end architecture and design of optimized AWS compute infrastructure for large-scale AI/ML systems, including distributed training, GPU/accelerated compute, container platforms and model-serving environments.<br>  Design and tune large-scale AWS GPU clusters and distributed training systems using services such as EC2, EKS, SageMaker, S3, FSx/EFS, VPC, IAM and CloudWatch, including accelerator selection, interconnect/networking and high-throughput storage design.<br>  Serve as an authoritative AI infrastructure expert on AWS, applying deep knowledge of AWS AI/ML services, accelerators, networking, security and cost levers.<br>  Develop and evaluate architecture alternatives, weighing trade-offs across compute, networking, storage, orchestration, model serving, observability, security, compliance, cost and operational complexity.<br>  Lead architecture assessments and reviews of existing and proposed environments, identifying gaps, risks, bottlenecks and optimization opportunities, and recommending remediation actions.<br>  Drive architecture decision-making by documenting rationale, trade-offs, assumptions and dependencies so decisions are transparent, defensible and aligned with business SLAs and standards.<br>  Define and maintain AI infrastructure roadmap inputs, capacity planning models, scaling strategies, cost forecasts and performance improvement opportunities.<br>  Design deployment, automation and CI/CD strategies for reliable, repeatable and scalable releases of AI systems, models, data pipelines and platform components into production.<br>  Establish AI monitoring and observability practices across InfraOps and MLOps, including SLAs, SLOs, alerting, performance/cost tracking and continuous optimization.<br>  Integrate AI/ML systems into enterprise environments while ensuring interoperability, security, compliance, regulatory alignment and adherence to client standards.<br>  Collaborate with clients, stakeholders, architects and engineering teams to align infrastructure decisions with business outcomes and translate requirements into actionable architecture standards.<br>  Set technical direction for workstreams, mentor engineers, review designs/code and promote engineering best practices across the team.<br><br>Required Qualifications<br>  Bachelor's degree in Computer Science, Computer Engineering, Information Technology or a related engineering field.<br>  Minimum 4 years of experience coding, building, monitoring, troubleshooting, designing and operating AI/ML infrastructure, cloud platforms, data platforms, model deployment pipelines or large-scale engineering solutions.<br>  Strong understanding of AI/ML concepts and the computing infrastructure required to deploy, run and optimize production AI workloads.<br>  Minimum 4 years of proficiency in programming or scripting languages such as Python, Java, C++, Bash, PowerShell or equivalent engineering languages.<br>  Experience with data pipeline and workflow management tools such as Apache Airflow, Kubeflow, managed orchestration services or platform-native workflow tooling.<br>  Strong problem-solving skills and ability to work in a fast-paced engineering or client delivery environment.<br>  Excellent communication, collaboration and stakeholder alignment skills.<br>  Minimum 4 years of experience in AI/ML infrastructure engineering or related roles on a hyperscaler or enterprise platform for deploying large-scale solutions.<br>  Proven experience leading AI projects or engineering workstreams and managing priorities across multiple initiatives.<br>  Demonstrated experience evaluating and selecting AI technologies, frameworks, cloud services and architecture patterns.<br><br>Required Skills/ Experience<br>  Strong hands-on experience with AWS AI infrastructure services including EC2, EKS, SageMaker, S3, FSx/EFS, IAM, VPC, CloudWatch and AWS DevOps/security services.<br>  Experience architecting GPU/accelerated compute, distributed training, model serving, high-throughput storage, container platforms and secure cloud networking.<br>  Strong working knowledge of Terraform/CloudFormation, CI/CD, Docker, Kubernetes, InfraOps, MLOps, observability and incident response practices.<br>  Ability to optimize AWS AI infrastructure for performance, power, cost, scalability, security, reliability and compliance.<br>  Experience producing architecture decision records, reference implementations, standards, runbooks and reusable infrastructure patterns.<br><br>Good to Have Skills<br>  AWS certifications such as Solutions Architect Professional, DevOps Engineer Professional or Machine Learning/AI specialty or associate credentials.<br>  Industry experience in BFSI, healthcare, retail/e-commerce, telecom, manufacturing, energy or public sector environments where AI infrastructure must meet compliance, security, reliability and cost-control requirements.<br>  Exposure to LLM infrastructure, vector databases, retrieval pipelines, GPU scheduling, high-performance storage, low-latency model serving and model optimization techniques.<br>  Knowledge of enterprise architecture governance, FinOps, infrastructure partner/vendor collaboration and production support operating models.   <br>",partial,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-017,4512d89b-599e-455f-bb28-9da2a16d197a,requisition_id,051026937116,ATCI-5700815-S2061806,mismatch,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-018,707e777f-94b2-4494-bed0-9ed746a72289,employer_name,Accenture,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-018,707e777f-94b2-4494-bed0-9ed746a72289,job_title,AI / ML Engineer,AI / ML Engineer,exact,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-018,707e777f-94b2-4494-bed0-9ed746a72289,job_location,Coimbatore,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-018,707e777f-94b2-4494-bed0-9ed746a72289,job_description,"Educational Qualification : 15 years full time education. Summary: As an AI / ML Engineer,you will develop applications and systems utilizing AI tools,Cloud AI services,with proper cloud or on-prem application pipeline with production ready quality
+
+15 years full time education
+
+Minimum 12 year(s) of experience is required
+
+Good to have skills : NA","<b>Project Role : </b>AI / ML Engineer<br><b>Project Role Description : </b>Develops applications and systems that utilize AI tools, Cloud AI services, with proper cloud or on-prem application pipeline with production ready quality. Be able to apply GenAI models as part of the solution. Could also include but not limited to deep learning, neural networks, chatbots, image processing.                                                                                                                                                                                                                        <br><b>Must have skills : </b>Large Language Models (LLMs)<br><b>Good to have skills : </b>NA<br>Minimum <b>12</b> year(s) of experience is required<br><b>Educational Qualification : </b>15 years full time education<br><br>Summary: <br>As an AI / Machine Learning Engineer, a typical day involves designing and building advanced applications and systems that integrate artificial intelligence technologies. This role requires working with cloud-based or on-premises environments to ensure solutions are production-ready and scalable. The engineer applies generative artificial intelligence models and explores various domains such as deep learning, neural networks, conversational agents, and image analysis. Collaboration with cross-functional teams to align technical implementations with project goals and continuous refinement of AI-driven solutions are key aspects of the daily workflow.<br> <br>Roles & Responsibilities: <br>- Expected to be an SME, collaborate and manage the team to perform.<br>- Responsible for team decisions.<br>- Engage with multiple teams and contribute on key decisions.<br>- Expected to provide solutions to problems that apply across multiple teams.<br>- Lead the integration of artificial intelligence models into existing systems to enhance functionality and performance.<br>- Facilitate knowledge sharing and mentorship within the team to foster professional growth and technical excellence.<br>- Coordinate with stakeholders to gather requirements and translate them into technical specifications.<br>- Monitor and optimize the performance of AI applications to ensure reliability and efficiency.<br> <br>Professional & Technical Skills: <br>- Must To Have Skills: Proficiency in Large Language Models (LLMs).<br>- Experience in designing and deploying AI applications using cloud AI services and on-premises pipelines.<br>- Strong understanding of generative artificial intelligence models and their practical applications.<br>- Familiarity with deep learning frameworks and neural network architectures.<br>- Ability to develop and maintain production-quality AI systems with scalability and robustness.<br>- Competence in implementing AI-driven solutions such as chatbots and image processing tools.<br> <br>Additional Information: <br>- The candidate should have minimum 7 years of experience in Large Language Models (LLMs).<br>- This position is based at our CODC1A - SEZ location.<br>- A 15 years full time education is required.<br> <br>",partial,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-018,707e777f-94b2-4494-bed0-9ed746a72289,requisition_id,051026938828,ATCI-4929706-S1854499,mismatch,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-019,73b02060-ebde-4e41-a6f3-e7eb2ed108cd,employer_name,Accenture,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-019,73b02060-ebde-4e41-a6f3-e7eb2ed108cd,job_title,Copywriting Analyst,Copywriting Analyst,exact,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-019,73b02060-ebde-4e41-a6f3-e7eb2ed108cd,job_location,Mumbai,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-019,73b02060-ebde-4e41-a6f3-e7eb2ed108cd,job_description,"Please note that this role may require you to work in rotational shifts. Qualification Any Graduation
+
+Qualifications: Any Graduation . Years of Experience: 3 to 5 years . What would you do Help balance increased marketing complexity and diminishing marketing resources
+
+Skill required: Marketing Operations - Content Creation.","<b>Skill required:</b> Marketing Operations - Content Creation<br><b>Designation:</b> Copywriting Analyst<br><b>Qualifications:</b>Any Graduation  <br><b>Years of Experience:</b>3 to 5 years  <br><b>About Accenture</b><br>Accenture is a global professional services company with leading capabilities in digital, cloud and security.Combining unmatched experience and specialized skills across more than 40 industries, we offer Strategy and Consulting, Technology and Operations services, and Accenture Song&mdash; all powered by the world&rsquo;s largest network of Advanced Technology and  Intelligent Operations centers. Our 784,000 people deliver on the promise of technology and human ingenuity every day, serving clients in more than 120 countries.  We embrace the power of change to create value and shared success for our clients, people, shareholders, partners and  communities.Visit us at www.accenture.com <br><b>What would you do?</b> Help balance increased marketing complexity and diminishing marketing resources. Drive marketing performance with deep functional and technical expertise, while accelerating time-to-market and operating efficiencies at scale through Data and Technology, Next Generation Content Services, Digital Marketing Services & Customer Engagement and Media Growth Services.
+In a Marketing Operations job profile, responsibilities include managing and optimizing marketing processes and systems. This involves tasks such as campaign execution, data analysis, and budget management. The goal is to improve marketing efficiency and effectiveness. The role requires strong analytical skills, attention to detail, and knowledge of marketing technologies. It is essential for ensuring that marketing strategies are implemented smoothly and deliver measurable results.
+Content creation is the contribution of information to any media and most especially to digital media for an end-user/audience in specific contexts.<br><b>What are we looking for?</b> •Content Guidelines
+•Content Assessment
+•Content Auditing
+•Clinical & Regulatory Writing
+•Content Moderation
+•Agility for quick learning
+•Problem-solving skills
+•Ability to meet deadlines
+•Written and verbal communication
+•Commitment to quality <br><b>Roles and Responsibilities:</b> •In this role you are required to do analysis and solving of lower-complexity problems
+• Your day to day interaction is with peers within Accenture before updating supervisors
+• In this role you may have limited exposure with clients and/or Accenture management
+• You will be given moderate level instruction on daily work tasks and detailed instructions on new assignments
+• The decisions you make impact your own work and may impact the work of others
+• You will be an individual contributor as a part of a team, with a focused scope of work
+• Please note that this role may require you to work in rotational shifts",partial,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-019,73b02060-ebde-4e41-a6f3-e7eb2ed108cd,requisition_id,261026917413,AIOC-S01660977,mismatch,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-020,d04caa10-5e45-4fd4-86c1-3b03e229476c,employer_name,Accenture,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-020,d04caa10-5e45-4fd4-86c1-3b03e229476c,job_title,PPSM Analyst,PPSM Analyst,exact,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-020,d04caa10-5e45-4fd4-86c1-3b03e229476c,job_location,Bengaluru,,not_comparable,not_extracted,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-020,d04caa10-5e45-4fd4-86c1-3b03e229476c,job_description,"Qualifications: Any Graduation 
+
+Any Graduation
+
+Skill required: Capital Markets Services - Master Data Management (MDM)
+
+Years of Experience: 3 to 5 years .","<b>Skill required:</b> Capital Markets Services - Master Data Management (MDM)<br><b>Designation:</b> PPSM Analyst<br><b>Qualifications:</b>Any Graduation  <br><b>Years of Experience:</b>3 to 5 years  <br><b>About Accenture</b><br>Accenture is a global professional services company with leading capabilities in digital, cloud and security.Combining unmatched experience and specialized skills across more than 40 industries, we offer Strategy and Consulting, Technology and Operations services, and Accenture Song&mdash; all powered by the world&rsquo;s largest network of Advanced Technology and  Intelligent Operations centers. Our 784,000 people deliver on the promise of technology and human ingenuity every day, serving clients in more than 120 countries.  We embrace the power of change to create value and shared success for our clients, people, shareholders, partners and  communities.Visit us at www.accenture.com <br><b>What would you do?</b> • NA
+
+• Looking for someone with capital market experience
+
+• Architect master data solutions across platforms to consolidate content, synchronize data, provide centralized maintenance of unified data, enable rich product content management and print publishing as well as to synchronize global data ensuring consistency and control of master data elements.<br><b>What are we looking for?</b> • Primary skill - Master Data Management (MDM) <br><b>Roles and Responsibilities:</b> • In this role you are required to do analysis and solving of lower-complexity problems.
+• Your day to day interaction is with peers within Accenture before updating supervisors.
+• In this role you may have limited exposure with clients and or Accenture management.
+• You will be given moderate level instruction on daily work tasks and detailed instructions on new assignments.
+• The decisions you make impact your own work and may impact the work of others.
+• You will be an individual contributor as a part of a team, with a focused scope of work.
+• Please note that this role may require you to work in rotational shifts",partial,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"
+S4B-020,d04caa10-5e45-4fd4-86c1-3b03e229476c,requisition_id,051026937986,AIOC-S01663273,mismatch,jsonld,"exact, normalized, token-overlap partial, mismatch, or not_comparable"

@@ -1,4 +1,4 @@
-# VacancyGuard Metric Analysis
+# TrustHire Metric Analysis
 
 Generated from existing prediction/label artifacts only. No datasets, annotations, benchmarks, source code, model logic, or labels were modified.
 

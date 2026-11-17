@@ -1,0 +1,48 @@
+{
+  "benchmark": "synthetic_benchmark_v3",
+  "class_distribution": {
+    "contradicted": 50,
+    "supported": 50,
+    "unresolved": 50
+  },
+  "evaluation_only_files": [
+    "expected_labels.jsonl",
+    "scenario_metadata.jsonl"
+  ],
+  "expected_labels_are": "authored synthetic design labels; not human-reviewed ground truth",
+  "generator": "scripts/run_current_implementation_eval_v1.py",
+  "model_input_files": [
+    "model_inputs.jsonl"
+  ],
+  "scenario_families": [
+    "independent_official_corroboration",
+    "two_source_requisition_match",
+    "current_employer_careers_listing",
+    "independent_field_corroboration",
+    "verified_current_status",
+    "explicit_official_contradiction",
+    "closed_requisition_confirmation",
+    "official_location_conflict",
+    "employment_type_conflict",
+    "material_title_conflict",
+    "copied_repost_cluster",
+    "unknown_lineage_support",
+    "unadjudicated_candidate_lineage",
+    "conflicting_official_records",
+    "employer_identity_only",
+    "similar_role_different_vacancy",
+    "stale_source_dates",
+    "missing_source_dates",
+    "unavailable_source",
+    "incomplete_insufficient_evidence"
+  ],
+  "seed": 20261115,
+  "sha256": {
+    "expected_labels.jsonl": "0982671a93d363473dc328c6519f9be3f95b6e1ddbfdec691109468a6babe2ab",
+    "methodology.md": "b08a6af2e66311749337d82fd88f229a52ecf18f5355537104a4f4d52702d76c",
+    "model_inputs.jsonl": "6433f805b0c76c19f7b0548aee9f33adbadc45edee507a7b00f0412a7b60dacf",
+    "scenario_definitions.json": "8e88654a2c5735fdec5f4ddc707596850e357171e9bd6c071e53836f037426df",
+    "scenario_metadata.jsonl": "b05cc26994f9b11fef8cb27b19e4b9d7ac08385da13d121b2444c1c532c06ca0"
+  },
+  "synthetic_cases": 150
+}

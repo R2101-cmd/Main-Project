@@ -1,0 +1,14 @@
+{
+  "workflow_id": "vacancyguard-phase2-v1",
+  "status": "pre_collection",
+  "source_benchmark": "data/annotations/job_ad_independent_review_v1.jsonl",
+  "read_only_working_copy": "working/current_benchmark_copy_read_only.jsonl",
+  "source_benchmark_sha256": "3EC3E6C422567F7A6378155CE725C5A250F57E78148F671D4BCF72B0D6C1BD31",
+  "working_copy_sha256": "3EC3E6C422567F7A6378155CE725C5A250F57E78148F671D4BCF72B0D6C1BD31",
+  "records_added": 0,
+  "labels_changed": 0,
+  "synthetic_records_added": 0,
+  "final_evaluation_split_created": false,
+  "model_training_run": false,
+  "frozen_artifacts_modified": false
+}

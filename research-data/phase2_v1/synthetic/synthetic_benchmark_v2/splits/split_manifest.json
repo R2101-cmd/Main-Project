@@ -1,0 +1,170 @@
+{
+  "benchmark_source_hashes_sha256": {
+    "expected_labels.jsonl": "87918ac4044bd169610f632b791397149133561132e4aa27b04dec44d47dc306",
+    "manifest.json": "828bcdae3038c6a0de4cc183cea7fe563be9af811223e90dde48d799cbb5dfed",
+    "model_inputs.jsonl": "a9e99795c5cec94044ab3cfd8ce7d8d57eae82e9ac70cb849831d645b75ea61a",
+    "scenario_metadata.jsonl": "3dcc9be267fdb84268db08928ccdd8abf6e5999797e1e241f8756ce5267cd32a"
+  },
+  "class_distribution": {
+    "test": {
+      "contradicted": 20,
+      "supported": 20,
+      "unresolved": 20
+    },
+    "train": {
+      "contradicted": 60,
+      "supported": 60,
+      "unresolved": 60
+    },
+    "validation": {
+      "contradicted": 20,
+      "supported": 20,
+      "unresolved": 20
+    }
+  },
+  "classes_present_in_every_partition": true,
+  "component_count": 300,
+  "evaluation_mappings_are_separate": true,
+  "evaluation_performed": false,
+  "group_leakage_count": 0,
+  "largest_component_size": 1,
+  "model_inputs_exclude_input_keys_and_evaluation_metadata": true,
+  "name": "synthetic_benchmark_v2_group_split_v1",
+  "partition_counts": {
+    "test": 60,
+    "train": 180,
+    "validation": 60
+  },
+  "ratios": {
+    "test": 0.2,
+    "train": 0.6,
+    "validation": 0.2
+  },
+  "records_total": 300,
+  "scenario_distribution": {
+    "test": {
+      "complete_match_with_unavailable_noise": 4,
+      "conflicting_independent_sources": 4,
+      "copied_claims_with_official_rejection": 4,
+      "current_official_corroboration": 4,
+      "distinct_independent_official_sources": 4,
+      "incomplete_insufficient_advertisement": 4,
+      "official_application_route_conflict": 4,
+      "official_employer_denial": 4,
+      "official_match_with_reposts": 4,
+      "official_material_field_conflict": 4,
+      "official_requisition_cancellation": 4,
+      "specific_role_among_similar_titles": 4,
+      "stale_or_unavailable_sources": 4,
+      "supported_claim_missing_lineage": 4,
+      "supported_claim_unknown_lineage": 4
+    },
+    "train": {
+      "complete_match_with_unavailable_noise": 12,
+      "conflicting_independent_sources": 12,
+      "copied_claims_with_official_rejection": 12,
+      "current_official_corroboration": 12,
+      "distinct_independent_official_sources": 12,
+      "incomplete_insufficient_advertisement": 12,
+      "official_application_route_conflict": 12,
+      "official_employer_denial": 12,
+      "official_match_with_reposts": 12,
+      "official_material_field_conflict": 12,
+      "official_requisition_cancellation": 12,
+      "specific_role_among_similar_titles": 12,
+      "stale_or_unavailable_sources": 12,
+      "supported_claim_missing_lineage": 12,
+      "supported_claim_unknown_lineage": 12
+    },
+    "validation": {
+      "complete_match_with_unavailable_noise": 4,
+      "conflicting_independent_sources": 4,
+      "copied_claims_with_official_rejection": 4,
+      "current_official_corroboration": 4,
+      "distinct_independent_official_sources": 4,
+      "incomplete_insufficient_advertisement": 4,
+      "official_application_route_conflict": 4,
+      "official_employer_denial": 4,
+      "official_match_with_reposts": 4,
+      "official_material_field_conflict": 4,
+      "official_requisition_cancellation": 4,
+      "specific_role_among_similar_titles": 4,
+      "stale_or_unavailable_sources": 4,
+      "supported_claim_missing_lineage": 4,
+      "supported_claim_unknown_lineage": 4
+    }
+  },
+  "scenario_families_overlap": {
+    "test": [
+      "complete_match_with_unavailable_noise",
+      "conflicting_independent_sources",
+      "copied_claims_with_official_rejection",
+      "current_official_corroboration",
+      "distinct_independent_official_sources",
+      "incomplete_insufficient_advertisement",
+      "official_application_route_conflict",
+      "official_employer_denial",
+      "official_match_with_reposts",
+      "official_material_field_conflict",
+      "official_requisition_cancellation",
+      "specific_role_among_similar_titles",
+      "stale_or_unavailable_sources",
+      "supported_claim_missing_lineage",
+      "supported_claim_unknown_lineage"
+    ],
+    "train": [
+      "complete_match_with_unavailable_noise",
+      "conflicting_independent_sources",
+      "copied_claims_with_official_rejection",
+      "current_official_corroboration",
+      "distinct_independent_official_sources",
+      "incomplete_insufficient_advertisement",
+      "official_application_route_conflict",
+      "official_employer_denial",
+      "official_match_with_reposts",
+      "official_material_field_conflict",
+      "official_requisition_cancellation",
+      "specific_role_among_similar_titles",
+      "stale_or_unavailable_sources",
+      "supported_claim_missing_lineage",
+      "supported_claim_unknown_lineage"
+    ],
+    "validation": [
+      "complete_match_with_unavailable_noise",
+      "conflicting_independent_sources",
+      "copied_claims_with_official_rejection",
+      "current_official_corroboration",
+      "distinct_independent_official_sources",
+      "incomplete_insufficient_advertisement",
+      "official_application_route_conflict",
+      "official_employer_denial",
+      "official_match_with_reposts",
+      "official_material_field_conflict",
+      "official_requisition_cancellation",
+      "specific_role_among_similar_titles",
+      "stale_or_unavailable_sources",
+      "supported_claim_missing_lineage",
+      "supported_claim_unknown_lineage"
+    ]
+  },
+  "scenario_family_intersection_across_all_partitions": [
+    "complete_match_with_unavailable_noise",
+    "conflicting_independent_sources",
+    "copied_claims_with_official_rejection",
+    "current_official_corroboration",
+    "distinct_independent_official_sources",
+    "incomplete_insufficient_advertisement",
+    "official_application_route_conflict",
+    "official_employer_denial",
+    "official_match_with_reposts",
+    "official_material_field_conflict",
+    "official_requisition_cancellation",
+    "specific_role_among_similar_titles",
+    "stale_or_unavailable_sources",
+    "supported_claim_missing_lineage",
+    "supported_claim_unknown_lineage"
+  ],
+  "scenario_overlap_interpretation": "All scenario families occur in all partitions; test results can measure held-out cases within known scenario families, not generalization to unseen families.",
+  "seed": 20261115,
+  "source_benchmark_seed": 20261114
+}

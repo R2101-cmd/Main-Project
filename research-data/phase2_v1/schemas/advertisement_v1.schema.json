@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vacancyguard-phase2-advertisement-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["advertisement_id", "vacancy_group_id", "observed_at", "input_type", "privacy_review_status", "missing_data_notes"],
+  "properties": {
+    "advertisement_id": {"type": "string", "minLength": 1},
+    "vacancy_group_id": {"type": "string", "minLength": 1},
+    "employer_id": {"type": ["string", "null"]},
+    "employer_name": {"type": ["string", "null"]},
+    "job_title": {"type": ["string", "null"]},
+    "job_description": {"type": ["string", "null"]},
+    "location": {"type": ["string", "null"]},
+    "salary_text": {"type": ["string", "null"]},
+    "requisition_id": {"type": ["string", "null"]},
+    "contact_details_redacted": {"type": ["string", "null"]},
+    "application_url": {"type": ["string", "null"]},
+    "original_source_url": {"type": ["string", "null"], "format": "uri"},
+    "source_type": {"type": ["string", "null"]},
+    "input_type": {"enum": ["url", "pasted_text", "poster", "pdf"]},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "source_published_at": {"type": ["string", "null"], "format": "date-time"},
+    "snapshot_reference": {"type": ["string", "null"]},
+    "privacy_review_status": {"enum": ["not_needed", "redacted", "pending_review"]},
+    "missing_data_notes": {"type": "array", "items": {"type": "string"}},
+    "evaluation_partition": {"type": ["string", "null"], "enum": ["train", "validation", "test", null]}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vacancyguard-phase2-adjudication-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["adjudication_id", "advertisement_id", "vacancy_group_id", "original_annotation_ids", "original_annotation_fingerprints", "adjudicator_id", "adjudicated_at", "employer_identity_label", "vacancy_authorization_label", "rationale"],
+  "properties": {
+    "adjudication_id": {"type": "string", "minLength": 1},
+    "advertisement_id": {"type": "string", "minLength": 1},
+    "vacancy_group_id": {"type": "string", "minLength": 1},
+    "original_annotation_ids": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+    "original_annotation_fingerprints": {"type": "object", "minProperties": 2, "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
+    "adjudicator_id": {"type": "string", "minLength": 1},
+    "adjudicated_at": {"type": "string", "format": "date-time"},
+    "employer_identity_label": {"enum": ["verified", "contradicted", "unresolved"]},
+    "vacancy_authorization_label": {"enum": ["supported", "contradicted", "unresolved"]},
+    "rationale": {"type": "string", "minLength": 1},
+    "disagreement_reason": {"type": "string"}
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-11-11T06:25:00.841457+00:00",
+  "table_a_records": 780,
+  "table_b_records": 780,
+  "table_b_columns_exact": true,
+  "table_b_missing_ids": 0,
+  "table_b_duplicate_ids": 0,
+  "table_a_duplicate_ids": 0,
+  "ids_missing_from_table_b": 0,
+  "ids_missing_from_table_a": 0,
+  "invalid_label_values": {
+    "employer_identity_label": [],
+    "vacancy_authorization_label": [],
+    "fraud_outcome_label": []
+  },
+  "table_b_label_counts": {
+    "employer_identity_label": {
+      "unresolved": 780
+    },
+    "vacancy_authorization_label": {
+      "unresolved": 780
+    },
+    "fraud_outcome_label": {
+      "unresolved": 780
+    }
+  },
+  "table_b_linkable_to_table_c": "case_id is linkable; no canonical full Table C existed before this stage",
+  "greenhouse_records": 780,
+  "evidence_counts": {
+    "supported": 780
+  },
+  "potential_repost_relationships_existing": 21,
+  "human_review_ready_records": 780,
+  "remaining_unresolved_cases": 780
+}

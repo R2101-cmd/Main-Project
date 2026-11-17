@@ -1,0 +1,21 @@
+{
+  "stage": "5C",
+  "created_utc": "2026-11-13T06:21:06.883848+00:00",
+  "inputs": [
+    "stage5b_reviewer1_worksheet.csv",
+    "stage5b_reviewer2_worksheet.csv",
+    "stage5b_lineage_pair_review.csv"
+  ],
+  "outputs": [
+    "stage5c_annotation_validation.csv",
+    "stage5c_interannotator_agreement.json",
+    "stage5c_disagreement_report.csv",
+    "stage5c_adjudication_worksheet.csv",
+    "stage5c_lineage_review_summary.json"
+  ],
+  "reviewer_submissions_complete": false,
+  "adjudication_complete": false,
+  "benchmark_frozen": false,
+  "previous_outputs_modified": false,
+  "automated_predictions_used_as_ground_truth": false
+}

@@ -1,0 +1,32 @@
+{
+  "stripe_stage4e_records": 780,
+  "stripe_evidence_classification": {
+    "independent_official_confirmation": 744,
+    "fresh_same_system_retrieval": 19,
+    "unresolved": 16,
+    "unavailable": 1
+  },
+  "stripe_vacancy_status": {
+    "active": 763,
+    "removed": 17
+  },
+  "field_comparison_rows": 3900,
+  "field_match_states": {
+    "exact": 98,
+    "partial": 2,
+    "exact_match": 3696,
+    "not_comparable": 85,
+    "partial_match": 15,
+    "mismatch": 4
+  },
+  "stage4f_retrieval_status": {
+    "200": 2196,
+    "": 4
+  },
+  "stage4f_missing_fields": {
+    "job_description": 5,
+    "updated_date": 453
+  },
+  "stage4f_response_hashes": 2200,
+  "stage4f_retrieval_timestamps": 2200
+}

@@ -1,0 +1,16 @@
+{
+  "pilot_size": 20,
+  "official_domain_signals": {
+    "not_observed": 11,
+    "retrieved_host_contains_employer_token": 9
+  },
+  "ats_relationship_signals": {
+    "not_observed": 18,
+    "ats_host_observed; employer relationship not independently confirmed": 2
+  },
+  "identifier_agreement_signals": {
+    "not_established": 20
+  },
+  "independent_authorization_evidence": 0,
+  "interpretation": "Fresh retrieval and ATS hosting are provenance signals, not independent employer authorization. No employer-domain confirmation or separate official confirmation was established automatically."
+}

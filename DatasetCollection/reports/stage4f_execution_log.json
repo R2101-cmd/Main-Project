@@ -1,0 +1,22 @@
+{
+  "stage": "4F",
+  "created_utc": "2026-11-13T07:22:55.578764+00:00",
+  "records_collected": 2200,
+  "new_records": 2200,
+  "previous_outputs_modified": false,
+  "naukri_dataset_excluded": true,
+  "targets": {
+    "Greenhouse": 500,
+    "Lever": 400,
+    "Workday": 400,
+    "SmartRecruiters": 300,
+    "Ashby": 200,
+    "Other": 220,
+    "ThirdParty": 200
+  },
+  "failures": 1,
+  "resume_supported": true,
+  "raw_response_root": "raw/stage4f_responses",
+  "collection_interrupted": true,
+  "finalized_from_checkpoint": true
+}

@@ -1,0 +1,22 @@
+{
+  "dataset": "synthetic_benchmark_v1.jsonl",
+  "synthetic": true,
+  "generator": "build_synthetic_benchmark_v1.py",
+  "seed": 20261022,
+  "records": 60,
+  "sha256": "2ea4323c4f101ba04785dc7567fa04bf0da3028fa192df0515e1a5b8f4129419",
+  "labels": {
+    "supported": 20,
+    "contradicted": 20,
+    "unresolved": 20
+  },
+  "partitions_per_label": {
+    "train": 12,
+    "validation": 4,
+    "test": 4
+  },
+  "human_annotation": false,
+  "real_world_evidence": false,
+  "permitted_use": "software, schema, aggregation, and metric smoke tests only",
+  "not_permitted": "real-world accuracy, fraud prevalence, or generalization claims"
+}

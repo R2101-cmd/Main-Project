@@ -1,0 +1,28 @@
+{
+  "dataset": "data/processed/real_world_corpus_v2.csv",
+  "records": 3178,
+  "input_counts": {
+    "main_proposed": 2980,
+    "naukri_separate_audit": 198
+  },
+  "cohorts": {
+    "stripe_greenhouse_780": 780,
+    "stage4f_expansion_2200": 2200,
+    "naukri_separate_audit_cohort": 198
+  },
+  "distinct_employer_ids": 175,
+  "source_families": {
+    "stripe_greenhouse": 780,
+    "Greenhouse": 1747,
+    "Lever": 453,
+    "job portal (Naukri)": 198
+  },
+  "authorization_labels_assigned": 0,
+  "confirmed_cross_cohort_lineage_assigned": 0,
+  "evaluation_eligible": false,
+  "limitations": [
+    "The union adds descriptive source coverage only; it is not a reviewed benchmark.",
+    "The Naukri cohort remains separately identified and requires compatibility and lineage audit before benchmark use.",
+    "No authorization or fraud labels, official source authority, or cross-cohort duplicates were inferred."
+  ]
+}

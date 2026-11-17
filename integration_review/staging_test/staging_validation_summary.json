@@ -1,0 +1,127 @@
+{
+  "input_file": "C:\\Users\\Admin\\Desktop\\Cleaned data\\final_research_package\\stripe_cohort.csv",
+  "manifest_main_cohorts": [
+    "stripe_greenhouse_780",
+    "stage4f_expansion_2200"
+  ],
+  "manifest_expected_main_records": 2980,
+  "selected_records": 780,
+  "preview_records": 780,
+  "input_fingerprint": "08341e1700c8fc2cd0bf2006a3243da8467d0c1040b021252d2b34907039ed51",
+  "preview_fingerprint": "08341e1700c8fc2cd0bf2006a3243da8467d0c1040b021252d2b34907039ed51",
+  "checks": {
+    "record_count": {
+      "status": "PASS",
+      "expected": 780,
+      "actual": 780
+    },
+    "unique_case_ids": {
+      "status": "PASS",
+      "unique": 780,
+      "duplicates": 0
+    },
+    "cohort_identity": {
+      "status": "PASS",
+      "case_id_prefixes": {
+        "GREENHOUSE": 780
+      },
+      "employer_ids": {
+        "EMP_STRIPE": 780
+      },
+      "unexpected_stage4f": 0,
+      "unexpected_naukri": 0
+    },
+    "duplicate_urls": {
+      "status": "PASS",
+      "populated": 780,
+      "duplicates": 0
+    },
+    "vacancy_identifiers": {
+      "status": "PASS",
+      "field_present": false,
+      "duplicates": "not assessed because no proposed job_identifier field is present"
+    },
+    "urls": {
+      "status": "PASS",
+      "invalid": 0
+    },
+    "timestamps": {
+      "status": "PASS",
+      "invalid_observed_at": 0,
+      "missing_observed_at": 0,
+      "missing_update_date": 780
+    },
+    "provenance": {
+      "status": "CONDITIONAL",
+      "complete_records": 0,
+      "total_records": 780,
+      "missing_fields": {
+        "cohort_id": 780,
+        "employer_name": 780,
+        "original_source_url": 780,
+        "official_employer_url": 780,
+        "ats_platform": 780,
+        "source_family_id": 780,
+        "source_instance_id": 780,
+        "retrieval_timestamp": 780,
+        "http_status": 780,
+        "response_hash": 780,
+        "job_identifier": 780,
+        "canonical_vacancy_id": 780,
+        "vacancy_status_observation": 780,
+        "evidence_state": 780,
+        "employer_identity_state": 780,
+        "vacancy_authorization_state": 780,
+        "source_independence_status": 780,
+        "retrieval_independence_status": 780,
+        "lineage_group_id": 780,
+        "confirmed_lineage_status": 780,
+        "employer_identity_label": 780,
+        "vacancy_authorization_label": 780,
+        "fraud_outcome_label": 780
+      },
+      "reason": "Selected stripe_cohort.csv preserves the original 12 source columns; proposed provenance fields are absent and are reported missing."
+    },
+    "allowed_values": {
+      "status": "PASS_OR_NOT_APPLICABLE",
+      "invalid": {},
+      "absent_allowed_fields": [
+        "evidence_state",
+        "employer_identity_state",
+        "vacancy_authorization_state",
+        "confirmed_lineage_status",
+        "fraud_outcome_label"
+      ]
+    },
+    "research_semantics": {
+      "status": "PASS",
+      "unavailable_preserved": "not applicable; field absent",
+      "unresolved_preserved": "not applicable; field absent",
+      "unverified_preserved": "not applicable; field absent",
+      "candidate_lineage_confirmations": 0,
+      "same_ats_independent_authorization_generated": 0,
+      "active_to_legitimate_labels_generated": 0,
+      "fraud_or_authorization_labels_generated": 0,
+      "missing_to_contradiction_conversions": 0
+    },
+    "duplicates_and_lineage": {
+      "status": "PASS_WITH_WARNINGS",
+      "exact_description_duplicate_records": 61,
+      "near_duplicate_candidate_pairs": 186,
+      "records_deleted": 0,
+      "confirmed_lineage_edges_created": 0,
+      "interpretation": "Similarity candidates are reported only; no records or lineage decisions were changed."
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "provenance",
+    "allowed_values",
+    "duplicates_and_lineage"
+  ],
+  "original_files_modified": false,
+  "sqlite_accessed": false,
+  "scraping_performed": false,
+  "labels_generated": false,
+  "status": "CONDITIONAL PASS"
+}

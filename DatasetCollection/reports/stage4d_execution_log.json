@@ -1,0 +1,17 @@
+{
+  "stage": "Stage 4D Cohort Integrity Audit and Representative Stripe Verification Pilot",
+  "executed_at": "2026-11-12T16:09:52.459269+00:00",
+  "scope": "20 Stripe-only cases from the 780-record main cohort; Naukri/ATS cohort excluded",
+  "selection_seed": 20261112,
+  "previous_outputs_modified": [],
+  "new_outputs": [
+    "reports/stage4d_cohort_integrity_report.json",
+    "processed/stage4d_stripe_pilot_selection.csv",
+    "processed/stage4d_stripe_pilot_evidence.csv",
+    "reports/stage4d_verification_results.json",
+    "reports/stage4d_execution_log.json",
+    "scripts/run_stage4d.py",
+    "raw/stage4d_responses/*.bin"
+  ],
+  "integrity": "No cohort merging, no invented URLs, no fraud labels, unresolved retained."
+}

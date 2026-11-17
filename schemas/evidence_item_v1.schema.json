@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evidence-item-v1",
+  "type": "object",
+  "required": ["evidence_id", "case_id", "vacancy_group_id", "claim_type", "source_url", "source_type", "source_stratum", "retrieved_at", "retrieval_state", "evidence_state", "matched_fields", "rationale", "snapshot_reference", "privacy_redaction_status"],
+  "properties": {
+    "evidence_id": {"type": "string", "minLength": 1},
+    "case_id": {"type": "string", "minLength": 1},
+    "vacancy_group_id": {"type": "string", "minLength": 1},
+    "claim_type": {"enum": ["employer_identity", "vacancy_authorization", "contact", "application_route"]},
+    "source_url": {"type": ["string", "null"]},
+    "source_type": {"type": "string", "minLength": 1},
+    "source_stratum": {"type": "string", "minLength": 1},
+    "retrieved_at": {"type": "string", "format": "date-time"},
+    "source_published_at": {"type": ["string", "null"], "format": "date-time"},
+    "retrieval_state": {"enum": ["available", "unavailable", "blocked", "redirected", "not_searched"]},
+    "evidence_state": {"enum": ["supported", "contradicted", "unverified", "unavailable"]},
+    "matched_fields": {"type": "array", "items": {"type": "string"}},
+    "rationale": {"type": "string", "minLength": 1},
+    "contradiction_details": {"type": "string"},
+    "snapshot_reference": {"type": ["string", "null"]},
+    "privacy_redaction_status": {"enum": ["not_needed", "redacted", "pending_review"]}
+  }
+}

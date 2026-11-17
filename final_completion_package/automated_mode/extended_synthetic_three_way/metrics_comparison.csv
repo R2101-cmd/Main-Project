@@ -1,0 +1,7 @@
+﻿subset,approach,n,accuracy,macro_f1,false_assurance_numerator,false_assurance_denominator,false_assurance_rate,unresolved_rate
+all,A_text_only,30,0.8666666666666667,0.8333333333333334,0,6,0.0,0.4666666666666667
+all,B_ordinary_aggregation,30,1.0,1.0,0,6,0.0,0.4666666666666667
+all,C_lineage_aware_aggregation,30,1.0,1.0,0,6,0.0,0.4666666666666667
+test,A_text_only,12,0.6666666666666666,0.3333333333333333,0,0,,0.6666666666666666
+test,B_ordinary_aggregation,12,1.0,0.6666666666666666,0,0,,0.6666666666666666
+test,C_lineage_aware_aggregation,12,1.0,0.6666666666666666,0,0,,0.6666666666666666

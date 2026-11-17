@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-11-12T17:05:49.261853+00:00",
+  "cohort_counts": {
+    "stripe_table_a_records": 780,
+    "stripe_table_b_records": 780,
+    "stripe_table_c_records": 780,
+    "stripe_stage4e_records": 780,
+    "naukri_cleaned_records": 198,
+    "naukri_stage4b_records": 20
+  },
+  "stripe_unique_case_ids": 780,
+  "stripe_duplicate_case_ids": 0,
+  "naukri_unique_case_ids": 198,
+  "naukri_duplicate_case_ids": 0,
+  "cross_dataset_case_id_overlap": 0,
+  "stripe_employer_ids": [
+    "EMP_STRIPE"
+  ],
+  "stripe_source_files": [
+    "raw/greenhouse/greenhouse_raw.json"
+  ],
+  "naukri_source_files": [
+    "dataset_naukri-job-scraper_2026-11-10_07-56-33-603.csv"
+  ],
+  "pilot_origin_audit": {
+    "stage4d_stripe_pilot": 20,
+    "stage4d_stripe_evidence": 20,
+    "stage4b_naukri_pilot": 20,
+    "stage4c_naukri_relationships": 20
+  },
+  "uncertain_origin_cases": 0,
+  "cross_dataset_contamination": false,
+  "evaluation_scripts_found": [],
+  "conclusion": "The Stripe and Naukri cohorts are separate and must not be combined into one benchmark."
+}

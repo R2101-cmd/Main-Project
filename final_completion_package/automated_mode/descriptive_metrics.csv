@@ -1,0 +1,15 @@
+﻿metric_group,metric,value,note
+stage4e_evidence,records,780,Descriptive system outputs from collected Stage 4E artifacts; not ground-truth performance metrics.
+stage4e_evidence,retrieval_success_rate,1.0,Descriptive system outputs from collected Stage 4E artifacts; not ground-truth performance metrics.
+stage4e_evidence,official_source_match_rate_proxy,0.9538461538461539,Descriptive system outputs from collected Stage 4E artifacts; not ground-truth performance metrics.
+stage4e_evidence,evidence_availability_rate,0.9987179487179487,Descriptive system outputs from collected Stage 4E artifacts; not ground-truth performance metrics.
+stage4e_evidence,snapshot_only_match_rate_proxy,0.0,Descriptive system outputs from collected Stage 4E artifacts; not ground-truth performance metrics.
+stage4e_evidence,contradiction_evidence_count,0,Descriptive system outputs from collected Stage 4E artifacts; not ground-truth performance metrics.
+stage4e_evidence,unresolved_rate,0.046153846153846156,Descriptive system outputs from collected Stage 4E artifacts; not ground-truth performance metrics.
+automated_verification_states,records,780,States produced from collected artifacts by automated conservative mapping; not live-verified ground truth.
+automated_verification_states,retrieval_success_rate_proxy,0.0,States produced from collected artifacts by automated conservative mapping; not live-verified ground truth.
+automated_verification_states,unresolved_or_inaccessible_rate,1.0,States produced from collected artifacts by automated conservative mapping; not live-verified ground truth.
+automated_verification_states,snapshot_match_only_rate,0.0,States produced from collected artifacts by automated conservative mapping; not live-verified ground truth.
+automated_verification_states,state_count_independently_unresolved,780,States produced from collected artifacts by automated conservative mapping; not live-verified ground truth.
+automated_decision_distribution,abstention_rate_descriptive,1.0,Automated machine-generated evidence assessments; no independently adjudicated conclusions. Unresolved dominates where authority/confirmation unavailable.
+lineage,candidate_pairs_processed,687,DESCRIPTIVE SYSTEM OUTPUTS ONLY - not ground-truth performance metrics (no human/adjudicated labels).

@@ -1,0 +1,156 @@
+{
+  "generated_utc": "2026-11-14T04:25:59.484552+00:00",
+  "datasets": {
+    "stripe_greenhouse_original_780": {
+      "paths": [
+        "DatasetCollection/processed/table_A_advertisements.csv",
+        "DatasetCollection/processed/table_B_ground_truth.csv",
+        "DatasetCollection/processed/table_C_evidence_records.csv",
+        "DatasetCollection/processed/stage4e_evidence_records.csv"
+      ],
+      "records": {
+        "table_a": 780,
+        "table_b": 780,
+        "table_c_snapshot": 780,
+        "stage4e_evidence": 780
+      },
+      "unique_case_ids": {
+        "table_a": 780,
+        "stage4e": 780
+      },
+      "employer_count": 1,
+      "source_family": "Stripe/Greenhouse snapshot-derived cohort",
+      "label_status": "No adjudicated human ground truth in Tables B/5B; Table B and reviewer worksheets remain unresolved/unsubmitted.",
+      "evidence_status": "Stage 4E collected evidence records exist; 744 independent_official_confirmation, 19 fresh_same_system_retrieval, 16 unresolved, 1 unavailable by evidence_state field (provenance classes, not human authorization labels).",
+      "limitations": [
+        "Single employer/source-family concentration",
+        "Snapshot match != independently verified authorization",
+        "No frozen human benchmark"
+      ]
+    },
+    "stage4f_expansion_2200": {
+      "paths": [
+        "DatasetCollection/processed/stage4f_expansion_records.csv",
+        "DatasetCollection/final_research_package/stage4f_expansion_cohort.csv"
+      ],
+      "records": 2200,
+      "unique_case_ids": 2200,
+      "employer_count": 17,
+      "source_families": {
+        "Greenhouse": 1747,
+        "Lever": 453
+      },
+      "label_status": "Collection dataset only; no human adjudication, no authorization/fraud ground truth.",
+      "limitations": [
+        "Greenhouse/Lever-heavy",
+        "No third-party/Workday/SmartRecruiters/Ashby collected in this package summary",
+        "Collection interrupted/finalized from checkpoint per logs"
+      ]
+    },
+    "proposed_unified_2980": {
+      "paths": [
+        "DatasetCollection/final_research_package/unified_proposed_dataset.csv"
+      ],
+      "records": 2980,
+      "unique_case_ids": 2980,
+      "employer_count": 18,
+      "cohorts": {
+        "stripe_greenhouse_780": 780,
+        "stage4f_expansion_2200": 2200
+      },
+      "selection_decision": "PROPOSED_NOT_PRIMARY_BENCHMARK: structurally packaged and useful as a collection/staging dataset, but not eligible as a verified evaluation benchmark because adjudicated human labels, confirmed lineage, and balanced source diversity are incomplete.",
+      "must_not_replace_automatically": true
+    },
+    "naukri_separate_198": {
+      "paths": [
+        "DatasetCollection/final_research_package/naukri_separate_cohort.csv"
+      ],
+      "records": 198,
+      "unique_case_ids": 198,
+      "employer_count": 157,
+      "selection_decision": "SEPARATE_COHORT_ONLY: provenance/structure differ; do not merge with main dataset until comparability, labeling, and lineage rules are established.",
+      "overlap_with_unified_case_ids": 0
+    },
+    "phase2_v1_research_data": {
+      "paths": [
+        "research-data/phase2_v1/advertisements_v1.jsonl",
+        "research-data/phase2_v1/evidence_v1.jsonl",
+        "research-data/phase2_v1/independent_annotations_v1.jsonl",
+        "research-data/phase2_v1/lineage_reviews_v1.jsonl",
+        "research-data/phase2_v1/synthetic/synthetic_benchmark_v1.jsonl"
+      ],
+      "core_label_files_empty": true,
+      "synthetic_records": 60,
+      "selection_decision": "Synthetic benchmark valid for controlled implementation checks only; not real-world ground truth."
+    },
+    "provisional_annotations": {
+      "paths": [
+        "data/annotations/pilot.jsonl",
+        "data/annotations/job_ad_authorization_evaluation.jsonl",
+        "data/annotations/job_ad_independent_review_v1.jsonl"
+      ],
+      "pilot_records": 4,
+      "evaluation_records": 145,
+      "independent_review_v1_records": 31,
+      "selection_decision": "PROVISIONAL/SINGLE-REVIEWER: usable for exploratory analysis only, not for defensible hypothesis proof."
+    }
+  },
+  "overlaps": {
+    "stripe_pkg_case_ids": 780,
+    "table_a_case_ids": 780,
+    "table_a_vs_stripe_pkg_case_id_overlap": 780,
+    "table_a_vs_unified_case_id_overlap": 780,
+    "expansion_vs_unified_case_id_overlap": 2200,
+    "stripe_vs_expansion_case_id_overlap": 0,
+    "naukri_vs_main_case_id_overlap": 0
+  },
+  "primary_dataset_decision": {
+    "selected_for_verified_evaluation": "NONE (blocked: no adjudicated multi-reviewer human ground truth / confirmed lineage benchmark)",
+    "selected_for_collection_staging_reference": "DatasetCollection/final_research_package/unified_proposed_dataset.csv (proposed, versioned, structurally validated; not approved replacement)",
+    "selected_for_existing_snapshot_cohort_analysis": "DatasetCollection/processed table_A/B/C + stage4e_evidence_records.csv (780 Stripe/Greenhouse, provenance/snapshot evidence only)",
+    "selected_for_controlled_implementation_validation": "research-data/phase2_v1/synthetic/synthetic_benchmark_v1.jsonl"
+  },
+  "employer_reconciliation": {
+    "unified_distinct_employers": 18,
+    "stripe_distinct_employers": 1,
+    "expansion_distinct_employers": 17,
+    "explanation": "Difference (17 vs 18) is scope: expansion cohort has 17 employers; unified main package has 18 because it includes the Stripe/Greenhouse cohort employer in addition to the 17 expansion employers (1 + 17 = 18).",
+    "stripe_employer_ids": [
+      "EMP_STRIPE"
+    ],
+    "expansion_employer_ids_sample": [
+      "EMP_STAGE4F_09a2f4897466c7a5",
+      "EMP_STAGE4F_0ebebc1dc933de11",
+      "EMP_STAGE4F_2e183f2a7a70de1c",
+      "EMP_STAGE4F_427a3e8d8f1b42ff",
+      "EMP_STAGE4F_44435aa866c2c97a",
+      "EMP_STAGE4F_4d3754cc6848e1ed",
+      "EMP_STAGE4F_4d8bd97f03109ac1",
+      "EMP_STAGE4F_59958e2950398a3a",
+      "EMP_STAGE4F_65819e198c32566a",
+      "EMP_STAGE4F_738e22f0acab814c"
+    ]
+  },
+  "lineage_reconciliation": {
+    "counts": {
+      "original_21": 21,
+      "stage4f_459": 459,
+      "stripe_pairs_207": 207,
+      "total": 687
+    },
+    "coverage_before_update": {
+      "total_reported_candidates": 687,
+      "original_21_in_human_queue": 0,
+      "stage4f_459_in_human_queue": 0,
+      "stripe_pairs_207_in_human_queue": 207,
+      "provisional_annotation_cases_in_queue": 145,
+      "human_queue_total_rows": 352,
+      "previous_gap": "Human review queue initially included 144 provisional cases + 207 stripe pair rows (351) but omitted 21 original lineage candidates and 459 Stage 4F candidates; these are now added as prioritized worksheets/queue rows with overlap flags."
+    },
+    "duplicates_across_candidate_sets": {
+      "pair_id_overlap_stage4f_vs_stripe_pairs": 0,
+      "id_overlap_original_vs_stage4f": 0
+    },
+    "status": "All 687 candidates/pairs are identified as pending/unconfirmed in source artifacts; none are human-confirmed or rejected. Queue/workbook coverage updated in this pass."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "synthetic_benchmark_extended_v1",
+  "records": 30,
+  "seed": 20261114,
+  "synthetic": true,
+  "human_reviewed": false,
+  "labels_are_synthetic_not_ground_truth": true,
+  "scenarios": {
+    "copied_dependent_supported": 6,
+    "copied_dependent_unresolved": 4,
+    "contradictory_evidence": 6,
+    "unavailable_sources": 6,
+    "unknown_lineage_mixed_unresolved": 4,
+    "independent_supporting": 4
+  },
+  "original_benchmark_preserved": "research-data/phase2_v1/synthetic/synthetic_benchmark_v1.jsonl"
+}

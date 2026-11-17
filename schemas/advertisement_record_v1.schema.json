@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "advertisement-record-v1",
+  "type": "object",
+  "required": ["case_id", "vacancy_group_id", "employer_id", "job_title", "location", "input_type", "source_stratum", "observed_at", "snapshot_reference", "privacy_redaction_status"],
+  "properties": {
+    "case_id": {"type": "string", "minLength": 1},
+    "vacancy_group_id": {"type": "string", "minLength": 1},
+    "employer_id": {"type": "string", "minLength": 1},
+    "job_title": {"type": "string", "minLength": 1},
+    "location": {"type": "string", "minLength": 1},
+    "input_type": {"enum": ["url", "pasted_text", "poster", "pdf"]},
+    "source_stratum": {"type": "string", "minLength": 1},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "snapshot_reference": {"type": ["string", "null"]},
+    "privacy_redaction_status": {"enum": ["not_needed", "redacted", "pending_review"]}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "records": 198,
+  "employers": 157,
+  "schema_fields": [
+    "case_id",
+    "employer_id",
+    "job_title",
+    "job_description",
+    "location",
+    "salary_text",
+    "contact_details",
+    "application_url",
+    "advertisement_url",
+    "platform_type",
+    "input_type",
+    "observed_at",
+    "source_job_id",
+    "source_employer_name",
+    "source_company_id",
+    "source_created_date",
+    "source_file"
+  ],
+  "included_in_main_unified_dataset": false,
+  "compatibility_status": "separate audit required before integration",
+  "reason": "Different source cohort and prior lineage experiment; no automatic merge."
+}

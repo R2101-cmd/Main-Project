@@ -1,0 +1,77 @@
+{
+  "schema_versions": {
+    "collection_config": "collection-config-v1",
+    "advertisement": "advertisement-record-v1",
+    "evidence": "evidence-item-v1",
+    "annotation": "annotation-form-v1",
+    "lineage": "lineage-review-v1",
+    "collection_log": "collection-log-v1"
+  },
+  "annotation_protocol_version": "independent-annotation-protocol-v2",
+  "operational_status": "template_not_authorized",
+  "sampling_frame": {
+    "geography": "India, including remote roles explicitly open to Indian applicants",
+    "role_scope": "Data/analytics and closely related internship or entry-level vacancies",
+    "vacancy_group_target": {
+      "minimum": 100,
+      "maximum": 200,
+      "is_feasibility_target": true,
+      "statistical_power_guaranteed": false
+    },
+    "source_strata": [
+      {
+        "id": "employer_careers_and_ats",
+        "selection_procedure": "Sample the predefined employer/source frame during the fixed window and record every eligible vacancy encountered under the stated rule."
+      },
+      {
+        "id": "public_job_portals_and_networks",
+        "selection_procedure": "Use the same documented search terms and sampling seed across the named public platforms; retain the individual listing URL when available."
+      },
+      {
+        "id": "institutional_recruitment",
+        "selection_procedure": "Search the predefined university, government, and institutional sources using the approved role scope and window."
+      },
+      {
+        "id": "public_reposts_and_social",
+        "selection_procedure": "Use only as targeted supplementary provenance sources and keep them separately reported from the main frame."
+      }
+    ],
+    "selection_procedure": "Freeze the source frame, search terms, inclusion/exclusion rules, collection window, and random seed before collection. Do not select records using model predictions or observed labels.",
+    "sampling_seed": null,
+    "selection_policy": {
+      "artificial_class_balancing": false,
+      "model_prediction_selection": false,
+      "main_frame_and_supplementary_cases_reported_separately": true
+    }
+  },
+  "collection_window": {
+    "start": null,
+    "end": null,
+    "timezone": "Asia/Kolkata",
+    "duration_days": 30
+  },
+  "collection_log": {
+    "path": "data/collection/collection_log.jsonl",
+    "schema_version": "collection-log-v1"
+  },
+  "reviewers": {
+    "setup_status": "pending_assignment",
+    "operational_authorization": false,
+    "reviewer_ids": [],
+    "adjudicator_id": null,
+    "blinding_procedure": "Reviewers receive the same frozen advertisement/evidence packet without each other's labels, adjudication notes, model predictions, or test-level error analysis."
+  },
+  "privacy_and_retention": {
+    "status": "pending_decision",
+    "privacy_decision": null,
+    "redaction_policy": null,
+    "snapshot_policy": null,
+    "retention_decision": null,
+    "access_control": null
+  },
+  "operational_authorization": {
+    "status": "not_authorized",
+    "approved_by": null,
+    "approved_at": null
+  }
+}

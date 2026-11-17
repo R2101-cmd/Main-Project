@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-11-12T17:05:49.296249+00:00",
+  "objective": "Evaluate whether lineage-aware evidence aggregation reduces false assurance in vacancy authorization verification.",
+  "datasets": {
+    "stripe_main": {
+      "records": 780,
+      "role": "main cohort; independent evaluation of evidence aggregation"
+    },
+    "naukri_separate": {
+      "records": 198,
+      "role": "separate lineage experiment only; never merged with Stripe benchmark"
+    }
+  },
+  "evaluation_approaches": {
+    "A_text_only_baseline": {
+      "inputs": [
+        "advertisement title",
+        "description",
+        "location",
+        "salary/contact text where present"
+      ],
+      "excluded": [
+        "retrieved evidence",
+        "source URLs as authority",
+        "lineage labels"
+      ]
+    },
+    "B_ordinary_evidence_aggregation": {
+      "inputs": [
+        "advertisement fields",
+        "retrieved evidence fields",
+        "retrieval outcomes"
+      ],
+      "rule": "Aggregate evidence per case without correcting for shared source or copy lineage.",
+      "risk": "Can count repeated same-source or copied evidence as independent support."
+    },
+    "C_lineage_aware_aggregation": {
+      "inputs": [
+        "all Approach B inputs",
+        "source independence",
+        "retrieval independence",
+        "lineage groups",
+        "freshness",
+        "contradictions",
+        "missingness"
+      ],
+      "rule": "Deduplicate evidence by source family and lineage group; require independent source support for positive authorization; retain unresolved when evidence is incomplete."
+    }
+  },
+  "split_protocol": {
+    "unit": "case-level",
+    "grouping": "Keep exact duplicates, near-duplicate clusters, lineage candidates, and shared source families within one split.",
+    "recommended_split": "grouped train/validation/test split after adjudication; test set frozen before model tuning",
+    "leakage_controls": [
+      "fit text normalization/vectorizers on train only",
+      "do not use post-retrieval labels as features before their allowed time",
+      "do not split copied descriptions across folds",
+      "do not merge Naukri and Stripe"
+    ],
+    "current_status": "No supervised split or model evaluation should be run until human ground truth exists."
+  },
+  "metrics": {
+    "false_assurance_rate": "Unsupported positive authorization conclusions divided by all positive authorization conclusions.",
+    "precision": "True supported authorization conclusions divided by all positive authorization conclusions.",
+    "recall": "True supported authorization conclusions divided by all adjudicated supported authorization cases.",
+    "f1": "Harmonic mean of precision and recall.",
+    "specificity": "Correct non-supported/unresolved decisions divided by all adjudicated non-supported cases.",
+    "unresolved_decision_rate": "Unresolved outputs divided by all evaluated cases.",
+    "coverage": "Cases receiving a non-unresolved conclusion divided by all evaluated cases.",
+    "contradiction_handling": "Report explicit contradictions separately; do not fold unavailable evidence into contradiction.",
+    "repost_performance": "Report metrics separately for adjudicated lineage/repost groups and non-lineage cases.",
+    "incomplete_evidence_performance": "Report unresolved rate and false-assurance rate for incomplete/unavailable evidence strata."
+  },
+  "comparability_rule": "All three approaches use the same adjudicated case IDs, split assignments, and target definition; only inputs and aggregation logic differ.",
+  "no_metric_claim_rule": "Do not calculate meaningful supervised precision, recall, F1, specificity, or false-assurance rates until ground truth is independently adjudicated."
+}

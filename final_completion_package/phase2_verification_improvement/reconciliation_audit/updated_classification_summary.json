@@ -1,0 +1,31 @@
+{
+  "generated_utc": "2026-11-14T05:30:25.594249+00:00",
+  "records_crosswalked": 780,
+  "stage4e_raw_evidence_classification": {
+    "independent_official_confirmation": 744,
+    "fresh_same_system_retrieval": 19,
+    "unresolved": 16,
+    "unavailable": 1
+  },
+  "new_staging_normalized_evidence_state": {
+    "supported": 744,
+    "unverified": 19,
+    "unresolved": 16,
+    "unavailable": 1
+  },
+  "phase2_artifact_verification_status": {
+    "snapshot_match_only": 763,
+    "inaccessible": 17
+  },
+  "stage4e_historical_verification_state": {
+    "independently_unresolved": 780
+  },
+  "lineage_status": {
+    "none": 588,
+    "candidate": 192
+  },
+  "snapshot_only_to_independent_authorization_promotions": 0,
+  "unavailable_unverified_or_snapshot_silent_promotions": 0,
+  "source_files_modified": false,
+  "datasets_modified": false
+}

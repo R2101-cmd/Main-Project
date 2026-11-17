@@ -1,0 +1,14 @@
+{
+  "stage": "Stage 4E Controlled Full-Cohort Evidence Collection",
+  "updated_at": "2026-11-12T16:50:03.473463+00:00",
+  "batch_completed": 3,
+  "batch_size": 610,
+  "total_collected_including_stage4d_pilot": 780,
+  "remaining_to_process": 0,
+  "previous_outputs_modified": [],
+  "rate_limit_seconds_between_requests": 0.15,
+  "retries_per_request": 1,
+  "scope": "Stripe/Greenhouse cohort only; separate Naukri/ATS cohort excluded",
+  "raw_response_archive": "raw/stage4e_responses/",
+  "integrity": "No fraud labels, no source substitution, no authentication/CAPTCHA bypass, unresolved retained."
+}

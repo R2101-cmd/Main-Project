@@ -1,0 +1,102 @@
+{
+  "schema_version": "employer-sources-v1",
+  "max_current_posting_age_days": 180,
+  "mappings": [
+    {
+      "employer_id": "EMP_STRIPE",
+      "employer_name": "Stripe",
+      "canonical_employer_name": "Stripe",
+      "authorized_domain": "stripe.com",
+      "authorized_path_prefix": "/careers/",
+      "relationship_type": "employer_owned_official",
+      "verification_status": "verified",
+      "last_verified_at": "2026-11-16",
+      "provenance": "Stripe's public careers pages identify Stripe as the employer and present role-specific listings and applications: https://stripe.com/careers/apply/backend-engineer-developer-end-user-experience-platform/7292520 (checked 2026-11-16). Scope is limited to stripe.com/careers/; no third-party ATS domain is inferred as authorized.",
+      "verification_provenance": "Stripe's public careers pages identify Stripe as the employer and present role-specific listings and applications: https://stripe.com/careers/apply/backend-engineer-developer-end-user-experience-platform/7292520 (checked 2026-11-16). Scope is limited to stripe.com/careers/; no third-party ATS domain is inferred as authorized."
+    },
+    {
+      "employer_id": "EMP_CLOUDFLARE",
+      "employer_name": "Cloudflare",
+      "canonical_employer_name": "Cloudflare",
+      "authorized_domain": "cloudflare.com",
+      "authorized_path_prefix": "/en-in/careers/",
+      "relationship_type": "employer_owned_official",
+      "verification_status": "verified",
+      "last_verified_at": "2026-11-17",
+      "provenance": "Cloudflare's own careers site at https://www.cloudflare.com/en-in/careers/ links to its open positions (checked 2026-11-17). This mapping covers only the employer-owned India careers path; no ATS domain is authorized.",
+      "verification_provenance": "Cloudflare's own careers site at https://www.cloudflare.com/en-in/careers/ links to its open positions (checked 2026-11-17). This mapping covers only the employer-owned India careers path; no ATS domain is authorized."
+    },
+    {
+      "employer_id": "EMP_DATADOG",
+      "employer_name": "Datadog",
+      "canonical_employer_name": "Datadog",
+      "authorized_domain": "careers.datadoghq.com",
+      "authorized_path_prefix": "/",
+      "relationship_type": "employer_owned_official",
+      "verification_status": "verified",
+      "last_verified_at": "2026-11-17",
+      "provenance": "Datadog's branded careers site lists teams, locations, and job openings at https://careers.datadoghq.com/all-jobs/ (checked 2026-11-17). Scope is limited to the careers subdomain.",
+      "verification_provenance": "Datadog's branded careers site lists teams, locations, and job openings at https://careers.datadoghq.com/all-jobs/ (checked 2026-11-17). Scope is limited to the careers subdomain."
+    },
+    {
+      "employer_id": "EMP_OKTA",
+      "employer_name": "Okta",
+      "canonical_employer_name": "Okta",
+      "authorized_domain": "okta.com",
+      "authorized_path_prefix": "/company/careers/",
+      "relationship_type": "employer_owned_official",
+      "verification_status": "verified",
+      "last_verified_at": "2026-11-17",
+      "provenance": "Okta's employer-hosted job listing and role pages are under https://www.okta.com/company/careers/ (checked 2026-11-17). Scope excludes all third-party ATS hosts.",
+      "verification_provenance": "Okta's employer-hosted job listing and role pages are under https://www.okta.com/company/careers/ (checked 2026-11-17). Scope excludes all third-party ATS hosts."
+    },
+    {
+      "employer_id": "EMP_AIRBNB",
+      "employer_name": "Airbnb",
+      "canonical_employer_name": "Airbnb",
+      "authorized_domain": "careers.airbnb.com",
+      "authorized_path_prefix": "/positions/",
+      "relationship_type": "employer_owned_official",
+      "verification_status": "verified",
+      "last_verified_at": "2026-11-17",
+      "provenance": "Airbnb's own job page identifies careers.airbnb.com as the site where its open roles are posted: https://careers.airbnb.com/positions/8381807/ (checked 2026-11-17). Scope excludes the separate contractor provider.",
+      "verification_provenance": "Airbnb's own job page identifies careers.airbnb.com as the site where its open roles are posted: https://careers.airbnb.com/positions/8381807/ (checked 2026-11-17). Scope excludes the separate contractor provider."
+    },
+    {
+      "employer_id": "EMP_MICROSOFT",
+      "employer_name": "Microsoft",
+      "canonical_employer_name": "Microsoft",
+      "authorized_domain": "careers.microsoft.com",
+      "authorized_path_prefix": "/v2/global/en/",
+      "relationship_type": "employer_owned_official",
+      "verification_status": "verified",
+      "last_verified_at": "2026-11-17",
+      "provenance": "Microsoft's careers site hosts its India location pages and job details with update dates and employer application links: https://careers.microsoft.com/v2/global/en/locations/india.html (checked 2026-11-17). Scope is limited to the global English careers site.",
+      "verification_provenance": "Microsoft's careers site hosts its India location pages and job details with update dates and employer application links: https://careers.microsoft.com/v2/global/en/locations/india.html (checked 2026-11-17). Scope is limited to the global English careers site."
+    },
+    {
+      "employer_id": "EMP_RAZORPAY",
+      "employer_name": "Razorpay",
+      "canonical_employer_name": "Razorpay",
+      "authorized_domain": "job-boards.greenhouse.io",
+      "authorized_path_prefix": "/razorpaysoftwareprivatelimited",
+      "relationship_type": "verified_employer_associated_ats",
+      "verification_status": "verified",
+      "last_verified_at": "2026-11-17",
+      "provenance": "Razorpay's careers page links SEE ALL JOBS directly to https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited (checked 2026-11-17). Scope is restricted to that employer account path; Greenhouse as a whole is not authorized.",
+      "verification_provenance": "Razorpay's careers page links SEE ALL JOBS directly to https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited (checked 2026-11-17). Scope is restricted to that employer account path; Greenhouse as a whole is not authorized."
+    },
+    {
+      "employer_id": "EMP_BEML",
+      "employer_name": "BEML",
+      "canonical_employer_name": "BEML",
+      "authorized_domain": "www.bemlindia.in",
+      "authorized_path_prefix": "/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/",
+      "relationship_type": "employer_owned_official",
+      "verification_status": "verified",
+      "last_verified_at": "2026-11-17",
+      "provenance": "BEML's official careers page https://www.bemlindia.in/careers/ links recruitment advertisements hosted on BEML's bemlindia.in domain, including https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_09_2026.pdf (checked 2026-11-17). Scope is restricted to the recruitment-document path; this does not cover third-party sources.",
+      "verification_provenance": "BEML's official careers page https://www.bemlindia.in/careers/ links recruitment advertisements hosted on BEML's bemlindia.in domain, including https://www.bemlindia.in/wp-content/plugins/career/WCP/DATA/Writereaddata/Career/KP_S_09_2026.pdf (checked 2026-11-17). Scope is restricted to the recruitment-document path; this does not cover third-party sources."
+    }
+  ]
+}

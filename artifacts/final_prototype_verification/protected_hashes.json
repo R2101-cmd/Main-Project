@@ -1,0 +1,32 @@
+[
+  {
+    "path": "data\\annotations\\pilot.jsonl",
+    "sha256": "fe4e0d2f0e3858b8e7d0732d14875109cb5435a5b3c06389ca9446ea3255f69e",
+    "bytes": 4664
+  },
+  {
+    "path": "data\\annotations\\job_ad_authorization_evaluation.jsonl",
+    "sha256": "b6105933ad642146f1436357bd1d819163c1ade8ed5ddde21c61307bb2fecffc",
+    "bytes": 147670
+  },
+  {
+    "path": "data\\annotations\\job_ad_independent_review_v1.jsonl",
+    "sha256": "3ec3e6c422567f7a6378155ce725c5a250f57e78148f671d4bcf72b0d6c1bd31",
+    "bytes": 33461
+  },
+  {
+    "path": "research-data\\phase2_v1\\synthetic\\synthetic_benchmark_v2\\splits\\test.jsonl",
+    "sha256": "d6b78ea52d10cc27cdf999d11fe66e6c1064ed8e074ceb1c34c61ebd8f372e07",
+    "bytes": 85722
+  },
+  {
+    "path": "research-data\\phase2_v1\\synthetic\\synthetic_benchmark_v2\\splits\\train.jsonl",
+    "sha256": "2be01d34ade005e2c6bdaa3269a503e4dda516f761f833ea322636e5c22c18e5",
+    "bytes": 257142
+  },
+  {
+    "path": "research-data\\phase2_v1\\synthetic\\synthetic_benchmark_v2\\splits\\validation.jsonl",
+    "sha256": "bb411c2f3ceddf8dbcd248227cac7d11c07d3b573ca96839fa58b3508f76682f",
+    "bytes": 85634
+  }
+]

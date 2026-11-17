@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-11-12T16:09:52.459269+00:00",
+  "pilot_size": 20,
+  "unique_case_ids": 20,
+  "selection_seed": 20261112,
+  "selection_strata_covered": {
+    "_title_stratum": 20,
+    "_location_stratum": 20,
+    "_published_month": 20,
+    "_updated_month": 2,
+    "_description_stratum": 3
+  },
+  "evidence_classifications": {
+    "independent_official_confirmation": 18,
+    "fresh_same_system_retrieval": 2
+  },
+  "vacancy_statuses": {
+    "active": 20
+  },
+  "employer_identity_independently_confirmed": 20,
+  "vacancy_authorization_independently_confirmed": 18,
+  "contradicted": 0,
+  "unavailable": 0,
+  "unresolved": 2,
+  "fraud_labels_assigned": 0,
+  "general_relationship_not_generalized": true,
+  "recommendation": "Scale only after reviewing the live retrieval success, exact matching, API stability, and status interpretation manually; do not automate fraud or legitimacy labels."
+}

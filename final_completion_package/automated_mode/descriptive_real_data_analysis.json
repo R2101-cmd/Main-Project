@@ -1,0 +1,74 @@
+{
+  "stage4e_evidence": {
+    "records": 780,
+    "retrieval_success_rate": 1.0,
+    "official_source_match_rate_proxy": 0.9538461538461539,
+    "evidence_availability_rate": 0.9987179487179487,
+    "snapshot_only_match_rate_proxy": 0.0,
+    "contradiction_evidence_count": 0,
+    "unresolved_rate": 0.046153846153846156,
+    "note": "Descriptive system outputs from collected Stage 4E artifacts; not ground-truth performance metrics."
+  },
+  "unified_proposed_package": {
+    "records": 2980,
+    "vacancy_status_observation_distribution": {
+      "active": 763,
+      "removed": 17,
+      "active_or_listed_at_retrieval": 2200
+    },
+    "duplicate_evidence_rate_url_proxy": 0.0,
+    "duplicate_source_url_count": 0,
+    "candidate_lineage_involved_records": 464,
+    "candidate_lineage_rate_proxy": 0.15570469798657718,
+    "decision_distribution_note": "Unified package is collection/staging data; no automated authorization decisions assigned as labels."
+  },
+  "automated_verification_states": {
+    "records": 780,
+    "state_distribution": {
+      "independently_unresolved": 780
+    },
+    "retrieval_success_rate_proxy": 0.0,
+    "unresolved_or_inaccessible_rate": 1.0,
+    "snapshot_match_only_rate": 0.0,
+    "note": "States produced from collected artifacts by automated conservative mapping; not live-verified ground truth."
+  },
+  "automated_decision_distribution": {
+    "employer_identity": {
+      "verified": 0,
+      "contradicted": 0,
+      "unresolved": 780
+    },
+    "vacancy_authorization": {
+      "supported": 0,
+      "contradicted": 0,
+      "unresolved": 780
+    },
+    "fraud_outcome": {
+      "confirmed_fraudulent": 0,
+      "confirmed_legitimate": 0,
+      "unresolved": 780
+    },
+    "abstention_rate_descriptive": 1.0,
+    "note": "Automated machine-generated evidence assessments; no independently adjudicated conclusions. Unresolved dominates where authority/confirmation unavailable."
+  },
+  "lineage": {
+    "candidate_lineage_rate_overall": 1.0,
+    "total_candidate_pairs_processed": 687,
+    "category_distribution": {
+      "likely_dependent": 406,
+      "possible_dependency": 281
+    },
+    "evidence_independence_estimates": {
+      "pairs": 687,
+      "confirmed_by_provenance": 0,
+      "likely_dependent": 406,
+      "possible_dependency": 281,
+      "unknown_relationship": 0,
+      "conservative_estimated_independent_source_families": 687,
+      "lower_bound_families": 687,
+      "upper_bound_if_all_independent_not_assumed": 1374,
+      "note": "Automated conservative estimate; unknown relationships not assumed independent; similarity-based relations are not confirmed lineage."
+    }
+  },
+  "label": "DESCRIPTIVE SYSTEM OUTPUTS ONLY - not ground-truth performance metrics (no human/adjudicated labels)."
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "collection-config-v1",
+  "type": "object",
+  "required": ["schema_versions", "annotation_protocol_version", "sampling_frame", "collection_window", "collection_log", "reviewers", "privacy_and_retention", "operational_authorization"],
+  "properties": {
+    "schema_versions": {"type": "object", "additionalProperties": {"type": "string"}},
+    "annotation_protocol_version": {"const": "independent-annotation-protocol-v2"},
+    "sampling_frame": {"type": "object", "required": ["geography", "role_scope", "source_strata", "selection_procedure", "selection_policy", "vacancy_group_target"]},
+    "collection_window": {"type": "object", "required": ["start", "end", "timezone", "duration_days"], "properties": {"start": {"type": ["string", "null"]}, "end": {"type": ["string", "null"]}, "timezone": {"type": "string"}, "duration_days": {"const": 30}}},
+    "collection_log": {"type": "object", "required": ["path", "schema_version"]},
+    "reviewers": {"type": "object", "required": ["setup_status", "operational_authorization", "reviewer_ids", "adjudicator_id"]},
+    "privacy_and_retention": {"type": "object", "required": ["status", "privacy_decision", "redaction_policy", "snapshot_policy", "retention_decision", "access_control"]},
+    "operational_authorization": {"type": "object", "required": ["status", "approved_by", "approved_at"]}
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "stage": "5B",
+  "seed": 20261113,
+  "cohort": {
+    "name": "Stripe/Greenhouse",
+    "records": 780,
+    "employer_ids": [
+      "EMP_STRIPE"
+    ],
+    "excluded_dataset": "Naukri/ATS 198"
+  },
+  "sample_size": 100,
+  "selection_dimensions": [
+    "vacancy_status",
+    "evidence_state",
+    "field_match_quality",
+    "publication_period",
+    "description_completeness",
+    "near_duplicate_involvement"
+  ],
+  "candidate_pairs": 207,
+  "pair_rule": "Reproduced Stage 5A thresholds; candidates are not confirmed lineage.",
+  "labels": {
+    "employer_identity": [
+      "verified",
+      "contradicted",
+      "unresolved"
+    ],
+    "vacancy_authorization": [
+      "supported",
+      "contradicted",
+      "unresolved"
+    ],
+    "fraud_outcome": [
+      "confirmed_legitimate",
+      "confirmed_fraudulent",
+      "unresolved"
+    ]
+  },
+  "pair_decisions": [
+    "confirmed_same_vacancy",
+    "confirmed_repost",
+    "probable_copy",
+    "template_similarity",
+    "unrelated",
+    "unresolved"
+  ],
+  "reviewer_workflow": [
+    "independent annotation",
+    "freeze initial copies",
+    "compare distributions and Cohen kappa where appropriate",
+    "lead adjudication",
+    "provenance audit"
+  ],
+  "agreement_not_yet_calculated": true,
+  "created_utc": "2026-11-12T17:13:47.459057+00:00"
+}

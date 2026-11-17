@@ -1,0 +1,18 @@
+{
+  "stage": "Stage 4B Retrieval and Evidence Quality Improvement",
+  "executed_at": "2026-11-12T15:57:13.087640+00:00",
+  "pilot_cases": 20,
+  "scope": "same 20 Stage 4A cases; no scale-up",
+  "previous_outputs_modified": [],
+  "new_outputs": [
+    "processed/table_C_stage4b_pilot.csv",
+    "reports/stage4b_retrieval_quality.json",
+    "reports/stage4b_field_matching_report.csv",
+    "reports/stage4b_authorization_audit.json",
+    "reports/stage4b_comparison_with_stage4a.json",
+    "reports/stage4b_execution_log.json",
+    "scripts/run_stage4b.py",
+    "raw/stage4b_responses/*.bin"
+  ],
+  "integrity": "No URLs invented; missing URLs retained as unavailable with recovery candidates; no fraud labels; same-ATS retrieval not called independent."
+}

@@ -1,0 +1,18 @@
+{
+  "generated_utc": "2026-11-14T04:27:26.950441+00:00",
+  "definition": "False assurance = system returns supported authorization for a case whose independently adjudicated reference label is contradicted (or otherwise non-supported per frozen protocol).",
+  "real_data": {
+    "status": "BLOCKED",
+    "reason": "No independently adjudicated contradicted/supported authorization ground truth; provisional single-reviewer labels are not defensible for hypothesis proof.",
+    "numerator": null,
+    "denominator": null,
+    "rate": null
+  },
+  "synthetic_data": {
+    "status": "AVAILABLE_FOR_CONTROLLED_CHECKS",
+    "benchmark": "research-data/phase2_v1/synthetic/synthetic_benchmark_v1.jsonl",
+    "records": 60,
+    "seed": 20261022,
+    "note": "Not real-world ground truth; use to validate implementation behavior only."
+  }
+}

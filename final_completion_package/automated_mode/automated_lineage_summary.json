@@ -1,0 +1,61 @@
+{
+  "total_candidates_processed": 687,
+  "categories": {
+    "likely_dependent": 406,
+    "possible_dependency": 281
+  },
+  "by_source_set": {
+    "original_21": {
+      "pairs": 21,
+      "confirmed_by_provenance": 0,
+      "likely_dependent": 17,
+      "possible_dependency": 4,
+      "unknown_relationship": 0,
+      "conservative_estimated_independent_source_families": 21,
+      "lower_bound_families": 21,
+      "upper_bound_if_all_independent_not_assumed": 42,
+      "note": "Automated conservative estimate; unknown relationships not assumed independent; similarity-based relations are not confirmed lineage."
+    },
+    "stage4f_459": {
+      "pairs": 459,
+      "confirmed_by_provenance": 0,
+      "likely_dependent": 246,
+      "possible_dependency": 213,
+      "unknown_relationship": 0,
+      "conservative_estimated_independent_source_families": 459,
+      "lower_bound_families": 459,
+      "upper_bound_if_all_independent_not_assumed": 918,
+      "note": "Automated conservative estimate; unknown relationships not assumed independent; similarity-based relations are not confirmed lineage."
+    },
+    "stripe_pairs_207": {
+      "pairs": 207,
+      "confirmed_by_provenance": 0,
+      "likely_dependent": 143,
+      "possible_dependency": 64,
+      "unknown_relationship": 0,
+      "conservative_estimated_independent_source_families": 207,
+      "lower_bound_families": 207,
+      "upper_bound_if_all_independent_not_assumed": 414,
+      "note": "Automated conservative estimate; unknown relationships not assumed independent; similarity-based relations are not confirmed lineage."
+    }
+  },
+  "overall_independence_estimate": {
+    "pairs": 687,
+    "confirmed_by_provenance": 0,
+    "likely_dependent": 406,
+    "possible_dependency": 281,
+    "unknown_relationship": 0,
+    "conservative_estimated_independent_source_families": 687,
+    "lower_bound_families": 687,
+    "upper_bound_if_all_independent_not_assumed": 1374,
+    "note": "Automated conservative estimate; unknown relationships not assumed independent; similarity-based relations are not confirmed lineage."
+  },
+  "method": "Automated scoring from existing similarity/signal/metadata fields; thresholds >=0.98 or strong identifier signal => likely_dependent, >=0.80 => possible_dependency, >=0.50 => possible_dependency, else unknown. No human confirmation; no similarity treated as confirmed lineage.",
+  "historical_human_review_artifacts_preserved": [
+    "final_completion_package/05_annotations/worksheets/*",
+    "DatasetCollection/processed/stage5b_reviewer1_worksheet.csv",
+    "DatasetCollection/processed/stage5b_reviewer2_worksheet.csv",
+    "DatasetCollection/processed/stage5b_lineage_pair_review.csv",
+    "data/annotations/*"
+  ]
+}

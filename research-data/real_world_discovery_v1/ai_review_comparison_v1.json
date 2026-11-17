@@ -1,0 +1,114 @@
+{
+  "summary": {
+    "reviewers": [
+      "AI_REVIEWER_A",
+      "AI_REVIEWER_B"
+    ],
+    "cases": 10,
+    "independent_ai_judgments": 20,
+    "employer_identity_label_disagreements": 0,
+    "vacancy_authorization_label_disagreements": 0,
+    "temporal_status_disagreements": 0,
+    "notes": [
+      "The two AI reviewers agree on employer identity and vacancy authorization labels for all 10 cases.",
+      "Both identify RW08 as historical/closed; it is not current.",
+      "Both flag RW05 requisition token P25728_3523399 as not visible in the retrieved role page text.",
+      "There are differing source-retrieval observations for RW05 application controls and RW09 direct detail accessibility; these are evidence completeness caveats, not label disagreements."
+    ],
+    "eligible_for_human_review_gate": false,
+    "eligible_for_calibration_or_final_evaluation": false,
+    "reason": "AI review outputs are not human annotations or adjudicated ground truth; the cohort has no frozen group-separated test split."
+  },
+  "cases": [
+    {
+      "case_id": "RW01",
+      "employer_identity_agreement": true,
+      "vacancy_authorization_agreement": true,
+      "temporal_status_agreement": true,
+      "human_adjudication_required": true,
+      "reviewer_a_note": "Razorpay employer-linked Greenhouse page matches listed title and location and shows an Apply action.",
+      "reviewer_b_note": "Razorpay careers page links to its Greenhouse account; role page matches title/location and displays Apply."
+    },
+    {
+      "case_id": "RW02",
+      "employer_identity_agreement": true,
+      "vacancy_authorization_agreement": true,
+      "temporal_status_agreement": true,
+      "human_adjudication_required": true,
+      "reviewer_a_note": "Razorpay employer-linked Greenhouse page matches listed title and location and shows an Apply action.",
+      "reviewer_b_note": "Razorpay careers page links to its Greenhouse account; role page matches title/location and displays Apply."
+    },
+    {
+      "case_id": "RW03",
+      "employer_identity_agreement": true,
+      "vacancy_authorization_agreement": true,
+      "temporal_status_agreement": true,
+      "human_adjudication_required": true,
+      "reviewer_a_note": "Razorpay employer-linked Greenhouse page matches listed title and location and shows an Apply action.",
+      "reviewer_b_note": "Razorpay careers page links to its Greenhouse account; role page matches title/location and displays Apply."
+    },
+    {
+      "case_id": "RW04",
+      "employer_identity_agreement": true,
+      "vacancy_authorization_agreement": true,
+      "temporal_status_agreement": true,
+      "human_adjudication_required": true,
+      "reviewer_a_note": "Razorpay employer-linked Greenhouse page matches listed title and location and shows an Apply action.",
+      "reviewer_b_note": "Razorpay careers page links to its Greenhouse account; role page matches title/location and displays Apply."
+    },
+    {
+      "case_id": "RW05",
+      "employer_identity_agreement": true,
+      "vacancy_authorization_agreement": true,
+      "temporal_status_agreement": true,
+      "human_adjudication_required": true,
+      "reviewer_a_note": "Okta-hosted role page matches title/location; application controls were not exposed in retrieved text, so current availability is uncertain; requisition token not visibly confirmed.",
+      "reviewer_b_note": "Okta employer-hosted page matches title/location and has an application form; requisition token was not visible in retrieved page text."
+    },
+    {
+      "case_id": "RW06",
+      "employer_identity_agreement": true,
+      "vacancy_authorization_agreement": true,
+      "temporal_status_agreement": true,
+      "human_adjudication_required": true,
+      "reviewer_a_note": "Airbnb-hosted role page identifies this role and describes it; current application availability was not established in retrieved text.",
+      "reviewer_b_note": "Airbnb employer-hosted page matches role and identifies US remote eligibility."
+    },
+    {
+      "case_id": "RW07",
+      "employer_identity_agreement": true,
+      "vacancy_authorization_agreement": true,
+      "temporal_status_agreement": true,
+      "human_adjudication_required": true,
+      "reviewer_a_note": "Microsoft India careers listing matches title/location, carries a recent update date, and links to Microsoft application details.",
+      "reviewer_b_note": "Microsoft India careers listing matches title/location and links to its Microsoft application page."
+    },
+    {
+      "case_id": "RW08",
+      "employer_identity_agreement": true,
+      "vacancy_authorization_agreement": true,
+      "temporal_status_agreement": true,
+      "human_adjudication_required": true,
+      "reviewer_a_note": "BEML official careers page and linked ad support a genuine historical recruitment notice; careers page shows closing date 2026-05-18, so it is not current.",
+      "reviewer_b_note": "BEML careers page lists KP/S/09/2026; linked official PDF is dated 2026-04-29 and careers page gives closing date 2026-05-18; historical, not current."
+    },
+    {
+      "case_id": "RW09",
+      "employer_identity_agreement": true,
+      "vacancy_authorization_agreement": true,
+      "temporal_status_agreement": true,
+      "human_adjudication_required": true,
+      "reviewer_a_note": "Microsoft Bengaluru careers listing matches title/location, carries update date 2026-11-16, and links to details.",
+      "reviewer_b_note": "Microsoft Bengaluru careers listing matches title/location and links to the role; direct detail URL was inaccessible during this review pass."
+    },
+    {
+      "case_id": "RW10",
+      "employer_identity_agreement": true,
+      "vacancy_authorization_agreement": true,
+      "temporal_status_agreement": true,
+      "human_adjudication_required": true,
+      "reviewer_a_note": "Microsoft Bengaluru careers listing matches title/location and links to details.",
+      "reviewer_b_note": "Microsoft Bengaluru careers listing and direct role detail match the listed title/location."
+    }
+  ]
+}

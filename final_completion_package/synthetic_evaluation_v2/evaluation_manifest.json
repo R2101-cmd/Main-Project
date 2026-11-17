@@ -1,0 +1,47 @@
+{
+  "approaches": {
+    "A_text_only": "Existing TextBaseline: TF-IDF word unigram/bigram with scikit-learn logistic regression; fit on train advertisement.text and train expected labels only; prediction uses advertisement.text only.",
+    "B_ordinary_aggregation": "Production src.aggregation.rules.naive over each test record's evidence; appearance-level aggregation without lineage deduplication.",
+    "C_lineage_aware_aggregation": "Production src.aggregation.rules.lineage_aware over the same evidence, passing adjudicated copied_derived group keys; unknown or missing lineage is excluded by production rules."
+  },
+  "approaches_used_identical_test_cases": true,
+  "benchmark_source_hashes_sha256": {
+    "expected_labels.jsonl": "87918ac4044bd169610f632b791397149133561132e4aa27b04dec44d47dc306",
+    "manifest.json": "828bcdae3038c6a0de4cc183cea7fe563be9af811223e90dde48d799cbb5dfed",
+    "model_inputs.jsonl": "a9e99795c5cec94044ab3cfd8ce7d8d57eae82e9ac70cb849831d645b75ea61a",
+    "scenario_metadata.jsonl": "3dcc9be267fdb84268db08928ccdd8abf6e5999797e1e241f8756ce5267cd32a"
+  },
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20261117,
+  "model_seed": 20261116,
+  "name": "synthetic_benchmark_v2_controlled_abc_evaluation",
+  "scenario_metadata_exposed_to_predictors": false,
+  "software": {
+    "python": "3.11.9",
+    "scikit_learn": "1.5.2"
+  },
+  "split_package_hashes_sha256": {
+    "split_manifest.json": "e51a2764f637a603c1af9732218a912d98eab913a53d4496f8051d7feed51046",
+    "split_methodology.md": "44dcb75d0f8776c8ec17edb6c3cf6b41da2398a9ecc00dc480b1c806fe5437f0",
+    "test.jsonl": "d6b78ea52d10cc27cdf999d11fe66e6c1064ed8e074ceb1c34c61ebd8f372e07",
+    "test_labels.jsonl": "6ad7e61cc0a2ecf8faed147463c94a36c10b39c13be3dca13fc216dc40630d21",
+    "test_scenarios.jsonl": "9d3dca1df8826215f220a788063b0df418862455da10809d69aee086368af534",
+    "train.jsonl": "2be01d34ade005e2c6bdaa3269a503e4dda516f761f833ea322636e5c22c18e5",
+    "train_labels.jsonl": "91a683731f549f4750f843af949bda38947b5ff44ce897f0b4ffb8840cf5d646",
+    "train_scenarios.jsonl": "9b436f20342d0d276e74731152888221b1159a5575509bdbc9835e1d2b07ad1f",
+    "validation.jsonl": "bb411c2f3ceddf8dbcd248227cac7d11c07d3b573ca96839fa58b3508f76682f",
+    "validation_labels.jsonl": "b5439bd275192dc140e7447912c1bc7719a651f07cdf4e5769e7af7d76dba570",
+    "validation_scenarios.jsonl": "9b2ee5d5a569fca4e0e5de0005347ffc18316dc4f8514a270af6e5351fef10f1"
+  },
+  "split_seed": 20261115,
+  "test_expected_class_distribution": {
+    "contradicted": 20,
+    "supported": 20,
+    "unresolved": 20
+  },
+  "test_labels_used_for_training_or_tuning": false,
+  "test_partition_has_15_known_scenario_families": true,
+  "test_records": 60,
+  "train_records": 180,
+  "validation_partition_used_for_tuning": false
+}

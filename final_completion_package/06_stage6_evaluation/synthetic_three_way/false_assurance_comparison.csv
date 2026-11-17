@@ -1,0 +1,7 @@
+﻿subset,approach,numerator,denominator,rate
+all_cases,A_text_only,0,20,0.0
+all_cases,B_ordinary_aggregation,0,20,0.0
+all_cases,C_lineage_aware_aggregation,0,20,0.0
+test,A_text_only,0,4,0.0
+test,B_ordinary_aggregation,0,4,0.0
+test,C_lineage_aware_aggregation,0,4,0.0

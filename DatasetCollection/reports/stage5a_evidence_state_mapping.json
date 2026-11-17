@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-11-12T17:05:49.296249+00:00",
+  "mutually_exclusive_states": {
+    "matched_snapshot": {
+      "meaning": "Advertisement fields match the frozen Greenhouse snapshot.",
+      "retrieval_independence": "historical_snapshot",
+      "source_independence": "same_source_derivation",
+      "authorization_conclusion": "no independent authorization conclusion"
+    },
+    "fresh_same_system_retrieval": {
+      "meaning": "A fresh Greenhouse retrieval succeeded, but independent official confirmation criteria were not met.",
+      "retrieval_independence": "fresh_from_frozen_snapshot",
+      "source_independence": "same_official_system",
+      "authorization_conclusion": "unresolved for independent authorization"
+    },
+    "independent_official_confirmation": {
+      "meaning": "Official employer page and official Greenhouse record were retrieved and core fields plus identifier agreed.",
+      "retrieval_independence": "fresh_from_frozen_snapshot",
+      "source_independence": "employer_controlled_page_plus_official_ATS",
+      "authorization_conclusion": "candidate evidence-supported authorization; human adjudication still required"
+    },
+    "contradicted": {
+      "meaning": "An explicit authoritative conflict exists, such as a different employer or identifier.",
+      "retrieval_independence": "case-specific",
+      "source_independence": "case-specific",
+      "authorization_conclusion": "authorization contradicted for review; not automatic fraud"
+    },
+    "unavailable": {
+      "meaning": "Required official source could not be retrieved or inspected.",
+      "retrieval_independence": "not_observed",
+      "source_independence": "not_observed",
+      "authorization_conclusion": "unresolved; not fraud evidence"
+    },
+    "unresolved": {
+      "meaning": "Evidence exists but is incomplete, mixed, or insufficient for a required conclusion.",
+      "retrieval_independence": "case-specific",
+      "source_independence": "case-specific",
+      "authorization_conclusion": "unresolved"
+    }
+  },
+  "stage4e_observed_counts": {
+    "independent_official_confirmation": 744,
+    "fresh_same_system_retrieval": 19,
+    "unresolved": 16,
+    "unavailable": 1
+  },
+  "stage4e_authorization_counts": {
+    "independently_confirmed": 744,
+    "unresolved": 36
+  },
+  "rule": "Retrieval independence and source independence must be stored separately; a fresh API response is not a separate independent source."
+}

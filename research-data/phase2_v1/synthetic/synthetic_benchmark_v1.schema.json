@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vacancyguard-synthetic-benchmark-v1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["id", "vacancy_group", "partition", "text", "authorization_label", "synthetic", "synthetic_label_source", "evidence"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^SYN-[0-9]{4}$"},
+    "vacancy_group": {"type": "string", "pattern": "^SYN-G-[0-9]{4}$"},
+    "partition": {"enum": ["train", "validation", "test"]},
+    "text": {"type": "string", "minLength": 1},
+    "authorization_label": {"enum": ["supported", "contradicted", "unresolved"]},
+    "synthetic": {"const": true},
+    "synthetic_label_source": {"const": "scenario_generator_v1"},
+    "evidence": {"type": "array", "minItems": 1}
+  }
+}

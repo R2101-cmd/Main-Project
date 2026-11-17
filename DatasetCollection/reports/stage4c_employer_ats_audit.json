@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-11-12T16:02:14.177988+00:00",
+  "employer_registry_records": 1,
+  "stripe_relationship_status": "confirmed_relationship_for_observed_vacancy",
+  "stripe_relationship_evidence": "Stripe application page identifies the company as Stripe and exposes a link labelled Greenhouse application for the same vacancy.",
+  "stripe_employer_page_retrieval": {
+    "requested_url": "https://stripe.com/careers/apply/abuse-investigator/8172487",
+    "actual_url": "https://stripe.com/careers/apply/abuse-investigator/8172487",
+    "retrieved_at": "2026-11-12T16:02:11.451871+00:00",
+    "http_status": 200,
+    "outcome": "retrieved",
+    "hash": "778e40fdf3ccfb530340e96e9863cea48c76f3b1e9d14d1a16d46e9b5b2b514f"
+  },
+  "stripe_ats_page_retrieval": {
+    "requested_url": "https://job-boards.greenhouse.io/embed/job_app?for=stripe&token=8172487",
+    "actual_url": "https://job-boards.greenhouse.io/embed/job_app?for=stripe&token=8172487",
+    "retrieved_at": "2026-11-12T16:02:13.327703+00:00",
+    "http_status": 200,
+    "outcome": "retrieved",
+    "hash": "d357587f3f7b02ac2817c6024626130e70fa77f05489f4744719fa3cda401734"
+  },
+  "relationship_interpretation": "Confirmed for the observed Stripe vacancy only; not blanket authorization for all 780 records.",
+  "thresholds": {
+    "snapshot_consistency": "Same frozen source record matches advertisement fields; no independence claim.",
+    "fresh_ats_retrieval": "Fresh response from the same ATS; establishes retrieval existence only, not independent employer authorization.",
+    "employer_to_ats_relationship": "Employer-controlled page directly links to or explicitly identifies the ATS; confirms a relationship for the observed evidence scope, not every vacancy.",
+    "vacancy_level_official_confirmation": "Employer-controlled page identifies the specific vacancy and agrees on identifier plus core details.",
+    "independent_authorization_support": "Requires vacancy-level official confirmation plus an established employer-to-ATS relationship, with provenance showing the sources are not merely the same derived snapshot."
+  },
+  "source_independence_rule": "A fresh retrieval from Greenhouse is retrieval-independent from the frozen snapshot but not a separate independent employer source.",
+  "vacancy_authorization_evidence_in_20_case_pilot": 0,
+  "limitations": "The 20-case pilot belongs to the separate Naukri/ATS cohort; it is not the Stripe/Greenhouse 780-record cohort."
+}

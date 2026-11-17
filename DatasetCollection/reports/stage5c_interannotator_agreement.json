@@ -1,0 +1,61 @@
+{
+  "stage": "5C",
+  "reviewer1_rows": 100,
+  "reviewer2_rows": 100,
+  "same_case_id_set": true,
+  "common_case_ids": 100,
+  "reviewer1_duplicate_ids": [],
+  "reviewer2_duplicate_ids": [],
+  "missing_from_reviewer1": [],
+  "missing_from_reviewer2": [],
+  "missing_evidence_references_reviewer1": 0,
+  "missing_evidence_references_reviewer2": 0,
+  "missing_reviewer_ids_reviewer1": 100,
+  "missing_reviewer_ids_reviewer2": 100,
+  "missing_rationales_reviewer1": 100,
+  "missing_rationales_reviewer2": 100,
+  "fields": {
+    "employer_identity_label": {
+      "n_common_cases": 100,
+      "n_complete_pairs": 0,
+      "missing_reviewer1": 100,
+      "missing_reviewer2": 100,
+      "invalid_reviewer1": 0,
+      "invalid_reviewer2": 0,
+      "raw_agreement": null,
+      "cohen_kappa": null,
+      "reviewer1_class_distribution": {},
+      "reviewer2_class_distribution": {},
+      "interpretation": "Not interpretable: no complete human annotations."
+    },
+    "vacancy_authorization_label": {
+      "n_common_cases": 100,
+      "n_complete_pairs": 0,
+      "missing_reviewer1": 100,
+      "missing_reviewer2": 100,
+      "invalid_reviewer1": 0,
+      "invalid_reviewer2": 0,
+      "raw_agreement": null,
+      "cohen_kappa": null,
+      "reviewer1_class_distribution": {},
+      "reviewer2_class_distribution": {},
+      "interpretation": "Not interpretable: no complete human annotations."
+    },
+    "fraud_outcome_label": {
+      "n_common_cases": 100,
+      "n_complete_pairs": 0,
+      "missing_reviewer1": 100,
+      "missing_reviewer2": 100,
+      "invalid_reviewer1": 0,
+      "invalid_reviewer2": 0,
+      "raw_agreement": null,
+      "cohen_kappa": null,
+      "reviewer1_class_distribution": {},
+      "reviewer2_class_distribution": {},
+      "interpretation": "Not interpretable: no complete human annotations."
+    }
+  },
+  "overall_interpretation": "Agreement cannot be calculated meaningfully because both worksheets contain no submitted labels. Blank values are missing annotations, not agreement.",
+  "benchmark_frozen": false,
+  "adjudication_complete": false
+}

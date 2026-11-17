@@ -1,0 +1,5 @@
+# Limitations
+
+This is a deliberately authored synthetic suite, not a probability sample of job advertisements. Its labels are design labels derived from the evidence conditions and are not independent human adjudications. The perfect C live-policy score is mechanically aligned with those authored rules; treat it as policy-conformance on this constructed set, not an estimate of generalization. Stage 7A training data is also synthetic and may differ from real advertisements. Structured evidence fields make this easier and more deterministic than web collection and extraction in deployment.
+
+Paired exact McNemar p-values are descriptive only; scenario construction does not support significance claims about an external population. No real-world accuracy, precision, recall or F1 is available: the 2,980 main-cohort advertisements and separate 198 Naukri advertisements lack independently adjudicated authorization ground truth. Historical Stage 7B used another test set and frozen implementation. Neither comparison establishes real-world performance.

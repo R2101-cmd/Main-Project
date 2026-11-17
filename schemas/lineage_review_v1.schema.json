@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lineage-review-v1",
+  "type": "object",
+  "required": ["lineage_relationship_id", "case_ids", "vacancy_group_id", "signals", "relationship", "reviewer_id", "reviewed_at", "rationale", "review_status"],
+  "properties": {
+    "lineage_relationship_id": {"type": "string", "minLength": 1},
+    "case_ids": {"type": "array", "minItems": 2, "items": {"type": "string"}},
+    "vacancy_group_id": {"type": "string", "minLength": 1},
+    "signals": {"type": "array", "items": {"type": "string"}},
+    "relationship": {"enum": ["original", "independent", "copied_derived", "unknown"]},
+    "reviewer_id": {"type": "string", "minLength": 1},
+    "reviewed_at": {"type": "string", "format": "date-time"},
+    "rationale": {"type": "string", "minLength": 1},
+    "confidence": {"enum": ["high", "medium", "low", "not_assigned"]},
+    "review_status": {"enum": ["candidate", "reviewed", "adjudicated", "unresolved"]}
+  }
+}

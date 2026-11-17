@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-11-14T04:34:24.145264+00:00",
+  "worksheets": {
+    "144_provisional_annotations.csv": 145,
+    "021_original_lineage_candidates.csv": 21,
+    "459_stage4f_lineage_candidates.csv": 459,
+    "207_stripe_lineage_pairs.csv": 207,
+    "targeted_official_source_verification.csv": 780
+  },
+  "total_items": 1612,
+  "coverage_statement": "Covers all requested human-review categories: 144 provisional, 21 original lineage, 459 Stage 4F, 207 Stripe pairs, and targeted official-source verification (failures + 30 spot checks). No automatic decisions generated.",
+  "overlap_handling": "Overlap notes included; cases may appear across annotation and lineage reviews and Stripe pairs may share cases across multiple pairs. Reviewers should cluster by case_id/pair group and reuse verification evidence to avoid duplicate work or conflicting decisions."
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "5B",
+  "created_utc": "2026-11-12T17:13:47.459057+00:00",
+  "script": "scripts/run_stage5b.py",
+  "inputs": [
+    "table_A_advertisements.csv",
+    "stage4e_evidence_records.csv",
+    "stage5a_lineage_audit.json"
+  ],
+  "outputs": [
+    "stage5b_human_review_sample.csv",
+    "stage5b_reviewer1_worksheet.csv",
+    "stage5b_reviewer2_worksheet.csv",
+    "stage5b_lineage_pair_review.csv",
+    "stage5b_annotation_guidelines.md",
+    "stage5b_annotation_protocol.json"
+  ],
+  "stripe_records": 780,
+  "selected_records": 100,
+  "candidate_pairs": 207,
+  "seed": 20261113,
+  "previous_files_modified": false,
+  "review_labels_filled": false
+}

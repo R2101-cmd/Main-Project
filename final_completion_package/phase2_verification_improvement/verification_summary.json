@@ -1,0 +1,32 @@
+{
+  "generated_utc": "2026-11-14T05:15:13.555465+00:00",
+  "phase": "Phase 2 - Official-Source Verification Improvement",
+  "input_artifact": "DatasetCollection\\processed\\stage4e_evidence_records.csv",
+  "input_sha256": "a0a78bccdb7358a928812311ebd144e2b401ecd7407d09c89fd875ca07d25676",
+  "total_records": 780,
+  "verification_status_counts": {
+    "snapshot_match_only": 763,
+    "inaccessible": 17
+  },
+  "required_counts": {
+    "independently_supported": 0,
+    "independently_contradicted": 0,
+    "independently_unresolved": 0,
+    "inaccessible": 17,
+    "not_comparable": 0,
+    "snapshot_match_only": 763
+  },
+  "before_after_comparison": {
+    "before_source": "final_completion_package\\03_stage4_verification\\verification_summary.json",
+    "before_states": {
+      "independently_unresolved": 780
+    },
+    "after_states": {
+      "snapshot_match_only": 763,
+      "inaccessible": 17
+    },
+    "note": "Before was prior conservative artifact mapping (all unresolved in saved summary). After applies Phase 2 conservative reclassification using field-match, authority hints, and snapshot-context distinctions from collected Stage 4E artifacts. Not a ground-truth accuracy claim."
+  },
+  "methodology": "Automated, conservative reclassification of existing Stage 4E collected records without live network retrieval, without fabricated evidence, and without human ground-truth labels. Snapshot/frozen-snapshot context kept distinct from independent authorization. Missing/inaccessible evidence not treated as fraud.",
+  "limitations": "No adjudicated ground truth; authority/employer-ATS relationships not independently verified; counts are descriptive reclassifications, not validated accuracy."
+}

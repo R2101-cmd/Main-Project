@@ -1,0 +1,3 @@
+scope,status,numerator,denominator,rate,reason
+real_adjudicated,BLOCKED,,,,No independently adjudicated contradicted/supported authorization ground truth; provisional single-reviewer labels are not defensible for hypothesis proof.
+synthetic_controlled,AVAILABLE_FOR_CONTROLLED_CHECKS,,,,Not real-world ground truth; use to validate implementation behavior only (60 records, seed 20261022).

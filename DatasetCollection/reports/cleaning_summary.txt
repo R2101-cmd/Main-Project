@@ -1,0 +1,11 @@
+TrustHire cleaning report
+Source: dataset_naukri-job-scraper_2026-11-10_07-56-33-603.csv
+User-reported records: 240
+Records found in source CSV: 198
+Blank rows removed: 0
+Cleaned records written: 198
+Duplicate jobId groups: 0
+Duplicate advertisement URL groups: 0
+Duplicate application URL groups: 4
+Lineage candidate pairs requiring manual review: 21
+Ground-truth and evidence labels are initialized as unresolved/unreviewed.

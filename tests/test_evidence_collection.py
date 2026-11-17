@@ -1,12 +1,15 @@
-from src.evidence.collector import candidate_official_sources, collect_vacancy_evidence
+from datetime import date
+
+from src.evidence.collector import _canon_url, _compare, candidate_official_sources, collect_vacancy_evidence
 from src.ingestion.content_extractor import extract_text
 
 
 def test_collector_records_supported_match_without_live_network():
-    advertisement = extract_text("Title: Data Analyst Intern. Company: Rusaanalytics. Location: Bengaluru")
+    today = date.today().isoformat()
+    advertisement = extract_text(f"Title: Data Analyst Intern. Company: Rusaanalytics. Location: Bengaluru. Posted: {today}. The analyst builds product dashboards, evaluates user behavior, and communicates insights to engineering and product teams.")
     def fake_fetcher(url):
-        return {"content_type": "text/html", "content": '<main><p>Title: Data Analyst Intern</p><p>Company: Rusaanalytics</p><p>Location: Bengaluru</p></main>'}
-    result = collect_vacancy_evidence(advertisement, ["https://rusaanalytics.example/careers"], fake_fetcher)
+        return {"content_type": "text/html", "content": f'<main><p>Title: Data Analyst Intern</p><p>Company: Rusaanalytics</p><p>Location: Bengaluru</p><p>Posted: {today}</p><p>The analyst builds product dashboards, evaluates user behavior, and communicates insights to engineering and product teams.</p></main>'}
+    result = collect_vacancy_evidence(advertisement, ["https://rusaanalytics.example/careers"], fake_fetcher, authorized_domains={"rusaanalytics.example"})
     assert result[0]["evidence_state"] == "supported"
     assert result[0]["retrieval_status"] == "available"
     assert result[0]["source_url"].endswith("careers")
@@ -15,9 +18,10 @@ def test_collector_records_supported_match_without_live_network():
 
 
 def test_third_party_repost_matches_vacancy_but_not_authorization():
-    advertisement = extract_text("Title: Data Analyst Intern. Company: Rusaanalytics. Location: Bengaluru")
+    today = date.today().isoformat()
+    advertisement = extract_text(f"Title: Data Analyst Intern. Company: Rusaanalytics. Location: Bengaluru. Job ID: R-112. Posted: {today}")
     def repost_fetcher(url):
-        return {"content_type": "text/html", "content": "<main><p>Title: Data Analyst Intern</p><p>Company: Rusaanalytics</p><p>Location: Bengaluru</p></main>"}
+        return {"content_type": "text/html", "content": f"<main><p>Title: Data Analyst Intern</p><p>Company: Rusaanalytics</p><p>Location: Bengaluru</p><p>Job ID: R-112</p><p>Posted: {today}</p></main>"}
     result = collect_vacancy_evidence(advertisement, ["https://www.indeed.com/viewjob?jk=abc"], repost_fetcher)
     assert result[0]["evidence_state"] == "unverified"
     assert result[0]["details"]["vacancy_match"] is True
@@ -34,10 +38,11 @@ def test_matching_title_without_authorization_evidence_is_unresolved():
 
 
 def test_missing_application_link_is_recorded_separately():
-    advertisement = extract_text("Title: Data Analyst Intern. Company: Rusaanalytics. Location: Bengaluru")
+    today = date.today().isoformat()
+    advertisement = extract_text(f"Title: Data Analyst Intern. Company: Rusaanalytics. Location: Bengaluru. Posted: {today}. The analyst builds product dashboards, evaluates user behavior, and communicates insights to engineering and product teams.")
     def employer_fetcher(url):
-        return {"content_type": "text/html", "content": "<main><p>Title: Data Analyst Intern</p><p>Company: Rusaanalytics</p><p>Location: Bengaluru</p></main>"}
-    result = collect_vacancy_evidence(advertisement, ["https://rusaanalytics.example/careers"], employer_fetcher)
+        return {"content_type": "text/html", "content": f"<main><p>Title: Data Analyst Intern</p><p>Company: Rusaanalytics</p><p>Location: Bengaluru</p><p>Posted: {today}</p><p>The analyst builds product dashboards, evaluates user behavior, and communicates insights to engineering and product teams.</p></main>"}
+    result = collect_vacancy_evidence(advertisement, ["https://rusaanalytics.example/careers"], employer_fetcher, authorized_domains={"rusaanalytics.example"})
     assert result[0]["evidence_state"] == "supported"
     assert result[0]["details"]["candidate_application_url"] is None
     assert result[0]["details"]["application_url_match"] is False
@@ -84,3 +89,31 @@ def test_original_specific_url_is_checked_before_generic_page_links():
     advertisement = extract_text("Title: Data Analyst Intern. Company: Integra FEC. Location: Austin, Texas")
     sources = candidate_official_sources(advertisement, "https://job-boards.greenhouse.io/integra/jobs/5406100008")
     assert sources == ["https://job-boards.greenhouse.io/integra/jobs/5406100008"]
+
+
+def test_canonical_application_url_preserves_vacancy_query_ids():
+    first = _canon_url("https://stripe.com/careers/search?gh_jid=123&utm_source=board")
+    second = _canon_url("https://stripe.com/careers/search?gh_jid=456&utm_source=board")
+    assert first != second
+    assert _canon_url("https://stripe.com/careers/search?gh_jid=123&utm_source=a") == _canon_url(
+        "https://stripe.com/careers/search?utm_source=b&gh_jid=123"
+    )
+
+
+def test_authoritative_host_without_extracted_employer_does_not_support_vacancy():
+    today = date.today().isoformat()
+    ad = extract_text(
+        f"Title: Data Analyst. Company: Example Corp. Location: London. Posted: {today}. "
+        "Build dashboards and analyze product usage for business teams."
+    )
+    candidate = extract_text(
+        f"Title: Data Analyst. Location: London. Posted: {today}. "
+        "Build dashboards and analyze product usage for business teams."
+    )
+    state, status, _, details = _compare(
+        ad, candidate, "https://careers.example.com/jobs/123",
+        authorized_domains={"careers.example.com"},
+    )
+    assert state == "unverified"
+    assert status == "independently_unresolved"
+    assert details["matching_explanation"]["employer_identity_status"] == "unresolved"

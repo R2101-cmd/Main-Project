@@ -1,0 +1,16 @@
+{
+  "stage": "Stage 4C Official Employer-to-ATS Relationship Verification and Vacancy Source Discovery",
+  "executed_at": "2026-11-12T16:02:14.177988+00:00",
+  "scope": "same 20 Stage 4B cases plus one Stripe relationship demonstration; no 780-record scale-up",
+  "previous_outputs_modified": [],
+  "new_outputs": [
+    "processed/stripe_official_source_registry.csv",
+    "processed/stage4c_vacancy_source_relationships.csv",
+    "reports/stage4c_employer_ats_audit.json",
+    "reports/stage4c_vacancy_verification_report.json",
+    "reports/stage4c_missing_url_analysis.csv",
+    "reports/stage4c_execution_log.json",
+    "scripts/run_stage4c.py"
+  ],
+  "integrity": "No URLs invented; third-party URLs were not used as official evidence; no fraud labels; unresolved retained."
+}

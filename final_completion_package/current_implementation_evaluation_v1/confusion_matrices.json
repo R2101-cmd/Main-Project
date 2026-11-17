@@ -1,0 +1,70 @@
+{
+  "A_text_only": {
+    "contradicted": {
+      "contradicted": 3,
+      "supported": 43,
+      "unresolved": 4
+    },
+    "supported": {
+      "contradicted": 2,
+      "supported": 45,
+      "unresolved": 3
+    },
+    "unresolved": {
+      "contradicted": 4,
+      "supported": 39,
+      "unresolved": 7
+    }
+  },
+  "B_ordinary_aggregation": {
+    "contradicted": {
+      "contradicted": 50,
+      "supported": 0,
+      "unresolved": 0
+    },
+    "supported": {
+      "contradicted": 0,
+      "supported": 50,
+      "unresolved": 0
+    },
+    "unresolved": {
+      "contradicted": 5,
+      "supported": 25,
+      "unresolved": 20
+    }
+  },
+  "C_lineage_aware_live_policy": {
+    "contradicted": {
+      "contradicted": 50,
+      "supported": 0,
+      "unresolved": 0
+    },
+    "supported": {
+      "contradicted": 0,
+      "supported": 50,
+      "unresolved": 0
+    },
+    "unresolved": {
+      "contradicted": 0,
+      "supported": 0,
+      "unresolved": 50
+    }
+  },
+  "C_lineage_aware_raw": {
+    "contradicted": {
+      "contradicted": 50,
+      "supported": 0,
+      "unresolved": 0
+    },
+    "supported": {
+      "contradicted": 0,
+      "supported": 50,
+      "unresolved": 0
+    },
+    "unresolved": {
+      "contradicted": 5,
+      "supported": 15,
+      "unresolved": 30
+    }
+  }
+}

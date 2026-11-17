@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-11-12T15:49:33.344628+00:00",
+  "pilot_size": 20,
+  "lineage_cases_selected": 10,
+  "ordinary_cases_selected": 10,
+  "duplicate_case_ids": false,
+  "greenhouse_snapshot_employer_count": 1,
+  "greenhouse_snapshot_employers": [
+    "Stripe"
+  ],
+  "greenhouse_cohort_note": "The 780-record Table A cohort is Stripe/Greenhouse; the 21 lineage candidates are from the separate 198-record cleaned Naukri/ATS cohort.",
+  "retrieval_outcomes": {
+    "unavailable: missing_url": 6,
+    "unavailable: URLError": 2,
+    "retrieved": 12
+  },
+  "match_states": {
+    "unavailable": 8,
+    "partial_match": 3,
+    "exact_or_strong_page_match": 8,
+    "retrieved_unverified": 1
+  },
+  "successful_live_retrievals": 12,
+  "failed_or_unavailable_retrievals": 8,
+  "exact_or_strong_matches": 8,
+  "partial_matches": 3,
+  "employer_identity_verification": "none assigned automatically; pilot records remain unresolved",
+  "independent_authorization_evidence": 0,
+  "contradictory_evidence": 0,
+  "unavailable_evidence": 8,
+  "unresolved_cases": 20,
+  "scale_recommendation": "Do not scale yet; first validate structured extraction and independent-source criteria on the pilot."
+}

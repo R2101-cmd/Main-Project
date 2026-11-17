@@ -1,0 +1,12 @@
+{
+  "stripe_records": 780,
+  "stage4f_records": 2200,
+  "raw_main_records": 2980,
+  "cross_cohort_url_intersection": 0,
+  "cross_cohort_employer_job_pair_intersection": 0,
+  "cross_cohort_exact_description_hash_intersection": 0,
+  "stripe_exact_description_duplicate_records": 61,
+  "stage4f_exact_description_duplicate_records": 151,
+  "deduplicated_main_count": 2980,
+  "deduplication_conclusion": "No cross-cohort duplicate was sufficiently established; candidate similarity and shared templates remain review-only."
+}

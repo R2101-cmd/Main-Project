@@ -1,0 +1,18 @@
+{
+  "stripe_count": 780,
+  "stage4f_count": 2200,
+  "expected_main_count": 2980,
+  "unified_count": 2980,
+  "stripe_stage4f_overlap": 0,
+  "unified_missing_ids": [],
+  "unified_extra_ids": [],
+  "unified_exact_union_match": true,
+  "unified_cohort_counts": {
+    "stripe_greenhouse_780": 780,
+    "stage4f_expansion_2200": 2200
+  },
+  "naukri_count": 198,
+  "naukri_overlap_main": 0,
+  "naukri_kept_separate": true,
+  "main_advertisement_sum": 2980
+}

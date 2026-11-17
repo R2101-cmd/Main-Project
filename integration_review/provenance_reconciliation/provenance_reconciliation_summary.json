@@ -1,0 +1,146 @@
+{
+  "generated_utc": "2026-11-13T07:56:57.600316+00:00",
+  "input_file": "Main Project/integration_review/staging_test/stripe_staging_preview.csv",
+  "records": 780,
+  "exact_case_id_matches": 780,
+  "unmatched_records": 0,
+  "ambiguous_matches": 0,
+  "complete_core_provenance": 0,
+  "partial_provenance": 780,
+  "no_recoverable_provenance": 0,
+  "strict_historical_complete": 0,
+  "derived_artifact_fields": {
+    "source_family_id": 780,
+    "source_instance_id": 780,
+    "canonical_vacancy_id": 780,
+    "retrieval_event_id": 0
+  },
+  "field_completeness": {
+    "case_id": {
+      "present": 780,
+      "missing": 0,
+      "source_files": []
+    },
+    "cohort_id": {
+      "present": 780,
+      "missing": 0,
+      "source_files": [
+        "final_research_package/cohort_manifest.json:main_integration_cohorts; final_research_package/unified_proposed_dataset.csv:cohort_id"
+      ]
+    },
+    "employer_id": {
+      "present": 780,
+      "missing": 0,
+      "source_files": [
+        "processed/table_A_advertisements.csv:employer_id"
+      ]
+    },
+    "source_family_id": {
+      "present": 780,
+      "missing": 0,
+      "source_files": [
+        "final_research_package/unified_proposed_dataset.csv:source_family_id"
+      ]
+    },
+    "source_instance_id": {
+      "present": 780,
+      "missing": 0,
+      "source_files": [
+        "final_research_package/unified_proposed_dataset.csv:source_instance_id"
+      ]
+    },
+    "retrieval_event_id": {
+      "present": 0,
+      "missing": 780,
+      "source_files": []
+    },
+    "source_url": {
+      "present": 780,
+      "missing": 0,
+      "source_files": [
+        "staging_test/stripe_staging_preview.csv:advertisement_url/application_url; processed/table_A_advertisements.csv:same case_id"
+      ]
+    },
+    "official_employer_url": {
+      "present": 780,
+      "missing": 0,
+      "source_files": [
+        "processed/stage4e_evidence_records.csv:official_employer_url"
+      ]
+    },
+    "canonical_vacancy_id": {
+      "present": 780,
+      "missing": 0,
+      "source_files": [
+        "final_research_package/unified_proposed_dataset.csv:canonical_vacancy_id"
+      ]
+    },
+    "retrieved_at": {
+      "present": 780,
+      "missing": 0,
+      "source_files": [
+        "processed/stage4e_evidence_records.csv:retrieval_timestamp"
+      ]
+    },
+    "updated_at": {
+      "present": 763,
+      "missing": 17,
+      "source_files": [
+        "processed/stage4e_evidence_records.csv:updated_date"
+      ]
+    },
+    "response_hash": {
+      "present": 780,
+      "missing": 0,
+      "source_files": [
+        "processed/stage4e_evidence_records.csv:greenhouse_response_hash"
+      ]
+    },
+    "evidence_state": {
+      "present": 780,
+      "missing": 0,
+      "source_files": [
+        "processed/stage4e_evidence_records.csv:evidence_classification"
+      ]
+    },
+    "source_independence": {
+      "present": 780,
+      "missing": 0,
+      "source_files": [
+        "processed/stage4e_evidence_records.csv:source_independence"
+      ]
+    },
+    "lineage_candidate_id": {
+      "present": 192,
+      "missing": 588,
+      "source_files": [
+        "processed/stage5b_lineage_pair_review.csv:pair_id"
+      ]
+    },
+    "confirmed_lineage_id": {
+      "present": 0,
+      "missing": 780,
+      "source_files": []
+    }
+  },
+  "lineage_candidates_recovered": 192,
+  "confirmed_lineage_recovered": 0,
+  "same_ats_independence_inferred": 0,
+  "labels_generated": false,
+  "scraping_performed": false,
+  "database_writes": false,
+  "application_modified": false,
+  "source_files_used": [
+    "processed/table_A_advertisements.csv",
+    "processed/table_B_ground_truth.csv",
+    "processed/table_C_evidence_records.csv",
+    "processed/stage4e_evidence_records.csv",
+    "processed/stripe_official_source_registry.csv",
+    "processed/stage5b_lineage_pair_review.csv",
+    "raw/greenhouse/greenhouse_raw.json",
+    "final_research_package/cohort_manifest.json",
+    "final_research_package/unified_proposed_dataset.csv"
+  ],
+  "matching_rule": "Exact case_id or documented cohort manifest; no description-only joins.",
+  "recommendation": "CONDITIONAL: core fields are recoverable from Stage 4E plus later derived artifacts, but strict historical provenance is incomplete because retrieval_event_id is absent and source-instance/canonical fields are derived rather than original event records."
+}

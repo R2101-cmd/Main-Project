@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vacancyguard-phase2-evidence-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["evidence_id", "advertisement_id", "vacancy_group_id", "claim_type", "source_type", "retrieval_status", "evidence_status", "matched_fields", "contradicted_fields", "rationale", "privacy_review_status"],
+  "properties": {
+    "evidence_id": {"type": "string", "minLength": 1},
+    "advertisement_id": {"type": "string", "minLength": 1},
+    "vacancy_group_id": {"type": "string", "minLength": 1},
+    "claim_type": {"enum": ["employer_identity", "vacancy_authorization", "contact", "application_route"]},
+    "source_url": {"type": ["string", "null"], "format": "uri"},
+    "source_type": {"type": "string", "minLength": 1},
+    "source_relationship": {"enum": ["original", "independent", "copied_derived", "unknown", "not_assessed"]},
+    "lineage_group_id": {"type": ["string", "null"]},
+    "lineage_basis": {"type": ["string", "null"]},
+    "lineage_review_status": {"enum": ["not_assessed", "candidate", "reviewed", "adjudicated", "unresolved"]},
+    "retrieved_at": {"type": ["string", "null"], "format": "date-time"},
+    "source_published_at": {"type": ["string", "null"], "format": "date-time"},
+    "retrieval_status": {"enum": ["available", "unavailable", "blocked", "redirected", "empty", "failed", "not_searched"]},
+    "extraction_status": {"enum": ["not_attempted", "content_extracted", "no_usable_content", "failed", "not_applicable"]},
+    "evidence_status": {"enum": ["supported", "contradicted", "unverified", "unavailable"]},
+    "evidence_excerpt": {"type": ["string", "null"]},
+    "matched_fields": {"type": "array", "items": {"type": "string"}},
+    "contradicted_fields": {"type": "array", "items": {"type": "string"}},
+    "contradiction_details": {"type": ["string", "null"]},
+    "rationale": {"type": "string", "minLength": 1},
+    "snapshot_reference": {"type": ["string", "null"]},
+    "privacy_review_status": {"enum": ["not_needed", "redacted", "pending_review"]}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-11-13T07:35:22.552602+00:00",
+  "main_integration_cohorts": [
+    "stripe_greenhouse_780",
+    "stage4f_expansion_2200"
+  ],
+  "main_records": 2980,
+  "naukri_separate_records": 198,
+  "raw_combined_all_three": 3178,
+  "deduplicated_main_records": 2980,
+  "deduplication_rule": "No records removed; only exact case-ID uniqueness was asserted. Candidate similarity remains review-only.",
+  "approval_status": "proposed_not_approved",
+  "previous_outputs_modified": false
+}

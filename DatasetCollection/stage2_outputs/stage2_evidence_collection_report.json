@@ -1,0 +1,12 @@
+{
+  "retrieved_at": "2026-11-10T08:27:30.962951+00:00",
+  "pilot_records": 40,
+  "evidence_counts": {
+    "unavailable": 27,
+    "supported": 2,
+    "unverified": 10,
+    "contradicted": 1
+  },
+  "lineage_candidates_reviewed": 21,
+  "source_policy": "publicly accessible sources only; no authentication/CAPTCHA bypass; unresolved retained as valid"
+}

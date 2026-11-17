@@ -1,0 +1,10 @@
+{
+  "stage": "local official-source matching",
+  "executed_at": "2026-11-11T06:25:00.841457+00:00",
+  "source_file": "raw/greenhouse/greenhouse_raw.json",
+  "records_processed": 780,
+  "records_matched_to_snapshot": 780,
+  "live_requests_made": 0,
+  "http_statuses": "not available; this stage used the preserved snapshot and did not assert live retrieval",
+  "restrictions": "No CAPTCHA, authentication, or access restriction was bypassed."
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "path": "research-data/phase2_v1/synthetic/synthetic_benchmark_extended_v1.jsonl",
+    "sha256": "d4956a9a99bd42ebdd8d5d4d4b7052a5278d6927134cfcd0dd4998b433845a37",
+    "bytes": 96912,
+    "baseline_status": "current_only_no_preimplementation_hash_available"
+  },
+  {
+    "path": "research-data/phase2_v1/synthetic/synthetic_benchmark_extended_v1.manifest.json",
+    "sha256": "96ef05d7d7d9a80b1c82a22eb006d7b2872be7c6622bf6339693d55af713144c",
+    "bytes": 532,
+    "baseline_status": "current_only_no_preimplementation_hash_available"
+  },
+  {
+    "path": "research-data/phase2_v1/synthetic/controlled_v2/evaluation_labels.jsonl",
+    "sha256": "fbab50481646225c5ea5afed7b4954dd404df01737315e0266a01b1899f1f437",
+    "bytes": 10389,
+    "baseline_status": "current_only_no_preimplementation_hash_available"
+  },
+  {
+    "path": "research-data/phase2_v1/synthetic/controlled_v2/manifest.json",
+    "sha256": "922712be906e2e35475e0ad7a831de0988fb1f190306a4651fd80f93e7ce2656",
+    "bytes": 918,
+    "baseline_status": "current_only_no_preimplementation_hash_available"
+  },
+  {
+    "path": "research-data/phase2_v1/synthetic/controlled_v2/model_inputs.jsonl",
+    "sha256": "025bc6a8e37c4eab0e659fde8efc03087d48214dcbdc784644d3842962433299",
+    "bytes": 48432,
+    "baseline_status": "current_only_no_preimplementation_hash_available"
+  }
+]

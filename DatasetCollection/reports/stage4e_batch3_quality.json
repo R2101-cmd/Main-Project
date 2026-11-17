@@ -1,0 +1,42 @@
+{
+  "label": "batch_3",
+  "records": 610,
+  "unique_case_ids": 610,
+  "duplicate_case_ids": 0,
+  "official_http_success": 609,
+  "greenhouse_http_success": 599,
+  "retrieval_success_rate": 0.982,
+  "exact_or_normalized_core_matches": 583,
+  "exact_or_normalized_core_match_rate": 0.9557,
+  "field_match_counts": {
+    "exact_match": 2977,
+    "not_comparable": 55,
+    "partial_match": 14,
+    "mismatch": 4
+  },
+  "evidence_classifications": {
+    "independent_official_confirmation": 583,
+    "unresolved": 10,
+    "fresh_same_system_retrieval": 16,
+    "unavailable": 1
+  },
+  "vacancy_statuses": {
+    "active": 599,
+    "removed": 11
+  },
+  "partial_match_records": 14,
+  "mismatch_records": 4,
+  "unavailable_records": 1,
+  "independent_official_confirmations": 583,
+  "same_system_retrievals": 16,
+  "unresolved_records": 27,
+  "fraud_labels_assigned": 0,
+  "comparison_with_stage4d_pilot": {
+    "pilot_retrieval_success_rate": 1.0,
+    "batch_retrieval_success_rate": 0.982,
+    "pilot_exact_or_normalized_core_rate": 0.9,
+    "batch_exact_or_normalized_core_rate": 0.9557,
+    "pilot_independent_confirmations": 18,
+    "batch_independent_confirmations": 583
+  }
+}

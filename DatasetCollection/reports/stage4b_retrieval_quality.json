@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-11-12T15:57:13.084614+00:00",
+  "pilot_size": 20,
+  "retrieval_outcomes": {
+    "unavailable: missing_official_url": 6,
+    "unavailable: URLError": 2,
+    "retrieved": 12
+  },
+  "overall_match_states": {
+    "unavailable": 8,
+    "partial_or_mixed": 8,
+    "retrieved_unverified": 4
+  },
+  "field_match_counts": {
+    "not_comparable": 69,
+    "partial": 10,
+    "mismatch": 16,
+    "exact": 5
+  },
+  "vacancy_status_counts": {
+    "indeterminable": 13,
+    "active": 7
+  },
+  "missing_url_recovery": {
+    "third_party_advertisement_url_available": 6,
+    "not_needed": 14
+  },
+  "successful_retrievals": 12,
+  "jsonld_jobposting_extractions": 7,
+  "retrieved_responses_with_any_extracted_field": 12,
+  "failed_or_unavailable": 8,
+  "independent_employer_verifications": 0,
+  "independent_authorization_evidence": 0,
+  "fraud_labels_assigned": 0,
+  "scale_recommendation": "Not yet suitable for full-scale verification; improve URL recovery, structured requisition/status extraction, and employer-domain confirmation first."
+}

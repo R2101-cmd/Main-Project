@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-11-13T07:22:54.532182+00:00",
+  "cohort": "Stage 4F expansion only",
+  "targets": {
+    "Greenhouse": 500,
+    "Lever": 400,
+    "Workday": 400,
+    "SmartRecruiters": 300,
+    "Ashby": 200,
+    "Other": 220,
+    "ThirdParty": 200
+  },
+  "records_collected": 2200,
+  "new_records_excluding_resume": 2200,
+  "distinct_employers": 17,
+  "source_family_distribution": {
+    "Greenhouse": 1747,
+    "Lever": 453
+  },
+  "ats_distribution": {
+    "Greenhouse": 1747,
+    "Lever": 453
+  },
+  "duplicate_case_ids": 0,
+  "duplicate_urls": 0,
+  "duplicate_job_identifiers": 0,
+  "exact_description_duplicates": 91,
+  "near_duplicate_candidates": 459,
+  "missing_field_counts": {
+    "employer_name": 0,
+    "job_title": 0,
+    "job_description": 5,
+    "location": 0,
+    "job_identifier": 0,
+    "publication_date": 0,
+    "updated_date": 453
+  },
+  "provenance_complete": 2200,
+  "retrieval_failures": 1,
+  "shortfall_against_2220": 20,
+  "lineage_decisions_confirmed": 0,
+  "naukri_records_excluded": 198,
+  "collection_interrupted": true,
+  "interruption_note": "Finalized from the last checkpoint; no synthetic records added."
+}

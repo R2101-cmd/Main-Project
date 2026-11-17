@@ -1,0 +1,122 @@
+{
+  "closed_requisition_confirmation": {
+    "description": "Independent official evidence for the exact requisition confirms a material closed-status contradiction.",
+    "expected_classes": [
+      "contradicted"
+    ]
+  },
+  "conflicting_official_records": {
+    "description": "Eligible independent current sources conflict, so the live policy abstains.",
+    "expected_classes": [
+      "unresolved"
+    ]
+  },
+  "copied_repost_cluster": {
+    "description": "Several adjudicated copied-derived records share one group; the group cannot satisfy the two-independent-source live policy.",
+    "expected_classes": [
+      "unresolved"
+    ]
+  },
+  "current_employer_careers_listing": {
+    "description": "Two current employer-controlled records independently support the same vacancy.",
+    "expected_classes": [
+      "supported"
+    ]
+  },
+  "employer_identity_only": {
+    "description": "Employer identity is verified but vacancy-specific authorization correspondence is absent.",
+    "expected_classes": [
+      "unresolved"
+    ]
+  },
+  "employment_type_conflict": {
+    "description": "Two current official sources confirm a material employment-type conflict for the matched requisition.",
+    "expected_classes": [
+      "contradicted"
+    ]
+  },
+  "explicit_official_contradiction": {
+    "description": "Two independent official sources identify the same vacancy and consistently contradict its authorization status.",
+    "expected_classes": [
+      "contradicted"
+    ]
+  },
+  "incomplete_insufficient_evidence": {
+    "description": "The advertisement lacks vacancy identifiers and details and available evidence is insufficient.",
+    "expected_classes": [
+      "unresolved"
+    ]
+  },
+  "independent_field_corroboration": {
+    "description": "Two independent official sources agree on employer, title, requisition and vacancy fields.",
+    "expected_classes": [
+      "supported"
+    ]
+  },
+  "independent_official_corroboration": {
+    "description": "Two distinct adjudicated independent official source groups currently corroborate the same vacancy.",
+    "expected_classes": [
+      "supported"
+    ]
+  },
+  "material_title_conflict": {
+    "description": "Two current official sources confirm a material title conflict for the matched requisition.",
+    "expected_classes": [
+      "contradicted"
+    ]
+  },
+  "missing_source_dates": {
+    "description": "Source dates are missing, leaving freshness unresolved.",
+    "expected_classes": [
+      "unresolved"
+    ]
+  },
+  "official_location_conflict": {
+    "description": "Two current official sources confirm a material location conflict for the matched requisition.",
+    "expected_classes": [
+      "contradicted"
+    ]
+  },
+  "similar_role_different_vacancy": {
+    "description": "A similar role belongs to a different vacancy and does not correspond to the advertised requisition.",
+    "expected_classes": [
+      "unresolved"
+    ]
+  },
+  "stale_source_dates": {
+    "description": "Evidence is stale and cannot establish current vacancy authorization.",
+    "expected_classes": [
+      "unresolved"
+    ]
+  },
+  "two_source_requisition_match": {
+    "description": "Two independent official sources match the exact requisition and current posting.",
+    "expected_classes": [
+      "supported"
+    ]
+  },
+  "unadjudicated_candidate_lineage": {
+    "description": "Lineage is only a candidate or not assessed and therefore cannot count as independent confirmation.",
+    "expected_classes": [
+      "unresolved"
+    ]
+  },
+  "unavailable_source": {
+    "description": "The source is unavailable, leaving insufficient evidence.",
+    "expected_classes": [
+      "unresolved"
+    ]
+  },
+  "unknown_lineage_support": {
+    "description": "Support-looking evidence has unknown or missing lineage and is excluded by lineage-aware aggregation.",
+    "expected_classes": [
+      "unresolved"
+    ]
+  },
+  "verified_current_status": {
+    "description": "Two adjudicated independent groups report a current matching vacancy.",
+    "expected_classes": [
+      "supported"
+    ]
+  }
+}

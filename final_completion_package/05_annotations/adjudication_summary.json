@@ -1,0 +1,20 @@
+{
+  "generated_utc": "2026-11-14T10:08:00Z",
+  "submitted_reviewer1_labels": 0,
+  "submitted_reviewer2_labels": 0,
+  "adjudicated_cases": 0,
+  "disputed_cases": 0,
+  "pending_cases_total": 352,
+  "status": "review_package_prepared_no_completed_independent_adjudication",
+  "note": "No automatic decisions generated. Inter-annotator agreement cannot be claimed until independent overlapping reviews are completed.",
+  "queue_rows_total": 878,
+  "worksheets": {
+    "provisional_annotations": 144,
+    "original_lineage_21": 21,
+    "stage4f_lineage_459": 459,
+    "stripe_pairs_207": 207,
+    "targeted_official_source_verification": 47
+  },
+  "all_required_categories_covered": true,
+  "lineage_candidates_reconciled_total": 687
+}

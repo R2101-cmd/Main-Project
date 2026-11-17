@@ -1,0 +1,27 @@
+{
+  "schema_version": "vacancyguard_staging_v1",
+  "database": "C:\\Users\\Admin\\Desktop\\Main Project\\integration_review\\schema_test\\disposable_staging.sqlite3",
+  "checks": {
+    "records_imported": 780,
+    "unique_case_ids": 780,
+    "duplicate_case_ids": 0,
+    "missing_records": 0,
+    "cohort_rows": 780,
+    "naukri_rows": 0,
+    "stage4f_rows": 0,
+    "candidate_lineage_rows": 207,
+    "confirmed_lineage_rows": 0,
+    "retrieval_event_rows": 0,
+    "missing_retrieval_event_rows": 780,
+    "null_claim_labels": 780
+  },
+  "expected_candidate_lineage_references": 207,
+  "candidate_lineage_records": 192,
+  "errors": [],
+  "production_database_opened": false,
+  "application_modified": false,
+  "source_files_modified": false,
+  "labels_generated": false,
+  "confirmed_lineage_generated": false,
+  "recommendation": "PASS"
+}

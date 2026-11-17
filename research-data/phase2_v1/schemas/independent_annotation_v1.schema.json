@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vacancyguard-phase2-independent-annotation-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["annotation_id", "advertisement_id", "vacancy_group_id", "annotation_type", "reviewer_id", "protocol_version", "annotated_at", "employer_identity_label", "vacancy_authorization_label", "evidence_ids", "label_rationale", "adjudication_status"],
+  "properties": {
+    "annotation_id": {"type": "string", "minLength": 1},
+    "advertisement_id": {"type": "string", "minLength": 1},
+    "vacancy_group_id": {"type": "string", "minLength": 1},
+    "annotation_type": {"const": "independent_original"},
+    "reviewer_id": {"type": "string", "minLength": 1},
+    "protocol_version": {"const": "phase2-annotation-v1"},
+    "annotated_at": {"type": "string", "format": "date-time"},
+    "employer_identity_label": {"enum": ["verified", "contradicted", "unresolved"]},
+    "vacancy_authorization_label": {"enum": ["supported", "contradicted", "unresolved"]},
+    "fraud_risk_label": {"type": ["string", "null"], "enum": ["confirmed_fraudulent", "confirmed_legitimate", "unresolved", null]},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "label_rationale": {"type": "string", "minLength": 1},
+    "additional_information_request": {"type": "string"},
+    "adjudication_status": {"enum": ["pending", "agreement", "disagreement", "adjudicated"]}
+  }
+}

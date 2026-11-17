@@ -1,0 +1,634 @@
+{
+  "generated_utc": "2026-11-14T04:35:55.006183+00:00",
+  "benchmark": "research-data/phase2_v1/synthetic/synthetic_benchmark_v1.jsonl",
+  "records_total": 60,
+  "partitions": {
+    "test": 12,
+    "train": 36,
+    "validation": 12
+  },
+  "labels": {
+    "unresolved": 20,
+    "contradicted": 20,
+    "supported": 20
+  },
+  "approaches": {
+    "A_text_only": "TF-IDF + LogisticRegression trained on train-partition text/metadata fields only (seed=20261022), no external authorization/lineage features.",
+    "B_ordinary_aggregation": "Naive evidence-state aggregation counting every evidence appearance independently (ignores lineage-group dependence).",
+    "C_lineage_aware_aggregation": "Lineage-aware aggregation consolidating repeated evidence appearances within the same known lineage_group (dependent group keys from evidence.lineage_group)."
+  },
+  "identical_cases_and_rules": true,
+  "metrics": {
+    "all_cases": {
+      "A_text_only": {
+        "n": 60,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 20,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 20,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 20
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 20,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 60,
+        "errors": 0
+      },
+      "B_ordinary_aggregation": {
+        "n": 60,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 20,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 20,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 20
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 20,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 60,
+        "errors": 0
+      },
+      "C_lineage_aware_aggregation": {
+        "n": 60,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 20,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 20,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 20
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 20
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 20,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 60,
+        "errors": 0
+      }
+    },
+    "train": {
+      "A_text_only": {
+        "n": 36,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 12,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 12,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 12
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 12,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 36,
+        "errors": 0
+      },
+      "B_ordinary_aggregation": {
+        "n": 36,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 12,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 12,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 12
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 12,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 36,
+        "errors": 0
+      },
+      "C_lineage_aware_aggregation": {
+        "n": 36,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 12,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 12,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 12
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 12,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 36,
+        "errors": 0
+      }
+    },
+    "validation": {
+      "A_text_only": {
+        "n": 12,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 4,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 4,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 4
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 4,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 12,
+        "errors": 0
+      },
+      "B_ordinary_aggregation": {
+        "n": 12,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 4,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 4,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 4
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 4,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 12,
+        "errors": 0
+      },
+      "C_lineage_aware_aggregation": {
+        "n": 12,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 4,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 4,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 4
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 4,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 12,
+        "errors": 0
+      }
+    },
+    "test": {
+      "A_text_only": {
+        "n": 12,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 4,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 4,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 4
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 4,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 12,
+        "errors": 0
+      },
+      "B_ordinary_aggregation": {
+        "n": 12,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 4,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 4,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 4
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 4,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 12,
+        "errors": 0
+      },
+      "C_lineage_aware_aggregation": {
+        "n": 12,
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "confusion_matrix": {
+          "supported": {
+            "supported": 4,
+            "contradicted": 0,
+            "unresolved": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 4,
+            "unresolved": 0
+          },
+          "unresolved": {
+            "supported": 0,
+            "contradicted": 0,
+            "unresolved": 4
+          }
+        },
+        "per_class": {
+          "supported": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "contradicted": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "unresolved": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 4
+          }
+        },
+        "false_assurance_numerator": 0,
+        "false_assurance_denominator": 4,
+        "false_assurance_rate": 0.0,
+        "unresolved_rate": 0.3333333333333333,
+        "coverage": 0.6666666666666666,
+        "correct": 12,
+        "errors": 0
+      }
+    }
+  },
+  "notes": [
+    "Synthetic benchmark only; NOT real-world validation and NOT proof of hypothesis.",
+    "False assurance defined as prediction == supported when reference_label == contradicted (numerator/denominator reported).",
+    "Train partition used only to fit text model; aggregation methods are rule-based on provided evidence."
+  ],
+  "reproducibility": {
+    "random_seed": 20261022,
+    "train_partition_records": 36,
+    "script": "scripts/run_synthetic_three_way.py",
+    "python_dependencies": [
+      "scikit-learn (TF-IDF, LogisticRegression)",
+      "project src.ml.text_classifier",
+      "project src.aggregation.rules"
+    ]
+  }
+}

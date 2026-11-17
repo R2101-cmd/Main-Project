@@ -1,0 +1,215 @@
+{
+  "note": "The repository was already dirty at task start. Only files listed here were intentionally edited or created in this implementation; other initial worktree changes are preserved and are not attributed to this implementation.",
+  "files": [
+    {
+      "path": ".streamlit/config.toml",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing untracked configuration"
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing tracked modification"
+    },
+    {
+      "path": "app.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing tracked modification"
+    },
+    {
+      "path": "config/employer_sources_v1.json",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "new authority configuration; empty trusted mapping list"
+    },
+    {
+      "path": "schemas/employer_sources_v1.schema.json",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "new schema"
+    },
+    {
+      "path": "src/decision/policy.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "previously clean tracked file"
+    },
+    {
+      "path": "src/evidence/authority_config.py",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new authority loader"
+    },
+    {
+      "path": "src/evidence/collector.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing tracked modification"
+    },
+    {
+      "path": "src/ingestion/content_extractor.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing tracked modification"
+    },
+    {
+      "path": "src/ingestion/url_fetcher.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing tracked modification"
+    },
+    {
+      "path": "src/ui_support.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing untracked file"
+    },
+    {
+      "path": "tests/test_automated_mode.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing untracked test file"
+    },
+    {
+      "path": "tests/test_core.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing tracked modification"
+    },
+    {
+      "path": "tests/test_evidence_collection.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing tracked modification"
+    },
+    {
+      "path": "tests/test_extraction.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing tracked modification"
+    },
+    {
+      "path": "tests/test_live_reliability.py",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new regression tests"
+    },
+    {
+      "path": "tests/test_phase2_verification.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing untracked test file"
+    },
+    {
+      "path": "tests/test_ui_support.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing untracked test file"
+    },
+    {
+      "path": "tests/test_url_fetcher.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "tracked file was clean at task start"
+    },
+    {
+      "path": "scripts/smoke_test_streamlit.py",
+      "change": "modified",
+      "already_present_as_dirty_or_untracked_at_start": true,
+      "context": "pre-existing untracked smoke script"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/implementation_summary.md",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/completed_tasks.md",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/remaining_limitations.md",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/test_results.md",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/security_review.md",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/data_integrity_report.md",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/demo_readiness_report.md",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/final_system_workflow.md",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/research_methodology_consistency.md",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/protected_checksums_before.json",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/protected_checksums_after.json",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/integrity_comparison.csv",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/initial_worktree_status.txt",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "new completion artifact"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/supplemental_historical_artifact_hashes.json",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "post-run hashes for five historical synthetic artifacts discovered outside the captured pre-change checksum set; not a before/after comparison"
+    },
+    {
+      "path": "final_completion_package/final_implementation_v1/supplemental_raw_dataset_current_hashes.json",
+      "change": "added",
+      "already_present_as_dirty_or_untracked_at_start": false,
+      "context": "current-only hashes of 3,841 original raw scraper files; no preimplementation baseline available"
+    }
+  ]
+}

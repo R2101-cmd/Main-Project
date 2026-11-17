@@ -1,0 +1,40 @@
+{
+  "case_ids_excluded_from_model_inputs": true,
+  "class_counts": {
+    "contradicted": 100,
+    "supported": 100,
+    "unresolved": 100
+  },
+  "evaluation_performed": false,
+  "expected_labels_file": "expected_labels.jsonl",
+  "files_sha256": {
+    "expected_labels.jsonl": "87918ac4044bd169610f632b791397149133561132e4aa27b04dec44d47dc306",
+    "model_inputs.jsonl": "a9e99795c5cec94044ab3cfd8ce7d8d57eae82e9ac70cb849831d645b75ea61a",
+    "scenario_metadata.jsonl": "3dcc9be267fdb84268db08928ccdd8abf6e5999797e1e241f8756ce5267cd32a"
+  },
+  "historical_artifacts_preserved": true,
+  "input_file": "model_inputs.jsonl",
+  "labels_and_scenarios_excluded_from_model_inputs": true,
+  "name": "vacancyguard_synthetic_benchmark_v2",
+  "records": 300,
+  "scenario_counts": {
+    "complete_match_with_unavailable_noise": 20,
+    "conflicting_independent_sources": 20,
+    "copied_claims_with_official_rejection": 20,
+    "current_official_corroboration": 20,
+    "distinct_independent_official_sources": 20,
+    "incomplete_insufficient_advertisement": 20,
+    "official_application_route_conflict": 20,
+    "official_employer_denial": 20,
+    "official_match_with_reposts": 20,
+    "official_material_field_conflict": 20,
+    "official_requisition_cancellation": 20,
+    "specific_role_among_similar_titles": 20,
+    "stale_or_unavailable_sources": 20,
+    "supported_claim_missing_lineage": 20,
+    "supported_claim_unknown_lineage": 20
+  },
+  "scenario_metadata_file": "scenario_metadata.jsonl",
+  "seed": 20261114,
+  "synthetic_only": true
+}

@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-11-12T17:05:49.295361+00:00",
+  "records": 780,
+  "independently_reviewed_cases": 0,
+  "unresolved_cases": 780,
+  "evidence_backed_authorization_labels": 0,
+  "evidence_backed_employer_identity_labels": 0,
+  "fraud_outcome_labels": 0,
+  "missing_label_rationale": 780,
+  "missing_evidence_references": 780,
+  "label_counts": {
+    "employer_identity_label": {
+      "unresolved": 780
+    },
+    "vacancy_authorization_label": {
+      "unresolved": 780
+    },
+    "fraud_outcome_label": {
+      "unresolved": 780
+    },
+    "adjudication_status": {
+      "pending": 780
+    }
+  },
+  "stage4e_evidence_used_as_ground_truth": false,
+  "assessment": "Table B is entirely unresolved/pending and is insufficient for supervised performance metrics.",
+  "human_adjudication_protocol": {
+    "unit": "one case advertisement, with linked evidence and lineage context",
+    "required_roles": "two independent annotators plus adjudicator for disagreement",
+    "separate_fields": [
+      "employer_identity_label",
+      "vacancy_authorization_label",
+      "fraud_outcome_label"
+    ],
+    "required_artifacts": [
+      "rationale",
+      "evidence references",
+      "source independence",
+      "retrieval timestamp",
+      "lineage group"
+    ],
+    "missing_vs_contradictory": "Unavailable or incomplete evidence remains unresolved; contradiction requires an explicit authoritative conflict.",
+    "quality_controls": [
+      "calibration set",
+      "blinded duplicate cases",
+      "inter-annotator agreement",
+      "adjudication log",
+      "no automatic labels from Stage 4E"
+    ]
+  }
+}

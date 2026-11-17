@@ -204,7 +204,7 @@ def write_outputs(results: list[dict]) -> None:
     v3 = next(r for r in results if r["benchmark"] == "synthetic_v3_current_implementation")
     v2 = next(r for r in results if r["benchmark"] == "synthetic_v2")
     lines = [
-        "# VacancyGuard Metric Analysis",
+        "# TrustHire Metric Analysis",
         "",
         "Generated from existing prediction/label artifacts only. No datasets, annotations, benchmarks, source code, model logic, or labels were modified.",
         "",

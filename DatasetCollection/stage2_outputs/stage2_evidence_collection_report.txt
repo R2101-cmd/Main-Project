@@ -1,0 +1,11 @@
+TrustHire Stage 2 – Evidence Collection and Lineage Verification
+Pilot records selected: 40
+Selection: one application-linked vacancy per distinct employer, with usable employer, title, location, and application URL.
+Verified/supporting evidence records: 2
+Contradicted evidence records: 1
+Unresolved/unverified evidence records: 10
+Unavailable evidence records: 27
+Lineage candidates reviewed: 21
+All lineage relationships remain suggested candidates requiring manual confirmation.
+All non-supported Table B pilot outcomes remain unresolved; fraud outcomes remain unresolved for every record.
+Third-party Naukri data was not treated as proof of employer authorization.

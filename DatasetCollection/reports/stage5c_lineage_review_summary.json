@@ -1,0 +1,12 @@
+{
+  "pair_rows": 207,
+  "valid_pair_decisions": 0,
+  "missing_pair_decisions": 207,
+  "invalid_pair_decisions": 0,
+  "rationale_present": 0,
+  "confirmed_reposts": 0,
+  "probable_copy": 0,
+  "unresolved": 0,
+  "automatic_lineage_conversion": false,
+  "interpretation": "Lineage decisions are not available; no candidates were converted automatically."
+}

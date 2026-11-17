@@ -1,0 +1,24 @@
+{
+  "errors": [],
+  "warnings": [
+    "Stage 4F source distribution is only Greenhouse and Lever; Workday, SmartRecruiters, Ashby, other and third-party targets are absent.",
+    "No human ground truth is available.",
+    "Unified package excludes Naukri from the main integration dataset.",
+    "Application source directory/Streamlit loader was not found in the inspected workspace."
+  ],
+  "main_unified_records": 2980,
+  "naukri_separate_records": 198,
+  "validation_passed": true,
+  "passed_checks": [
+    "unique case IDs within all cohorts",
+    "main cohort schema generated",
+    "URL and timestamp checks on populated fields",
+    "Naukri kept separate"
+  ],
+  "failed_or_unresolved_checks": [
+    "human ground truth completeness",
+    "confirmed lineage",
+    "source diversity targets",
+    "application integration test"
+  ]
+}

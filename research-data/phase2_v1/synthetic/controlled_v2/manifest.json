@@ -1,0 +1,34 @@
+{
+  "name": "controlled_v2",
+  "synthetic": true,
+  "records": 60,
+  "seed": 20261203,
+  "classes": {
+    "supported": 10,
+    "contradicted": 15,
+    "unresolved": 35
+  },
+  "scenario_counts": {
+    "independent_official_support": 5,
+    "official_field_contradiction": 5,
+    "copied_false_agreement": 5,
+    "multi_repost_support": 5,
+    "conflicting_sources": 5,
+    "unknown_lineage": 5,
+    "missing_lineage": 5,
+    "stale_snapshot": 5,
+    "unavailable_sources": 5,
+    "incomplete_description": 5,
+    "similar_title_wrong_vacancy": 5,
+    "insufficient_sources": 5
+  },
+  "inputs_file": "model_inputs.jsonl",
+  "labels_file": "evaluation_labels.jsonl",
+  "labels_separated": true,
+  "group_split": "whole vacancy/source-lineage groups; deterministic stratified greedy split",
+  "splits": {
+    "development": 42,
+    "test": 18
+  },
+  "original_benchmarks_preserved": true
+}

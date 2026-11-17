@@ -1,0 +1,18 @@
+{
+  "stage": "Stage 4A evidence reclassification and independent verification pilot",
+  "executed_at": "2026-11-12T15:49:33.344628+00:00",
+  "files_modified": [],
+  "new_files": [
+    "processed/table_C_stage4_reclassified.csv",
+    "processed/table_C_stage4_pilot.csv",
+    "reports/stage4a_schema_validation.json",
+    "reports/stage4a_pilot_results.json",
+    "reports/stage4a_lineage_analysis.csv",
+    "reports/stage4a_execution_log.json",
+    "scripts/run_stage4a.py"
+  ],
+  "records_reclassified": 780,
+  "pilot_requests": 20,
+  "scope_limit": "20-record pilot only; no 780-record live scrape",
+  "integrity_policy": "No fraud labels assigned; unavailable pages retained as unresolved; no CAPTCHA or authentication bypass."
+}

@@ -1,0 +1,40 @@
+{
+  "label": "all_collected_including_stage4d_pilot",
+  "records": 780,
+  "unique_case_ids": 780,
+  "duplicate_case_ids": 0,
+  "official_http_success": 779,
+  "greenhouse_http_success": 763,
+  "retrieval_success_rate": 0.9782,
+  "exact_or_normalized_core_matches": 744,
+  "exact_or_normalized_core_match_rate": 0.9538,
+  "field_match_counts": {
+    "exact": 98,
+    "exact_match": 3696,
+    "not_comparable": 85,
+    "partial_match": 15,
+    "mismatch": 4,
+    "partial": 2
+  },
+  "evidence_classifications": {
+    "independent_official_confirmation": 744,
+    "fresh_same_system_retrieval": 19,
+    "unresolved": 16,
+    "unavailable": 1
+  },
+  "vacancy_statuses": {
+    "active": 763,
+    "removed": 17
+  },
+  "partial_match_records": 15,
+  "mismatch_records": 4,
+  "unavailable_records": 1,
+  "independent_official_confirmations": 744,
+  "same_system_retrievals": 19,
+  "unresolved_records": 36,
+  "fraud_labels_assigned": 0,
+  "expected_total_cohort": 780,
+  "remaining_records": 0,
+  "cohort_integrity": "Stripe-only; Naukri/ATS records excluded",
+  "recommendation": "Collection is complete and suitable for the next research evaluation stage, with unresolved cases retained and no automatic fraud or legitimacy labels."
+}

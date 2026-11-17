@@ -1,0 +1,21 @@
+{
+  "generated_utc": "2026-11-14T04:27:26.950441+00:00",
+  "checks": {
+    "unified_unique_case_ids": true,
+    "unified_record_count": 2980,
+    "unified_employers": 18,
+    "naukri_separate_count": 198,
+    "critical_missing_counts": {
+      "case_id": 0,
+      "cohort_id": 0,
+      "employer_id": 0,
+      "source_family_id": 0
+    },
+    "human_ground_truth_available": false,
+    "confirmed_lineage_available": false
+  },
+  "issues": [
+    "No adjudicated human ground truth; no confirmed lineage relationships; proposed package remains collection/staging only."
+  ],
+  "selected_primary_verified_benchmark": null
+}

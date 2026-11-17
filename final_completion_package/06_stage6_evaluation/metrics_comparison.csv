@@ -1,0 +1,7 @@
+﻿subset,approach,n,accuracy,macro_f1,false_assurance_numerator,false_assurance_denominator,false_assurance_rate,unresolved_rate,coverage,correct,errors
+all_cases,A_text_only,60,1.0,1.0,0,20,0.0,0.3333333333333333,0.6666666666666666,60,0
+all_cases,B_ordinary_aggregation,60,1.0,1.0,0,20,0.0,0.3333333333333333,0.6666666666666666,60,0
+all_cases,C_lineage_aware_aggregation,60,1.0,1.0,0,20,0.0,0.3333333333333333,0.6666666666666666,60,0
+test,A_text_only,12,1.0,1.0,0,4,0.0,0.3333333333333333,0.6666666666666666,12,0
+test,B_ordinary_aggregation,12,1.0,1.0,0,4,0.0,0.3333333333333333,0.6666666666666666,12,0
+test,C_lineage_aware_aggregation,12,1.0,1.0,0,4,0.0,0.3333333333333333,0.6666666666666666,12,0

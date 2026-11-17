@@ -1,0 +1,11 @@
+{
+  "generated_utc": "2026-11-14T04:25:59.484552+00:00",
+  "checks": {
+    "candidates_preserved": true,
+    "no_auto_confirmation": true,
+    "unknown_preserved": true
+  },
+  "issues": [
+    "Human confirmation missing for all candidate/pair relationships"
+  ]
+}

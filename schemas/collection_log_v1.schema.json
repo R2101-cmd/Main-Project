@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "collection-log-v1",
+  "type": "object",
+  "required": ["event_id", "event_type", "case_id", "vacancy_group", "source_stratum", "observed_at", "operator_id"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "event_type": {"enum": ["search_started", "advertisement_observed", "advertisement_excluded", "evidence_captured", "source_unavailable", "lineage_candidate"]},
+    "case_id": {"type": ["string", "null"]},
+    "vacancy_group": {"type": ["string", "null"]},
+    "source_stratum": {"type": "string", "minLength": 1},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "operator_id": {"type": "string", "minLength": 1},
+    "note": {"type": "string"}
+  }
+}

@@ -15,6 +15,7 @@ Thumbs.db
 # Local Streamlit state and secrets
 .streamlit/secrets.toml
 .streamlit/cache/
+.streamlit/*.log
 
 # Local runtime and generated validation outputs
 data/*.sqlite3
@@ -31,6 +32,31 @@ data/snapshots/
 
 # Ignore large processed dataset files
 data/processed/*.jsonl
+data/processed/*.csv
+data/processed/*.xlsx
+
+# Local scraped source exports and generated workbook packages
+DatasetCollection/*.csv
+DatasetCollection/*.xlsx
+DatasetCollection/raw/
+DatasetCollection/processed/
+DatasetCollection/final_research_package/*.csv
+job_ad_dataset_project_ready.xlsx
+
+# Generated experiment and runtime artifacts; keep checked-in reports/configuration
+artifacts/**/*.jsonl
+artifacts/**/*.sqlite3
+artifacts/**/*.db
+artifacts/**/*.pkl
+artifacts/**/*.joblib
+artifacts/**/*.parquet
+
+# Disposable integration-test exports and local staging databases
+integration_review/**/disposable_*
+integration_review/**/staging_test/*.csv
+integration_review/**/provenance_reconciliation/*.csv
+integration_review/**/schema_test/*.csv
+integration_review/**/schema_test/*.sqlite3
 
 # Metric-analysis artifacts are publishable outputs; ignore only local scratch files
 final_completion_package/metric_analysis/.cache/

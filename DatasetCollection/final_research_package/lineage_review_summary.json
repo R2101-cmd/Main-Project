@@ -1,0 +1,9 @@
+{
+  "stage4f_exact_description_duplicate_records": 91,
+  "stage4f_near_duplicate_candidate_pairs": 459,
+  "stripe_candidate_pairs": 207,
+  "stage4f_confirmed_lineage": 0,
+  "stripe_confirmed_lineage": 0,
+  "human_review_status": "not available; Stage 5B pair decisions blank",
+  "automatic_confirmations": 0
+}

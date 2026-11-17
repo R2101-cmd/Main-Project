@@ -1,0 +1,19 @@
+{
+  "table_b_records": 780,
+  "reviewer1_rows": 100,
+  "reviewer2_rows": 100,
+  "reviewer1_submitted_labels": {
+    "employer_identity_label": 0,
+    "vacancy_authorization_label": 0,
+    "fraud_outcome_label": 0
+  },
+  "reviewer2_submitted_labels": {
+    "employer_identity_label": 0,
+    "vacancy_authorization_label": 0,
+    "fraud_outcome_label": 0
+  },
+  "stage5c_benchmark_frozen": false,
+  "lineage_pair_decisions_submitted": 0,
+  "ground_truth_ready": false,
+  "reason": "Human labels and pair decisions remain blank; no supervised benchmark or agreement can be claimed."
+}

@@ -48,3 +48,27 @@ def test_none_empty_and_non_meaningful_html_are_safe():
 def test_malformed_html_does_not_crash():
     result = extract_text("<main><div class='broken'><p>Title: Analyst", is_html=True)
     assert isinstance(result.description, str)
+
+
+def test_employment_type_extracted_from_jobposting_and_labeled_text():
+    structured = extract_text('<script type="application/ld+json">{"@type":"JobPosting","employmentType":["FULL_TIME"]}</script><main>Role details</main>', is_html=True)
+    labeled = extract_text("Title: Analyst. Employment type: Contract")
+    assert structured.employment_type == "FULL_TIME"
+    assert labeled.employment_type == "Contract"
+
+
+def test_posting_modified_and_validity_dates_are_not_conflated():
+    html = '''<script type="application/ld+json">{"@type":"JobPosting","datePosted":"2026-01-01","dateModified":"2026-02-02","validThrough":"2026-03-03"}</script>'''
+    result = extract_text(html, is_html=True)
+    assert result.date_posted == result.posting_date == "2026-01-01"
+    assert result.date_modified == "2026-02-02"
+    assert result.valid_through == "2026-03-03"
+
+
+def test_modified_or_valid_through_alone_never_becomes_posting_date():
+    html = '''<script type="application/ld+json">{"@type":"JobPosting","dateModified":"2026-02-02","validThrough":"2026-03-03"}</script>'''
+    result = extract_text(html, is_html=True)
+    assert result.date_posted is None
+    assert result.posting_date is None
+    assert result.date_modified == "2026-02-02"
+    assert result.valid_through == "2026-03-03"

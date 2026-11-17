@@ -1,0 +1,20 @@
+path,action,phase,notes
+accuracy_improvement_audit.md,created,Phase 1,Repository audit (pre-existing deliverable).
+src/evidence/collector.py,modified,Phase 2,"Improved field-level matching (employer/title/description/job ID/location/application URL/posting date/recruiter-contact), source authority assessment, verification_status/provenance, and conservative snapshot/independent distinctions; backward-compatible evidence fields preserved."
+src/ingestion/content_extractor.py,modified,Phase 2,"Added best-effort extraction for job_id, posting_date, recruiter to support field-level verification."
+tests/test_phase2_verification.py,created,Phase 2,New tests for exact/wrong job ID, similar titles, locations, employer mismatch, description similarity, third-party/verified/unverified ATS, snapshot-only, independent official provenance, missing/inaccessible and contradictory evidence.
+scripts/fix_rationale.py,created,Phase 2,Helper used during implementation (kept for traceability).
+final_completion_package/phase2_verification_improvement/protected_checksums_before.csv,created,Phase 2,SHA-256 checksums for protected files before Phase 2 outputs.
+final_completion_package/phase2_verification_improvement/protected_checksums_after.csv,created,Phase 2,SHA-256 checksums for protected files after Phase 2 execution (unchanged).
+final_completion_package/phase2_verification_improvement/generate_phase2_outputs.py,created,Phase 2,Generates Phase 2 reclassification/analysis outputs from existing Stage 4E artifacts (no live retrieval).
+final_completion_package/phase2_verification_improvement/field_matching_results.csv,created,Phase 2,Per-record per-field matching results (descriptive reclassification of existing artifacts).
+final_completion_package/phase2_verification_improvement/source_authority_analysis.csv,created,Phase 2,Source authority/provenance analysis (descriptive reclassification of existing artifacts).
+final_completion_package/phase2_verification_improvement/verification_summary.json,created,Phase 2,Verification status counts and before/after comparison.
+final_completion_package/phase2_verification_improvement/official_verification_improvements.md,created,Phase 2,Implementation summary and before/after comparison.
+final_completion_package/phase2_verification_improvement/test_report.md,created,Phase 2,Test execution report.
+final_completion_package/phase2_verification_improvement/methodology_update.md,created,Phase 2,Updated verification methodology documentation.
+final_completion_package/phase2_verification_improvement/file_change_manifest.csv,created,Phase 2,Manifest of Phase 2 changes/outputs.
+final_completion_package/phase2_verification_improvement/pytest_full.txt,created,Phase 2,Full pytest output.
+DatasetCollection/**,not_modified,Phase 2,Original/previous stage outputs preserved.
+data/**,not_modified,Phase 2,Original datasets/annotations preserved.
+final_completion_package/03_stage4_verification/**,not_modified,Phase 2,Previous Stage 4 verification outputs preserved.

@@ -1,0 +1,1439 @@
+{
+  "files": {
+    "stripe": {
+      "path": "DatasetCollection\\final_research_package\\stripe_cohort.csv",
+      "columns": [
+        "case_id",
+        "employer_id",
+        "job_title",
+        "job_description",
+        "location",
+        "salary_text",
+        "contact_details",
+        "application_url",
+        "advertisement_url",
+        "platform_type",
+        "input_type",
+        "observed_at"
+      ],
+      "records": 780
+    },
+    "stage4f": {
+      "path": "DatasetCollection\\final_research_package\\stage4f_expansion_cohort.csv",
+      "columns": [
+        "case_id",
+        "employer_id",
+        "employer_name",
+        "job_title",
+        "job_description",
+        "location",
+        "original_source_url",
+        "source_type",
+        "source_family",
+        "ats_platform",
+        "job_identifier",
+        "retrieval_timestamp",
+        "publication_date",
+        "updated_date",
+        "http_status",
+        "response_hash",
+        "collection_method",
+        "retrieval_provenance",
+        "source_family_id",
+        "source_instance_id",
+        "retrieval_event_id",
+        "canonical_vacancy_id",
+        "lineage_group_id",
+        "source_independence_status",
+        "retrieval_independence_status",
+        "vacancy_status_observation",
+        "retrieval_error_or_warning",
+        "raw_response_path"
+      ],
+      "records": 2200
+    },
+    "unified": {
+      "path": "DatasetCollection\\final_research_package\\unified_proposed_dataset.csv",
+      "columns": [
+        "cohort_id",
+        "case_id",
+        "employer_id",
+        "employer_name",
+        "job_title",
+        "job_description",
+        "location",
+        "salary_text",
+        "publication_date",
+        "update_date",
+        "original_source_url",
+        "official_employer_url",
+        "ats_platform",
+        "source_type",
+        "source_family_id",
+        "source_instance_id",
+        "collection_method",
+        "retrieval_timestamp",
+        "http_status",
+        "response_hash",
+        "job_identifier",
+        "canonical_vacancy_id",
+        "vacancy_status_observation",
+        "evidence_state",
+        "employer_identity_state",
+        "vacancy_authorization_state",
+        "source_independence_status",
+        "retrieval_independence_status",
+        "evidence_references",
+        "lineage_group_id",
+        "potential_lineage_relationship",
+        "confirmed_lineage_status",
+        "lineage_rationale",
+        "employer_identity_label",
+        "vacancy_authorization_label",
+        "fraud_outcome_label",
+        "annotator_id",
+        "adjudication_status"
+      ],
+      "records": 2980
+    },
+    "naukri": {
+      "path": "DatasetCollection\\final_research_package\\naukri_separate_cohort.csv",
+      "columns": [
+        "case_id",
+        "employer_id",
+        "job_title",
+        "job_description",
+        "location",
+        "salary_text",
+        "contact_details",
+        "application_url",
+        "advertisement_url",
+        "platform_type",
+        "input_type",
+        "observed_at",
+        "source_job_id",
+        "source_employer_name",
+        "source_company_id",
+        "source_created_date",
+        "source_file"
+      ],
+      "records": 198
+    }
+  },
+  "reconciliation": {
+    "stripe_count": 780,
+    "stage4f_count": 2200,
+    "expected_main_count": 2980,
+    "unified_count": 2980,
+    "stripe_stage4f_overlap": 0,
+    "unified_missing_ids": [],
+    "unified_extra_ids": [],
+    "unified_exact_union_match": true,
+    "unified_cohort_counts": {
+      "stripe_greenhouse_780": 780,
+      "stage4f_expansion_2200": 2200
+    },
+    "naukri_count": 198,
+    "naukri_overlap_main": 0,
+    "naukri_kept_separate": true,
+    "main_advertisement_sum": 2980
+  },
+  "descriptive_rows": [
+    {
+      "dataset": "main",
+      "dimension": "cohort_id",
+      "value": "stripe_greenhouse_780",
+      "count": 780
+    },
+    {
+      "dataset": "main",
+      "dimension": "cohort_id",
+      "value": "stage4f_expansion_2200",
+      "count": 2200
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STRIPE",
+      "count": 780
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_ab7d0a36ecbe10c2",
+      "count": 217
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_4d8bd97f03109ac1",
+      "count": 383
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_09a2f4897466c7a5",
+      "count": 151
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_65819e198c32566a",
+      "count": 368
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_738e22f0acab814c",
+      "count": 481
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_2e183f2a7a70de1c",
+      "count": 147
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_e0e2087b3efad83c",
+      "count": 30
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_0ebebc1dc933de11",
+      "count": 61
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_44435aa866c2c97a",
+      "count": 83
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_9e14aafb94637fb8",
+      "count": 2
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_e9e029f4af326c8e",
+      "count": 49
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_427a3e8d8f1b42ff",
+      "count": 2
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_f40955ee93bcbb1d",
+      "count": 11
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_4d3754cc6848e1ed",
+      "count": 7
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_59958e2950398a3a",
+      "count": 39
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_ad5ace34fe93d47c",
+      "count": 1
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_id",
+      "value": "EMP_STAGE4F_f5afbedfef4f63f0",
+      "count": 168
+    },
+    {
+      "dataset": "main",
+      "dimension": "source_family_id",
+      "value": "stripe_greenhouse",
+      "count": 780
+    },
+    {
+      "dataset": "main",
+      "dimension": "source_family_id",
+      "value": "Greenhouse",
+      "count": 1747
+    },
+    {
+      "dataset": "main",
+      "dimension": "source_family_id",
+      "value": "Lever",
+      "count": 453
+    },
+    {
+      "dataset": "main",
+      "dimension": "source_type",
+      "value": "official_employer_or_greenhouse_snapshot",
+      "count": 780
+    },
+    {
+      "dataset": "main",
+      "dimension": "source_type",
+      "value": "official_public_ats_or_employer_page",
+      "count": 2200
+    },
+    {
+      "dataset": "main",
+      "dimension": "ats_platform",
+      "value": "Greenhouse",
+      "count": 2527
+    },
+    {
+      "dataset": "main",
+      "dimension": "ats_platform",
+      "value": "Lever",
+      "count": 453
+    },
+    {
+      "dataset": "main",
+      "dimension": "source_independence_status",
+      "value": "separate_employer_controlled_page_and_official_greenhouse_api",
+      "count": 780
+    },
+    {
+      "dataset": "main",
+      "dimension": "source_independence_status",
+      "value": "not_assessed",
+      "count": 2200
+    },
+    {
+      "dataset": "main",
+      "dimension": "retrieval_independence_status",
+      "value": "fresh_retrieval_against_frozen_snapshot",
+      "count": 780
+    },
+    {
+      "dataset": "main",
+      "dimension": "retrieval_independence_status",
+      "value": "independent_collection_event",
+      "count": 2200
+    },
+    {
+      "dataset": "main",
+      "dimension": "evidence_state",
+      "value": "independent_official_confirmation",
+      "count": 744
+    },
+    {
+      "dataset": "main",
+      "dimension": "evidence_state",
+      "value": "fresh_same_system_retrieval",
+      "count": 19
+    },
+    {
+      "dataset": "main",
+      "dimension": "evidence_state",
+      "value": "unresolved",
+      "count": 16
+    },
+    {
+      "dataset": "main",
+      "dimension": "evidence_state",
+      "value": "unavailable",
+      "count": 1
+    },
+    {
+      "dataset": "main",
+      "dimension": "evidence_state",
+      "value": "<missing>",
+      "count": 2200
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_identity_state",
+      "value": "independently_confirmed",
+      "count": 763
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_identity_state",
+      "value": "unresolved",
+      "count": 17
+    },
+    {
+      "dataset": "main",
+      "dimension": "employer_identity_state",
+      "value": "<missing>",
+      "count": 2200
+    },
+    {
+      "dataset": "main",
+      "dimension": "vacancy_authorization_state",
+      "value": "independently_confirmed",
+      "count": 744
+    },
+    {
+      "dataset": "main",
+      "dimension": "vacancy_authorization_state",
+      "value": "unresolved",
+      "count": 36
+    },
+    {
+      "dataset": "main",
+      "dimension": "vacancy_authorization_state",
+      "value": "<missing>",
+      "count": 2200
+    },
+    {
+      "dataset": "main",
+      "dimension": "fraud_outcome_label",
+      "value": "<missing>",
+      "count": 2980
+    },
+    {
+      "dataset": "main",
+      "dimension": "adjudication_status",
+      "value": "unreviewed",
+      "count": 780
+    },
+    {
+      "dataset": "main",
+      "dimension": "adjudication_status",
+      "value": "not_started",
+      "count": 2200
+    },
+    {
+      "dataset": "main",
+      "dimension": "missing_job_title",
+      "value": "<summary>",
+      "count": 0
+    },
+    {
+      "dataset": "main",
+      "dimension": "missing_location",
+      "value": "<summary>",
+      "count": 0
+    },
+    {
+      "dataset": "main",
+      "dimension": "missing_canonical_vacancy_id",
+      "value": "<summary>",
+      "count": 0
+    },
+    {
+      "dataset": "main",
+      "dimension": "missing_lineage_group_id",
+      "value": "<summary>",
+      "count": 2980
+    },
+    {
+      "dataset": "main",
+      "dimension": "missing_case_id",
+      "value": "<summary>",
+      "count": 0
+    },
+    {
+      "dataset": "main",
+      "dimension": "duplicate_case_ids",
+      "value": "<summary>",
+      "count": 0
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_7f954e916e4c82f0",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_9f5b5b5b5b87dcc1",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_666b9f5485e5d89b",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_cf69bcecb143729b",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_cd591bdf17e46e2e",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_2307d03af219b2ef",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_fa348f9ce99bc048",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_2bdd94c004581aa9",
+      "count": 4
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_6891e729ffcb4a57",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_57268e0200eb64fc",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_2b1fe0a61041e5d9",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_943c3eeb252dbd17",
+      "count": 5
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_21fa2de96907a829",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_951f412aaed06d61",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_d6806158f7533400",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_99f9ebbef37fcec5",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_4d748ebd71af03a7",
+      "count": 9
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_a37ec9cf8b4b38ad",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_4f6e83814518ad27",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_5387a2ee0365fa3a",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_762aa83e50fa0bbb",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_88bf6402a35dc0cd",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_ec37707ea710e472",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_1b4c9133da73a711",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_41ba15ea98a9f520",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_21e60c29c8211672",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_0de4f3f059ad5e1c",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_39f5f8ef09033ca8",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_dd4cb9cf52f0a9f1",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_fec03011206dd95a",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_916a98f0fa2a39af",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_dfabc8966e318624",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_0b9ee0b94db97ea7",
+      "count": 3
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_27f25abbc4eb2884",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_3f521181851ef8de",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_978d2a2dd71d5d71",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_783cec79a0b714a3",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_9891cbd987293275",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_ee513d374afbbc2a",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_857110dff9343359",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_5531b44c6d7a3da2",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_fb134d04851dce40",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_5956dad857aadbd5",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_5528a266f145e52b",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_19250ce11bc927db",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_be6b7f0905284a9b",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_8f775dabf306533e",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_b21ef46cbb683626",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_2606d50ece093de6",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_f08dfc2b242429d0",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_978624d08e78c9a3",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_2e7d356dba417b6d",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_9cd50a3b43004536",
+      "count": 4
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_636d5cd504cefab9",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_034cd03003f1ccf3",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_a67a43ff3e0afbe7",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_6a50ccc096d5a7e8",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_b396c9b8804f33f9",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_12a61b34dd70f746",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_fe9ceb063688f77a",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_a9e3f127d53fc312",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_f1111223887f55ca",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_9279e823b3d8c478",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_46ff0b8f24ecd60d",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_71f566aba763fb76",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_dcd78e3dc7b0a497",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_eaf0e84f2d4bbed6",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_3abd807250d1b537",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_da162065a2fd4b0b",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_50a339699f01de8d",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_efc779a5982716c3",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_e1449d5270f09c05",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_6d1f8905cf123f61",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_feaebc5c87a216b7",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_8776319a26f211fd",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_a6ce0643939daa7a",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_e6f146354586d556",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_134d7a72120f91f4",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_cc359f384fe4f56d",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_1375576f05ad074d",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_f6331990e2a29030",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_b957647dd824aaff",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_f55a85b2f2eb0790",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_a1e34b49e76944e6",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_dfc25d0fb3a11317",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_4cae0edede738cee",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_6e2b3c7705bbcdc2",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_3f58330b2c8f6e95",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_918a3a7e7d069218",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_34a04005bcaf206e",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_79a28ca9877c064d",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_52407915d1919401",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_b98567e8b2490368",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_b9addfd89ab3c3c4",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_a7d324a4b53ea387",
+      "count": 3
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_2e22e1c7db7a74fa",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_64087abe6d4b2df6",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_7a80d7bed7820bde",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_44b0e167fa443a4a",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_7cb7226d2eff602a",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_87304b99b65d6362",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_9538358d0779f606",
+      "count": 3
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_889ce0c26e9d56f4",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_d86f29f84b945056",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_c004492ec46f2d87",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_51af9fb8e06da066",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_47c8daad5cca9706",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_c830cc8b3bc4c478",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_e922ba855f0224eb",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_bb2255fa30c66120",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_851a605996c87c1b",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_e9039fa403c6ba1f",
+      "count": 2
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_c785f9f85f908acb",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_d27c2fbf8703d32c",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_19a855e8934624f6",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_699523bc266cd797",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_f464933819223b9b",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_068f4ee1335dc3ed",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_06add78d9647221d",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_c96483e9efe9634e",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_f7eea3b1c743150a",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_3bd9f796f0569278",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_1456736a57693a81",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_34d1d26ff86dc369",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_562e2bfc9f2b1658",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_770b8f22c4543341",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_ab877737b6081bd1",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_453cd5708ce46254",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_99a684beca77b6b9",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_79dc96787c195c9f",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_481d91ae6b0a2b19",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_ddcaff469655adca",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_c3263cd1ac648916",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_3bd2e09eba4937c4",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_e56aabc51d39426f",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_c235f7bac06e6711",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_45d9225952c79f5a",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_d8cac552ef22e00e",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_dca697e909413f95",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_5d15851a2579c087",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_afdada189e5586ed",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_7bc919d962818545",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_311ff2d71234e230",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_cf39fcd692015c45",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_5da17623f39f2a53",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_d028e0ff5f006a83",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_7060b76eea2b856d",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_bba9672cd14e2213",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_cbf7d0a1282540d2",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_034f084fd2b6bfaa",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_28e71b7bb90fcf97",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_a969d00fd7918d05",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_559aedbf75063d8a",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_f8e77476c983e70e",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_04c5e32cf5180b52",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_b118c5fcc2f9dee1",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "employer_id",
+      "value": "emp_7fa3bdcd9da3b468",
+      "count": 1
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "platform_type",
+      "value": "job portal (Naukri)",
+      "count": 198
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "missing_job_title",
+      "value": "<summary>",
+      "count": 0
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "missing_location",
+      "value": "<summary>",
+      "count": 0
+    },
+    {
+      "dataset": "naukri",
+      "dimension": "missing_case_id",
+      "value": "<summary>",
+      "count": 0
+    }
+  ],
+  "evidence_summary": {
+    "records": 780,
+    "case_ids_matched_to_main": 780,
+    "states": {
+      "independent_official_confirmation": 744,
+      "fresh_same_system_retrieval": 19,
+      "unresolved": 16,
+      "unavailable": 1
+    },
+    "snapshot_only_count": 744,
+    "historical_confirmation_source_value_count": 744,
+    "independently_adjudicated_authorization_count": 0,
+    "unavailable_count": 1,
+    "unresolved_count": 16
+  },
+  "lineage_summary": {
+    "candidate_records": 687,
+    "candidate_pairs": 687,
+    "confirmed_relationship_records": 0,
+    "missing_group_id": 666,
+    "not_assessed_or_candidate": 687
+  },
+  "main_record_count": 2980,
+  "naukri_record_count": 198
+}

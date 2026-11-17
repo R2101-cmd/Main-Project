@@ -1,0 +1,60 @@
+{
+  "main_records": 2980,
+  "distinct_employers": 18,
+  "source_families": {
+    "stripe_greenhouse": 780,
+    "Greenhouse": 1747,
+    "Lever": 453
+  },
+  "ats_platforms": {
+    "Greenhouse": 2527,
+    "Lever": 453
+  },
+  "official_vs_third_party": {
+    "official_or_ats": 2980,
+    "third_party": 0
+  },
+  "employer_concentration_top": [
+    [
+      "EMP_STRIPE",
+      780
+    ],
+    [
+      "EMP_STAGE4F_738e22f0acab814c",
+      481
+    ],
+    [
+      "EMP_STAGE4F_4d8bd97f03109ac1",
+      383
+    ],
+    [
+      "EMP_STAGE4F_65819e198c32566a",
+      368
+    ],
+    [
+      "EMP_STAGE4F_ab7d0a36ecbe10c2",
+      217
+    ],
+    [
+      "EMP_STAGE4F_f5afbedfef4f63f0",
+      168
+    ],
+    [
+      "EMP_STAGE4F_09a2f4897466c7a5",
+      151
+    ],
+    [
+      "EMP_STAGE4F_2e183f2a7a70de1c",
+      147
+    ],
+    [
+      "EMP_STAGE4F_44435aa866c2c97a",
+      83
+    ],
+    [
+      "EMP_STAGE4F_0ebebc1dc933de11",
+      61
+    ]
+  ],
+  "naukri_separate": 198
+}

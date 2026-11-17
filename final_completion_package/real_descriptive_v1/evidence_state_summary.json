@@ -1,0 +1,15 @@
+{
+  "records": 780,
+  "case_ids_matched_to_main": 780,
+  "states": {
+    "independent_official_confirmation": 744,
+    "fresh_same_system_retrieval": 19,
+    "unresolved": 16,
+    "unavailable": 1
+  },
+  "snapshot_only_count": 744,
+  "historical_confirmation_source_value_count": 744,
+  "independently_adjudicated_authorization_count": 0,
+  "unavailable_count": 1,
+  "unresolved_count": 16
+}

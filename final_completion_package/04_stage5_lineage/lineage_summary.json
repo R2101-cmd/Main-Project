@@ -1,0 +1,11 @@
+{
+  "generated_utc": "2026-11-14T04:25:59.484552+00:00",
+  "existing_21_candidates_preserved": 21,
+  "stage4f_candidates_preserved": 459,
+  "stripe_pair_review_candidates": 207,
+  "confirmed_relationships": 0,
+  "rejected_relationships": 0,
+  "unknown_pending_relationships": 687,
+  "independent_source_families_confirmed": 0,
+  "note": "No candidate treated as confirmed; all require human review. Text/similarity/URL signals are candidate evidence only."
+}

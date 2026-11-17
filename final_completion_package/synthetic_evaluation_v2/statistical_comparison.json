@@ -1,0 +1,29 @@
+{
+  "delta_accuracy_C_minus_B": {
+    "ci_lower": 0.050000000000000044,
+    "ci_method": "paired percentile bootstrap over test cases",
+    "ci_upper": 0.23333333333333328,
+    "confidence_level": 0.95,
+    "estimate_c_minus_b": 0.1333333333333333,
+    "replicates": 10000,
+    "seed": 20261117
+  },
+  "delta_macro_f1_C_minus_B": {
+    "ci_lower": 0.06072106261859578,
+    "ci_method": "paired percentile bootstrap over test cases",
+    "ci_upper": 0.23458810692853238,
+    "confidence_level": 0.95,
+    "estimate_c_minus_b": 0.13888888888888895,
+    "replicates": 10000,
+    "seed": 20261118
+  },
+  "paired_B_vs_C": {
+    "b_correct_c_incorrect": 0,
+    "c_correct_b_incorrect": 8,
+    "discordant_pairs": 8,
+    "interpretation_limit": "Small synthetic test set; this paired test does not establish real-world superiority.",
+    "p_value": 0.0078125,
+    "test": "exact two-sided McNemar test"
+  },
+  "paired_case_count": 60
+}

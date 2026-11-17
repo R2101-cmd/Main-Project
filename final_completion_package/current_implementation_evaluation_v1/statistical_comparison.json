@@ -1,0 +1,15 @@
+{
+  "B_vs_C_live": {
+    "a_only_correct": 0,
+    "b_only_correct": 30,
+    "discordant": 30,
+    "exact_two_sided_p": 1.862645149230957e-09
+  },
+  "B_vs_C_raw_lineage": {
+    "a_only_correct": 0,
+    "b_only_correct": 10,
+    "discordant": 10,
+    "exact_two_sided_p": 0.001953125
+  },
+  "limitation": "Paired test is descriptive for this authored synthetic suite; not evidence of real-world superiority."
+}

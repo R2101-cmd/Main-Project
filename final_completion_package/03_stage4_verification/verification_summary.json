@@ -1,0 +1,12 @@
+{
+  "generated_utc": "2026-11-14T04:25:59.484552+00:00",
+  "method": "artifact-based verification classification from DatasetCollection/processed/stage4e_evidence_records.csv; no new live network retrieval executed in this run.",
+  "total_records": 780,
+  "states": {
+    "independently_unresolved": 780
+  },
+  "successful_retrievals_by_record": 0,
+  "independently_supported_human_adjudicated": 0,
+  "independently_contradicted_human_adjudicated": 0,
+  "limitation": "Snapshot/retrieval evidence does not equal independently verified employer authorization. Human adjudication and authority/lineage confirmation are required."
+}

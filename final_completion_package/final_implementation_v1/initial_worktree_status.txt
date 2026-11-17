@@ -1,0 +1,83 @@
+ M .gitignore
+ M README.md
+ M app.py
+ M docs/limitations.md
+ M src/aggregation/rules.py
+ M src/evaluation/metrics.py
+ M src/evaluation/runner.py
+ M src/evaluation/validation.py
+ M src/evidence/collector.py
+ M src/ingestion/content_extractor.py
+ M src/ingestion/url_fetcher.py
+ M tests/test_core.py
+ M tests/test_evidence_collection.py
+ M tests/test_extraction.py
+ M tests/test_runner.py
+?? .streamlit/
+?? DatasetCollection/
+?? accuracy_improvement_audit.md
+?? config/
+?? data/annotations/job_ad_authorization_evaluation.jsonl
+?? data/annotations/job_ad_independent_review_v1.jsonl
+?? data/collection/
+?? docs/annotation_quality_audit.md
+?? docs/benchmark_collection_checklist_v1.md
+?? docs/benchmark_collection_plan.md
+?? docs/collection_readiness_report.md
+?? docs/data_splitting_and_leakage.md
+?? docs/independent_annotation_protocol_v1.md
+?? docs/independent_annotation_protocol_v2.md
+?? docs/lineage_methodology_v2.md
+?? docs/metric_definitions.md
+?? docs/next_experiment_plan_v1.md
+?? docs/pre_collection_safeguard_audit_v1.md
+?? docs/related_work_audit.md
+?? docs/research_audit.md
+?? docs/research_evaluation_report_v1.md
+?? docs/research_specification_v1.md
+?? final_completion_package/
+?? integration_review/
+?? job_ad_dataset_project_ready.xlsx
+?? research-data/
+?? schemas/
+?? scripts/automated_mode_analysis.py
+?? scripts/build_controlled_benchmark_v2.py
+?? scripts/build_corrected_dataset.ps1
+?? scripts/build_evaluation_jsonl.ps1
+?? scripts/build_extended_synthetic_benchmark.py
+?? scripts/build_independent_review.py
+?? scripts/build_supported_record_reconciliation.py
+?? scripts/create_synthetic_benchmark_v2_split.py
+?? scripts/finalize_execution.py
+?? scripts/finish_package.py
+?? scripts/fix_rationale.py
+?? scripts/generate_synthetic_benchmark_v2.py
+?? scripts/post_execution_completion.py
+?? scripts/render_research_report.py
+?? scripts/run_extended_synthetic_three_way.py
+?? scripts/run_readonly_real_descriptive.py
+?? scripts/run_research_evaluation.py
+?? scripts/run_synthetic_benchmark_v2_evaluation.py
+?? scripts/run_synthetic_three_way.py
+?? scripts/smoke_test_streamlit.py
+?? scripts/validate_collection_readiness.py
+?? scripts/validate_staging_package.py
+?? src/annotation/
+?? src/collection_readiness.py
+?? src/datasets/benchmark_split_v2.py
+?? src/datasets/descriptive_integration.py
+?? src/datasets/staging.py
+?? src/datasets/synthetic_benchmark_v2.py
+?? src/evaluation/synthetic_v2.py
+?? src/ui_support.py
+?? tests/test_aggregation_verification.py
+?? tests/test_automated_mode.py
+?? tests/test_collection_readiness.py
+?? tests/test_descriptive_integration.py
+?? tests/test_metrics_extended.py
+?? tests/test_phase2_verification.py
+?? tests/test_staging.py
+?? tests/test_synthetic_benchmark_v2.py
+?? tests/test_synthetic_benchmark_v2_split.py
+?? tests/test_synthetic_v2_evaluation.py
+?? tests/test_ui_support.py

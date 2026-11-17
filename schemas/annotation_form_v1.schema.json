@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "annotation-form-v1",
+  "type": "object",
+  "required": ["annotation_id", "case_id", "vacancy_group_id", "annotation_type", "reviewer_id", "protocol_version", "annotated_at", "authorization_label", "evidence_ids", "rationale", "additional_information_request"],
+  "properties": {
+    "annotation_id": {"type": "string", "minLength": 1},
+    "case_id": {"type": "string", "minLength": 1},
+    "vacancy_group_id": {"type": "string", "minLength": 1},
+    "annotation_type": {"const": "independent_original"},
+    "reviewer_id": {"type": "string", "minLength": 1},
+    "protocol_version": {"const": "independent-annotation-protocol-v2"},
+    "annotated_at": {"type": "string", "format": "date-time"},
+    "authorization_label": {"enum": ["supported", "contradicted", "unresolved"]},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "rationale": {"type": "string", "minLength": 1},
+    "additional_information_request": {"type": "string"}
+  }
+}

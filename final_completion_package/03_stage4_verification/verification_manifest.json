@@ -1,0 +1,8 @@
+{
+  "generated_utc": "2026-11-14T04:25:59.484552+00:00",
+  "source": "DatasetCollection/processed/stage4e_evidence_records.csv",
+  "source_sha256": "a0a78bccdb7358a928812311ebd144e2b401ecd7407d09c89fd875ca07d25676",
+  "records": 780,
+  "live_http_performed": false,
+  "priority_processing": "all available collected Stripe/stage4e records classified; live recheck pending for unresolved/inaccessible and for authority confirmation"
+}

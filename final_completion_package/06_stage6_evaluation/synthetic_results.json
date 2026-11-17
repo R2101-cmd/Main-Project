@@ -1,0 +1,14 @@
+{
+  "generated_utc": "2026-11-14T04:35:55.006183+00:00",
+  "status": "completed_controlled_synthetic_three_way",
+  "benchmark_path": "research-data/phase2_v1/synthetic/synthetic_benchmark_v1.jsonl",
+  "records": 60,
+  "distribution": {
+    "supported": 20,
+    "contradicted": 20,
+    "unresolved": 20
+  },
+  "seed": 20261022,
+  "outputs_dir": "final_completion_package/06_stage6_evaluation/synthetic_three_way/",
+  "real_world_validation": false
+}

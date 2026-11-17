@@ -1,0 +1,31 @@
+{
+  "stage4a": {
+    "pilot_size": 20,
+    "successful_live_retrievals": 12,
+    "unavailable": 8,
+    "strong_matches": 8,
+    "partial_matches": 3,
+    "independent_authorization_evidence": 0,
+    "unresolved_cases": 20
+  },
+  "stage4b": {
+    "pilot_size": 20,
+    "successful_live_retrievals": 12,
+    "extraction_successful_response_parses": 12,
+    "jsonld_jobposting_extractions": 7,
+    "retrieved_responses_with_any_extracted_field": 12,
+    "exact_or_normalized_core_matches": 0,
+    "partial_or_mixed_matches": 8,
+    "retrieved_unverified": 4,
+    "unavailable": 8,
+    "vacancy_status_counts": {
+      "indeterminable": 13,
+      "active": 7
+    },
+    "employer_identity_verification": 0,
+    "independent_authorization_evidence": 0,
+    "contradictory_evidence": 0,
+    "unresolved_cases": 20
+  },
+  "method_change": "Stage 4B uses structured extraction, response hashes, archived responses, field-level comparison, and explicit authorization signals."
+}

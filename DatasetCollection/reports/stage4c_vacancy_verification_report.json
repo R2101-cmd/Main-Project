@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-11-12T16:02:14.177988+00:00",
+  "pilot_size": 20,
+  "official_url_present": 14,
+  "official_url_missing": 6,
+  "employer_domain_sources": 12,
+  "ats_or_destination_sources": 2,
+  "third_party_only_sources": 6,
+  "active_status_observed": 7,
+  "expired_status_observed": 0,
+  "removed_status_observed": 0,
+  "indeterminable_status": 13,
+  "employer_to_ats_relationship_confirmed_for_pilot": 0,
+  "individual_vacancy_authorization_sufficient": 0,
+  "individual_vacancy_authorization_unresolved": 20,
+  "missing_url_cases": 6,
+  "third_party_urls_used_as_official_evidence": 0,
+  "fraud_labels_assigned": 0,
+  "recommendation": "Do not scale to 780 yet. The Stripe employer-to-Greenhouse relationship is established for the observed Stripe vacancy, but the 20-case Naukri/ATS pilot has no sufficient individual authorization evidence."
+}
